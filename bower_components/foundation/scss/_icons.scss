@@ -1,0 +1,328 @@
+@mixin uri-img($image, $image2) {
+    background-image: inline-image($image);
+    height: image-height($image);
+    width: image-width($image);
+    text-indent: -9999px;
+    display: inline-block;
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+        background-image: inline-image($image2);
+        background-size: image-width($image) image-height($image);
+    }
+}
+
+%uri-position-1 {
+    position: relative;
+    top: rem-calc(7);
+}
+
+%uri-position-2 {
+    position: relative;
+    top: rem-calc(3);
+}
+
+.uri-heart {
+    @include uri-img("uri/uri_heart.png", "uri/retina/uri_heart.png");
+    @extend %uri-position-2;
+}
+
+
+.uri-checklist {
+    @include uri-img("uri/uri_checklist.png", "uri/retina/uri_checklist.png");
+    @extend %uri-position-2;
+}
+
+dd.active {
+    .uri-heart {
+        @include uri-img("uri/uri_heart-active.png", "uri/retina/uri_heart-active.png");
+        @extend %uri-position-2;
+    }
+    .uri-checklist {
+        @include uri-img("uri/uri_checklist-active.png", "uri/retina/uri_checklist-active.png");
+        @extend %uri-position-2;
+    }
+}
+
+.uri-info {
+    @include uri-img("uri/uri_info.png", "uri/retina/uri_info.png");
+}
+
+.uri-sad {
+    @include uri-img("uri/uri_sad.png", "uri/retina/uri_sad.png");
+    @extend %uri-position-1;
+}
+
+$sprites: sprite-map("icons/*.png", $spacing: 5px);
+$sprites-retina: sprite-map("icons-retina/*.png", $spacing: 10px);
+
+@mixin sprite-background($name) {
+    background-image: sprite-url($sprites);
+    background-position: sprite-position($sprites, $name);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: image-height(sprite-file($sprites, $name));
+    width: image-width(sprite-file($sprites, $name));
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+        // Workaround for https://gist.github.com/2140082
+        @if sprite-position($sprites, $name) != sprite-position($sprites-retina, $name) {
+            $ypos: round(nth(sprite-position($sprites-retina, $name), 2) / 1.999);
+            background-position: 0 $ypos;
+        }
+        // Grab size of non-retina sprite image.
+        background-image: sprite-url($sprites-retina);
+        @include background-size(image-width(sprite-path($sprites)) image-height(sprite-path($sprites)));
+    }
+}
+
+// Usage.
+
+%check-before {
+    &:before {
+        content: "";
+        @include sprite-background(icon_check-green);
+        position: absolute;
+        top: -7px;
+        right: -7px;
+    }
+}
+
+.icon_loading {
+    @include sprite-background(icon_loading);
+}
+
+.icon_card-q {
+    @include sprite-background(icon_card-q);
+}
+
+.icon_bank-q {
+    @include sprite-background(icon_bank-q);
+}
+
+.icon_sex-q {
+    @include sprite-background(icon_sex-q);
+}
+
+.icon_money-q {
+    @include sprite-background(icon_money-q);
+}
+
+.icon_logo-grey {
+    @include sprite-background(icon_logo-grey);
+}
+
+.icon_best-product {
+    @include sprite-background(icon_best-product);
+}
+
+%nav-icon {
+    position: relative;
+    top: rem-calc(5);
+    display: inline-block;
+    margin-right: rem-calc(5);
+}
+
+.icon_nav-home {
+    @include sprite-background(icon_nav-home);
+    @extend %nav-icon;
+}
+
+.icon_nav-discover {
+    @include sprite-background(icon_nav-discover);
+    @extend %nav-icon;
+}
+
+.icon_nav-legal {
+    @include sprite-background(icon_nav-legal);
+    @extend %nav-icon;
+}
+
+.icon_nav-help {
+    @include sprite-background(icon_nav-help);
+    @extend %nav-icon;
+}
+
+.icon_scroll-down {
+    @include sprite-background(icon_scroll-down);
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    margin-top: -16px;
+    margin-left: -16px;
+}
+
+.icon_favicon {
+    float: left;
+    @include sprite-background(icon_favicon);
+}
+
+.logo-icon {
+    @include sprite-background(icon_logo);
+    text-indent: -9999px;
+    margin-top: 0px;
+}
+
+.logo-icon-black {
+    @include sprite-background(icon_logo-black);
+    text-indent: -9999px;
+    margin-top: rem-calc(18);
+}
+
+.icon_glasses {
+    @include sprite-background(icon_glasses);
+    text-indent: -9999px;
+    top: rem-calc(-13);
+    position: relative;
+}
+
+.icon_lock {
+    @include sprite-background(icon_lock);
+    text-indent: -9999px;
+    top: rem-calc(-15);
+    position: relative;
+}
+
+.icon_heart {
+    @include sprite-background(icon_heart);
+    text-indent: -9999px;
+    position: relative;
+    top: rem-calc(-14);
+}
+
+.facebook-icon {
+    @include sprite-background(icon_facebook);
+    text-indent: -9999px;
+}
+
+.twitter-icon {
+    @include sprite-background(icon_twitter);
+    text-indent: -9999px;
+}
+
+.logo-small-icon {
+    @include sprite-background(icon_logo-small);
+    text-indent: -9999px;
+}
+
+.arrow-down-icon {
+    @include sprite-background(icon_arrow-down-small);
+    text-indent: -9999px;
+    position: relative;
+    top: 3px;
+}
+
+.info-icon {
+    @include sprite-background(icon_info);
+    position: relative;
+    top: 3px;
+}
+
+.option-box-large {
+    .icon_costs {
+        @include sprite-background(icon_costs);
+    }
+    .icon_benefits {
+        @include sprite-background(icon_benefits);
+    }
+    .icon_procedure {
+        @include sprite-background(icon_procedure);
+    }
+    .icon_easiness {
+        @include sprite-background(icon_easiness);
+    }
+    &.active, &:hover {
+        .icon_costs {
+            @include sprite-background(icon_costs-active);
+        }
+        .icon_benefits {
+            @include sprite-background(icon_benefits-active);
+        }
+        .icon_procedure {
+            @include sprite-background(icon_procedure-active);
+        }
+        .icon_easiness {
+            @include sprite-background(icon_easiness-active);
+        }
+    }
+}
+
+.mastercard {
+    @include sprite-background(icon_mastercard);
+    text-indent: -9999px;
+    cursor: pointer;
+    &.active {
+        @include sprite-background(icon_mastercard-active);
+        position: relative;
+        @extend %check-before;
+    }
+}
+
+.visa {
+    @include sprite-background(icon_visa);
+    text-indent: -9999px;
+    cursor: pointer;
+    &.active {
+        @include sprite-background(icon_visa-active);
+        position: relative;
+        @extend %check-before;
+    }
+}
+
+.american {
+    @include sprite-background(icon_american);
+    text-indent: -9999px;
+    cursor: pointer;
+    &.active {
+        @include sprite-background(icon_american-active);
+        position: relative;
+        @extend %check-before;
+    }
+}
+
+.boy-icon {
+    @include sprite-background(icon_boy);
+    text-indent: -9999px;
+    opacity: .5;
+    &:hover {
+        opacity: 1;
+    }
+    &.active {
+        @include sprite-background(icon_boy-active);
+        opacity: 1;
+    }
+}
+
+.girl-icon {
+    @include sprite-background(icon_girl);
+    text-indent: -9999px;
+    opacity: .5;
+    &:hover {
+        opacity: 1;
+    }
+    &.active {
+        @include sprite-background(icon_girl-active);
+        opacity: 1;
+    }
+}
+
+.icon_replace-card {
+    @include sprite-background(icon_replace-card);
+}
+
+.icon_new-card {
+    @include sprite-background(icon_new-card);
+}
+
+.icon_other-card {
+    @include sprite-background(icon_other-card);
+}
+
+.icon_cheap-card {
+    @include sprite-background(icon_cheap-card);
+}
+
+.icon_new-card-mini {
+    @include sprite-background(icon_new-card-mini);
+}
+
+.icon_update {
+    @include sprite-background(icon_update);
+}

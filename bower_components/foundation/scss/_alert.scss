@@ -1,0 +1,75 @@
+.alert-box.info {
+    color: #74bfdd;
+    border-color: rgba(166, 216, 236, 0.4);
+    background-color: rgba(160, 211, 232, 0.1);
+}
+
+.alert-box {
+    font-family: $body-font;
+    font-size: rem-calc(12);
+    font-weight: $light;
+    line-height: 1.5em;
+    display: block;
+    margin-top: 1.25rem;
+    padding: rem-calc(8) rem-calc(10);
+    border: none;
+    @include border-radius(2px);
+    &.error {
+        color: rgba(white, 0.9);
+        background-color: $error;
+        @include box-shadow(0 1px 1px rgba($dark-color, 0.5));
+    }
+}
+
+.alert-cta {
+    padding: rem-calc(10) 0 0 rem-calc(10);
+}
+
+.required-text {
+    margin-top: rem-calc(10);
+    position: absolute;
+    width: 100%;
+    bottom: rem-calc(5);
+    .label-error {
+        font-family: $body-font;
+        font-size: rem-calc(11);
+        font-weight: $medium;
+        padding: rem-calc(2) rem-calc(6);
+        color: $error;
+        border: 1px solid $error;
+        background: #fff;
+        @include border-radius(2px);
+    }
+}
+
+.input-box {
+    position: relative;
+}
+
+
+.content-validation .alert:before {
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: solid 10px;
+    border-color: transparent transparent $error transparent;
+    top: 10px
+}
+
+.content-validation {
+    position: absolute;
+    top: rem-calc(45);
+    width: 100%;
+    .alert {
+        font-family: $body-font;
+        font-size: rem-calc(12);
+        font-weight: $light;
+        padding: rem-calc(4) rem-calc(10);
+        text-align: left;
+        color: rgba(white, 0.9);
+        background-color: $error;
+        @include border-radius(2px);
+        position: relative;
+    }
+}

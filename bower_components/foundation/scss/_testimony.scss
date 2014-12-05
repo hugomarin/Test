@@ -1,0 +1,70 @@
+/*
+ * generated with CSS2Compass.class.php by Sebastian Pontow
+ * http://sebastianpontow.de/css2compass/
+ * Contact: me@sebastianpontow.de
+ */
+
+@import "compass/css3";
+
+//@import "base";
+
+//add the following variables to your _base.scss:
+//-------------------------
+$color_0: #284762;
+$color_1: #d3e1ed;
+
+//--------------------------
+
+.testimony-dicover {
+    padding-top: 2.5em;
+    margin-bottom: 2em;
+    padding-bottom: 1em;
+    font-family: $body-font;
+    img {
+        @include border-radius(50%);
+        margin-right: .8em;
+        width: 160px;
+        margin: 0 auto 1em auto;
+        border: 5px solid #f9f9fb;
+        @include box-shadow(0px 0px 0px 1px rgba(0, 0, 0, 0.15));
+        display: block;
+    }
+    blockquote {
+        line-height: 1.3em;
+        color: tint($dark-color, 30%);
+        text-align: center;
+        font-size: rem-calc(14);
+        padding: 0.5em 0;
+        border-left: none;
+        font-weight: $medium;
+        margin-bottom: 0;
+    }
+    p {
+        text-align: center;
+        font-size: rem-calc(12);
+        font-family: $body-font;
+    }
+}
+
+.icon-circle {
+    height: rem-calc(70);
+    width: rem-calc(70);
+    line-height: 60px;
+    @include border-radius(50%);
+    text-align: center;
+    margin-bottom: 2em;
+    padding-top: 0.6em;
+    border: 3px solid $dark-color;
+}
+
+.barriers {
+    h5 {
+        font-size: rem-calc(14);
+        font-weight: $medium;
+        margin-top: rem-calc(10);
+        margin-bottom: 0;
+    }
+    p {
+        font-size: rem-calc(12);
+    }
+}

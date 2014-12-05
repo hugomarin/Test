@@ -1,0 +1,90 @@
+%ui-state {
+  @include border-radius(50%);
+  @include background-image(radial-gradient(white, tint($dark-color, 80%)));
+  border: 1px solid rgba(206, 206, 206, 0.9);
+  background: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+%ui-slide-content-pseudo {
+    position: absolute;
+    bottom: rem-calc(-30);
+    color: tint($dark-color, 50%);
+    font-weight: $medium;
+    font-size: rem-calc(11);
+}
+
+@mixin ui-slide-content ($content1,  $content2 ) {
+    &:after {
+    right: 0px;
+    content: $content1;
+    @extend %ui-slide-content-pseudo;
+  }
+  &:before {
+    left: 0px;
+    content: $content2;
+    @extend %ui-slide-content-pseudo;
+  }
+}
+
+.ui-slider {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 2em;
+  text-align: left;
+  @include ui-slide-content ("100%",  "0%" );
+  &.q1003 {
+    @include ui-slide-content ("+72 meses",  "0 meses" );
+  }
+  &.q1007 {
+    @include ui-slide-content ("+8 años",  "0 meses" );
+  }
+  &.q2002 {
+    @include ui-slide-content ("+72 años",  "0 meses" );
+  }
+  .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    border: 0;
+    background-color: $green-color;
+    border-radius-top-left: 0;
+    top: 0;
+    height: 100%;
+  }
+  .ui-slider-handle {
+    @include box-shadow(-2px 3px 2px 0px rgba(0, 0, 0, 0.1));
+    position: absolute;
+    z-index: 2;
+    width: rem-calc(28);
+    height: rem-calc(28);
+    border: 1px solid tint($dark-color, 80%);
+    cursor: default;
+    top: -2px;
+    margin-left: -16px;
+  }
+}
+
+.ui-widget-content {
+  background: tint($dark-color, 95%);
+  border: 1px solid tint($dark-color, 40%);
+  .ui-state-default {
+    @extend %ui-state;
+  }
+}
+
+.ui-corner-all {
+  @include border-radius(1.5em);
+}
+
+.ui-slider-horizontal {
+  height: rem-calc(25px);
+}
+
+.ui-widget-header {
+  border: 1px solid tint($dark-color, 50%);
+  background: tint($dark-color, 50%);
+  .ui-state-default {
+    @extend %ui-state;
+  }
+}

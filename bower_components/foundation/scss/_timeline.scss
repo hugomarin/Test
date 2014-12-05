@@ -1,0 +1,33 @@
+//TIMELINE
+
+.question-timeline {
+    display: block;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding: 0;
+    width: 100%;
+    @media #{$medium-up} {
+        padding: 0;
+        width: 100%;
+    }
+    &.resume-padding {
+        padding-top: 1em;
+        @media #{$medium-up} {
+            padding-top: 2em;
+        }
+    }
+    li {
+        list-style: none;
+        &.action {
+            position: relative;
+            margin-bottom: 1em;
+            list-style: none;
+        }
+        &.question-li {
+            position: relative;
+            margin-top: .5em;
+            margin-bottom: .5em;
+            list-style: none;
+        }
+    }
+}

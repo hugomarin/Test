@@ -1,0 +1,143 @@
+@import "compass";
+
+// VARIABLES
+
+//$primary-color: #f57922; // Orange
+//$secondary-color: #177cbd; // Blue
+//$terciary-color: #fc1159; // Magenta
+
+
+$dark-color: #434651;
+$light-color: #e4e5e4;
+$red-color: #d7292d;
+$gold-color: #c69c6d;
+$green-color: #64ba76;
+$blue-color: #519ed1;
+$yellow-color: #fbb03b;
+
+$fb-color: #3b5998;
+$error: #ee5759;
+$highlighted: #ffcc33;
+
+$actives: #7ac943; //Green
+$passives: #fbb03b; //Yellow
+$incomes: #ef5d2f; //Orange-red
+$savings: #6acef4; // Light blue
+$debts: #177CBD; // Dark blue
+
+$bold: 700;
+$medium: 600;
+$light: 300;
+
+$header-font: 'proxima-nova';
+$body-font: 'proxima-nova';
+
+/* Classes */
+$tasks: ".tasks";
+
+
+%clearfix {
+  &:after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+}
+
+%smooth {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+
+%caption {
+  color: $gold-color;
+  font-weight: $light;
+  font-size: rem-calc(10);
+  margin-top: rem-calc(4);
+  text-transform: uppercase;
+}
+
+// MIXIN
+
+@mixin border($size, $percentage, $border, $color: $dark-color) {
+  border-#{$border}: $size solid scale-lightness($color, $percentage);
+}
+
+@mixin image-2x($image, $width, $height) {
+  @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+    background-size: $width $height;
+    /* on retina, use image that's scaled by 2 */
+    background-image: url($image);
+  }
+}
+
+@mixin hide-text($width, $height) {
+  display: block;
+  overflow: hidden;
+  width: $width;
+  height: $height;
+  text-indent: -9000px;
+  direction: ltr;
+}
+
+
+@mixin hr-text($text) {
+  content: $text;
+  display: inline-block;
+  position: relative;
+  top: -0.85em;
+  background: white;
+  padding: 0 .5em;
+  background: #f8f7f7;
+  font-size: rem-calc(13);
+  text-transform: uppercase;
+}
+
+@mixin round ($size: 70%) {
+  @include border-radius(50%);
+  border: 5px solid white;
+  display: block;
+  width: $size;
+  height: $size;
+}
+
+@mixin nice-button($color) {
+    color: white;
+    color: rgba(white, 0.9);
+    border: 1px solid ($color);
+    border-bottom: rem-calc(2) solid darken($color, 10%);
+    text-shadow: 0 rem-calc(-1) 0 rgba(black, 0.1);
+    @include background-image(linear-gradient(darken($color, 0%), darken($color, 2%)));
+    @include box-shadow(0 rem-calc(1) rem-calc(2) rgba(black, 0.2), inset 0px rem-calc(1) rgba(255,255,255,0.20));
+    @include border-radius(3px);
+    @extend %smooth;
+    font-weight: $bold;
+    &:hover {
+        background: darken($color, 15%);
+        border-bottom: rem-calc(2) solid darken($color, 25%);
+    }
+}
+
+@mixin nice-selection($color) {
+    color: white;
+    color: rgba(white, 0.9);
+    text-shadow: 0 rem-calc(-1) 0 rgba(black, 0.1);
+    @include box-shadow(0 rem-calc(1) rem-calc(2) rgba(black, 0.2), inset 0px rem-calc(1) rgba(255,255,255,0.20));
+    @extend %smooth;
+    &:hover {
+        background: darken($color, 15%);
+        border-bottom: rem-calc(2) solid darken($color, 25%);
+    }
+}
+
+@mixin hollow-button($color) {
+    color: $color;
+    background: transparent;
+    border: rem-calc(3) solid $color;
+    @include border-radius(50px);
+    @extend %smooth;
+
+}
+
+

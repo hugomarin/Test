@@ -1,0 +1,786 @@
+@import "icons";
+
+//TAGS
+
+body {
+  background-color: #f9f9fb;
+}
+
+//AUX
+
+.no-margin {
+  margin: 0;
+}
+
+.margin-bottom {
+  margin-bottom:3em;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.secondary {
+  color: $red-color;
+}
+
+.terciary {
+  color: $secondary-color;
+}
+
+.black {
+  color: $dark-color;
+}
+
+.gold {
+  color: $gold-color;
+}
+
+.white {
+  color: #fff;
+}
+
+p {
+  &.x-small {
+    font-size: 60%;
+  }
+  &.small {
+    font-size: 80%;
+  }
+  &.large {
+    font-size: 120%;
+  }
+  &.x-large {
+    font-size: 140%;
+  }
+}
+
+
+
+.nice-img {
+  @include border-radius(3px);
+  @include box-shadow(0 3px 6px rgba($dark-color, 0.2));
+}
+
+.over-the-top {
+  z-index: 999;
+}
+
+
+
+//Panel
+
+.panel {
+  @include box-shadow(0 1px 6px rgba(0, 0, 0, 0.04));
+  @include border-radius(0.2em);
+  margin-bottom: 0px;
+  padding: 1em;
+  padding-top: 0;
+  padding-bottom: 0;
+  border: 1px solid scale-lightness($light-color, 40%);
+  background-color: white;
+  &.start {
+    margin-top: 0em;
+    margin-bottom: 0em;
+  }
+  &.square {
+    @include border-radius(0);
+    border-bottom: none;
+  }
+  &.inner {
+    @extend %clearfix;
+    margin-top: 1em;
+    margin-bottom: 4em;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .panel-header {
+    margin-bottom: rem-calc(0px);
+    padding-top: rem-calc(0px);
+  }
+  &.top-radius {
+    @include border-radius(0.3em 0.3em 0 0);
+  }
+}
+
+.panel-title {
+  margin-bottom: 0;
+  letter-spacing: -1px;
+  margin-top: 0em;
+  color: tint($dark-color, 10%);
+  &.subheader {
+  	font-weight: $medium;
+  	font-size: rem-calc(21);
+  }
+}
+
+
+
+
+.amount-1 {
+  width: 88%;
+  border: none;
+  background-color: transparent;
+  color: $gold-color;
+  text-align: left;
+  font-weight: $light;
+  font-size: rem-calc(21);
+}
+
+.amount-2 {
+  min-width: 40px;
+  width: 30%;
+  border: none;
+  background-color: transparent;
+  color: $gold-color;
+  text-align: left;
+  font-weight: $light;
+  font-size: rem-calc(21);
+}
+
+
+
+
+
+// LANDING
+
+.start-title {
+  margin-top: 1em;
+  margin-bottom: .5em;
+  color: white;
+  letter-spacing: -1px;
+  font-weight: $medium;
+  font-size: rem-calc(33px);
+  line-height: 1.2em;
+  text-align: center;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.summary {
+  color: white;
+  font-weight: 300;
+  font-size: rem-calc(20px);
+  line-height: 1.3em;
+  text-align: center;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.modification-landing {
+  .start-title {
+    font-size: rem-calc(39px);
+  }
+  .summary {
+    font-size: rem-calc(25px);
+  }
+}
+
+.start-steps {
+  padding-top: 3em;
+  img {
+    margin: 1em 0;
+  }
+}
+
+.strong-title {
+  margin-top: 3em;
+  margin-bottom: 0;
+  color: scale-lightness($dark-color, 40%);
+  text-transform: uppercase;
+  font-weight: $medium;
+  font-size: rem-calc(11px);
+}
+
+.main-title {
+  margin-bottom: 1em;
+  color: scale-lightness($dark-color, 10%);
+  letter-spacing: -1px;
+  font-weight: $medium;
+  line-height: 1em;
+}
+
+.step-title {
+  color: scale-lightness($dark-color, 30%);
+  font-weight: $medium;
+}
+
+
+.tips {
+  @extend %clearfix;
+  position: relative;
+  display: none;
+  margin: 0 auto 10px;
+  padding: 1em 2em 0.5em;
+  width: auto;
+  border-style: none;
+  border-bottom: 1px solid lighten($secondary-color, 40%);
+  background-color: lighten($secondary-color, 45%);
+  .tips-title {
+    color: darken($secondary-color, 15%);
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .tips-text {
+    color: darken($secondary-color, 10%);
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .tips-close {
+    @include border-radius(6px);
+    position: absolute;
+    right: 2em;
+    bottom: .5em;
+    padding: rem-calc(2px) rem-calc(10px);
+    background-color: lighten($secondary-color, 40%);
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    a {
+      color: white;
+    }
+    &:hover {
+      @include single-transition;
+      background-color: lighten($secondary-color, 10%);
+    }
+  }
+}
+
+img.bg {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  z-index: 1;
+  min-width: 1024px;
+  height: auto;
+  /* Set rules to fill background */
+  min-height: 466px;
+  /* Set up proportionate scaling */
+  width: 100%;
+  /* Set up positioning */
+  position: relative;
+}
+
+.icon-circle {
+  background-color: scale-lightness($dark-color, 85%);
+  height: 70px;
+  width: 70px;
+  line-height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  margin-bottom: 2em;
+  padding-top: 0.6em;
+}
+
+.barriers {
+  h5 {
+    font-size: 14px;
+    font-weight: $medium;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  p {
+    font-size: 12px;
+  }
+}
+
+//BUTTONS
+
+
+
+.unavailable-1 {
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: tint($dark-color, 30%);
+  text-align: left;
+  font-weight: 600;
+  font-size: rem-calc(13px);
+  &:hover {
+    text-decoration: underline;
+  }
+  &:focus {
+    outline: 0;
+  }
+}
+
+.next-arrow-btn {
+  font-style: normal;
+  font-size: 34px;
+  color: white;
+  position: relative;
+  top: -7px;
+}
+
+.remark {
+  margin: 0;
+  color: scale-lightness($error, 60%);
+  font-size: rem-calc(11px);
+}
+
+
+// IMAGES
+
+img.nice {
+  @include border-radius(3px);
+  @include box-shadow(10px 10px 50px rgba($dark-color, 0.15));
+  width: 100%;
+  &:hover {
+    @include single-transition;
+    opacity: .7;
+  }
+  &.small {
+    @include border-radius(3px);
+    @include box-shadow(0 0 10px rgba($dark-color, 0.1));
+  }
+}
+
+img.margin {
+  margin-top: 2.5em;
+  margin-bottom: 1em;
+}
+
+img.nice-round {
+  @include border-radius(100%);
+  @include box-shadow(30px 30px 30px -10px rgba(0, 0, 0, 0.09));
+  max-width: rem-calc(154px);
+  max-height: rem-calc(154px);
+  &.margin {
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+  }
+}
+
+//QUESTIONS
+
+.title {
+  font-weight: 600;
+}
+
+.title-2 {
+  font-size: rem-calc(16);
+  font-weight: $medium;
+  color: tint($dark-color, 30%);
+  margin-top: rem-calc(7);
+}
+
+.select-margin {
+  margin-top: 1.1em;
+}
+
+
+
+
+
+
+
+
+
+.sub-text {
+  margin-top: .5em;
+  margin-bottom: 2.5em;
+  color: tint($dark-color, 60%);
+  font: rem-calc(15) "kepler-std", "Times New Roman", Georgia, serif;
+  font-style: italic;
+  &.explain {
+    font-size: rem-calc(15px);
+  }
+  &.margin-less {
+    margin-bottom: 0;
+  }
+  &.light {
+    color: scale-lightness($light-color, 20%);
+  }
+}
+
+.blank {
+  border: none;
+  background: transparent;
+}
+
+
+
+//INPUT
+
+.nice.full {
+  position: relative;
+  margin-top: .5em;
+  margin-bottom: 1em;
+  padding: 0.6em 0.8em;
+  width: 100%;
+  border: 1px solid scale-lightness($dark-color, 25%);
+  border-radius: rem-calc(4px);
+  color: $dark-color;
+  font-size: rem-calc(14px);
+  &.hash {
+    &:before {
+      position: absolute;
+      right: -3px;
+      bottom: 0px;
+      content: "#";
+      font-size: 12px;
+    }
+  }
+  &:focus {
+    outline: none;
+    border: 1px solid $secondary-color;
+    background: scale-lightness($secondary-color, 90%);
+  }
+  &.light {
+    border: 1px solid scale-lightness($dark-color, 85%);
+  }
+}
+
+.styled-select {
+  margin-top: 8px;
+}
+
+
+
+//CALCULATOR
+
+.trash-icon span {
+  position: relative;
+  top: 10px;
+  color: scale-lightness($dark-color, 90%);
+}
+
+//SLIDER
+
+
+
+.separator-bottom {
+  @include border(1px, 90%, bottom);
+}
+
+.separator-top {
+  @include border(1px, 90%, top);
+}
+
+.divider {
+  @include border(1px, 90%, right);
+}
+
+.expanded {
+  @include border-radius(0 0 0.3em 0.3em);
+  position: relative;
+  padding-bottom: 3em;
+  background-color: scale-lightness($dark-color, 95%);
+  .pretty-button {
+    width: 80%;
+  }
+  &.margin {
+    margin-bottom: 4em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    h4 {
+      line-height: 1em;
+    }
+  }
+  &:after {
+    @include image-2x("http://common.alfabetadev.com/img/UI/border@2x.png", 75px, 6px);
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 6px;
+    background: url("http://common.alfabetadev.com/img/UI/border@1x.png") repeat-x;
+    box-shadow: 0 0;
+    content: "";
+  }
+  &.no-padding {
+    padding-bottom: 0;
+  }
+}
+
+
+
+.calculator-btn {
+  color: scale-lightness($dark-color, 30%);
+  text-transform: uppercase;
+  font-weight: $medium;
+  font-size: rem-calc(11px);
+  &.active {
+    padding: 1em;
+    background-color: $dark-color;
+    color: white;
+  }
+}
+
+.total-calculator.gold {
+  text-align: left;
+  font-weight: 300;
+  font-size: rem-calc(23px);
+}
+
+.save-calculator {
+  margin: 1em 0;
+}
+
+.add-btn {
+  @extend .calculator-btn;
+}
+
+img.radius {
+  @include border-radius(4px);
+}
+
+
+
+
+.address {
+  .explain {
+    margin-top: 2em;
+    text-align: right;
+  }
+}
+
+.answer-1 {
+  @include border-radius(2px);
+  margin: 0.5em 0;
+  padding: 1em;
+  height: 111px;
+  background-color: tint($dark-color, 95%);
+  color: darken($secondary-color, 10%);
+  text-align: left;
+  &.active {
+    background-color: $secondary-color;
+    h5 {
+      color: white;
+      font-weight: 500;
+      font-size: rem-calc(16px);
+    }
+    .sub-text {
+      color: white;
+    }
+  }
+  h5 {
+    color: scale-lightness($light-color, -70%);
+    letter-spacing: -1px;
+    font-weight: $medium;
+    font-size: rem-calc(16px);
+  }
+  input {
+    display: none;
+  }
+}
+
+
+.disclaimer {
+  margin-top: 1em;
+  p {
+    color: tint($dark-color, 60%);
+    font-size: rem-calc(12px);
+  }
+}
+
+.thanks {
+  padding-top: 3em;
+  h3 {
+    margin-top: 2em;
+  }
+}
+
+.back {
+  display: block;
+  margin-top: 1em;
+  color: scale-lightness($dark-color, 50%);
+  text-transform: uppercase;
+  font-size: rem-calc(12px);
+}
+
+#erroresValidate p, #errorsFormCorreoValidate p, #errorsFormSolicitarFormValidate p {
+  @include border-radius(3px);
+  margin-bottom: 3px;
+  padding: 0.3em 0.5em 0.3em 0.5em;
+  border: 1px solid scale-lightness($error, 40%);
+  background-color: scale-lightness($error, 70%);
+  color: scale-lightness($error, -20%);
+  text-align: left;
+  font-weight: 600;
+  font-size: rem-calc(14px);
+}
+
+
+.ask-mail {
+  margin-top: 10%;
+  margin-bottom: 5em;
+}
+
+
+
+.reload {
+  margin-top: rem-calc(23px);
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.question {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.quest-js {
+  .answer {
+    @include border-radius(2px);
+    @include box-shadow(inset 0 0 2px rgba(black, 0.1));
+    margin: 0.5em 0;
+    padding: 0.7em 1em;
+    height: auto;
+    min-height: 140px;
+    border: 1px solid tint($dark-color, 80%);
+    color: darken($secondary-color, 10%);
+    text-align: left;
+    cursor: pointer;
+    h5 {
+        color: tint($dark-color, 30%);
+        font-size: rem-calc(18px);
+        font-weight: $medium;
+        letter-spacing: -1px;
+      }
+
+		p {
+		  font-size: rem-calc(13px);
+		}
+    &.active {
+      @include background-image(linear-gradient(tint($secondary-color, 10%), tint($secondary-color, 0%)));
+      border-color: $secondary-color;
+      h5 {
+        color: white;
+        font-size: rem-calc(18px);
+        font-weight: $medium;
+        letter-spacing: -1px;
+      }
+      p {
+        color: white;
+    	}
+    }
+    &:hover {
+    	@include background-image(linear-gradient(tint($secondary-color, 10%), tint($secondary-color, 0%)));
+    	border-color: $secondary-color;
+    	 p {
+        color: white;
+    	}
+     h5 {
+        color: white;
+      }
+    }
+  }
+}
+.sub-panel-title {
+  font-weight: $light;
+  color: scale-lightness($light-color, -70%);
+}
+
+p {
+  color: rgb(165, 165, 165);
+  font-weight: 300;
+  font-size: 15px;
+}
+
+
+
+.icon-selection {
+  text-align: center;
+  display: block;
+  margin-bottom: 2em;
+  span {
+    display: block;
+    font-size: rem-calc(11px);
+    text-transform: uppercase;
+    color: scale-lightness($light-color, -50%);
+    font-weight: $medium;
+  }
+}
+
+.btn-hollow {
+  @include border-radius(3px);
+  color: white;
+  border: 1px solid darken($green-color, 10%);
+  padding: 1em 3em;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: $bold;
+  display: inline-block;
+  font-size: rem-calc(17px);
+  background: $green-color;
+  text-shadow: 0 1px 0 darken($green-color, 10%);
+  &:hover {
+    background: darken($green-color, 20%);
+    color: white;
+  }
+}
+
+.user-nav a.btn-small {
+	@include border-radius(3px);
+	color: white;
+	border: 1px solid darken($primary-color, 10%);
+	padding: .5em 1em;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: rem-calc(14px);
+	background: $primary-color;
+	text-shadow: 0 1px 0 darken($primary-color, 10%);
+	line-height: 15px;
+	display: inline-block;
+	height: 26px;
+	margin-left: rem-calc(15);
+	&:hover {
+    background: darken($primary-color, 20%);
+    color: white;
+  }
+}
+
+
+.offline {
+  letter-spacing: -2px;
+  font-weight: 300;
+  color: rgb(36, 36, 36);
+}
+
+.veil {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  overflow-y: scroll;
+  background: rgba($dark-color, 0.9);
+  &.warning {
+    background: rgba($incomes, 0.95)
+  }
+}
+
+.big-avatar {
+	@include border-radius(50%);
+	display: block;
+	height: 110px;
+	margin-top: -84px;
+	border: 6px solid #edf0f2;
+	margin-bottom: 3em;
+}
+
+.input-div {
+	margin-bottom: 1.5em;
+}
+
+.label-price {
+    background-color: #ffffe1;
+    border: 1px solid #ffcc33;
+    color: rgba($dark-color, 0.5);
+    line-height: 28px;
+}
+
+.operator {
+    font-size: 4em;
+    font-weight: bold;
+    color: tint($dark-color, 70%);
+}

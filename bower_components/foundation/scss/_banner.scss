@@ -1,0 +1,91 @@
+.banner {
+    &.product {
+        position: relative;
+        overflow: hidden;
+        min-height: rem-calc(170);
+        padding: 2em 0;
+        @media #{$medium-up} {
+            min-height: rem-calc(220);
+        }
+        .banner-text {
+            .banner-title {
+                font-size: rem-calc(23);
+                font-weight: $light;
+                line-height: 1.2em;
+                margin-top: rem-calc(6);
+                text-align: center;
+                letter-spacing: -1px;
+                color: $blue-color;
+                @extend %smooth;
+                @media #{$medium-up} {
+                    font-size: rem-calc(37);
+                    letter-spacing: -2px;
+                }
+                @media #{$large-up} {
+                    font-size: rem-calc(44);
+                    letter-spacing: -2px;
+                }
+            }
+            .banner-subtitle {
+                font-size: rem-calc(19);
+                font-weight: $light;
+                font-family: $body-font;
+                line-height: 1.4em;
+                margin-top: rem-calc(14);
+                margin-bottom: rem-calc(0);
+                text-align: center;
+                letter-spacing: 0;
+                color: tint($dark-color, 10%);
+                @media #{$medium-up} {
+                    font-size: rem-calc(23);
+                    letter-spacing: -1px;
+                }
+                @media #{$large-up} {
+                    font-size: rem-calc(19);
+                    letter-spacing: -1px;
+                }
+            }
+        }
+    }
+}
+
+.media {
+    z-index: 3;
+    overflow: hidden;
+    width: 100%;
+    padding: rem-calc(16) 0;
+    border-bottom: 1px solid tint($dark-color, 90%);
+    border-top: 1px solid tint($dark-color, 90%);
+    background: tint($dark-color, 95%);
+    &.m-landing {
+        position: relative;
+        padding: 1.2em .3em 0;
+    }
+    h5 {
+        font-size: rem-calc(11);
+        font-weight: $medium;
+        margin-bottom: 0;
+        margin-top: rem-calc(-3);
+        color: tint($dark-color, 20%);
+        @extend %smooth;
+        @media #{$large-up} {
+            font-size: rem-calc(12);
+        }
+    }
+    i {
+        margin-right: 1em;
+        margin-left: 1em;
+    }
+    p {
+        font-size: rem-calc(10);
+        font-weight: $light;
+        margin-bottom: 0;
+        color: rgba(white, 0.7);
+        @media #{$large-up} {
+            font-size: rem-calc(13);
+        }
+    }
+}
+
+
+

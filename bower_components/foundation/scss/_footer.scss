@@ -1,0 +1,30 @@
+.footer {
+    padding: rem-calc(7) 0;
+    border-top: 1px solid tint($dark-color, 95%);
+    background: white;
+    .sub-nav {
+        margin: 0;
+        dd {
+            margin-bottom: 0;
+            &.first {
+                margin-left: 0;
+                a {
+                    padding-left: 0;
+                }
+            }
+            a {
+                text-transform: none;
+                font-weight: light;
+            }
+        }
+    }
+}
+
+.footer .social {
+    float: right;
+    min-width: rem-calc(100);
+}
+
+.footer dd a {
+    font-size: rem-calc(11);
+}

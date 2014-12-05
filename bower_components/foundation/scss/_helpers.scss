@@ -1,0 +1,419 @@
+// Buttons
+
+body,
+html {
+    background: white;
+    &.light {
+        background: #f9f9fb;;
+    }
+}
+
+.discover-questions {
+    background: #f9f9fb;
+}
+
+
+.discover-results {
+    background: #f9f9fb;
+}
+
+.white {
+    color: white;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.hide {
+    display: none;
+}
+
+.dark {
+    background: $dark-color;
+}
+
+.margin {
+    &.top {
+        margin-top: rem-calc(30);
+    }
+    &.bottom {
+        margin-bottom: rem-calc(30);
+    }
+}
+
+p {
+    font-family: $body-font;
+    font-weight: $light;
+    color: tint($dark-color, 30%);
+    &.tiny {
+        font-size: rem-calc(10);
+    }
+    &.xsmall {
+        font-size: rem-calc(12);
+    }
+    &.small {
+        font-size: rem-calc(14);
+    }
+    &.large {
+        font-size: rem-calc(18);
+    }
+    &.xlarge {
+        font-size: rem-calc(21);
+    }
+    &.huge {
+        font-size: rem-calc(33);
+    }
+    &.white {
+        color: rgba(white, 0.8);
+    }
+}
+
+.button {
+    color: white;
+    color: rgba(white, 0.9);
+    @extend %smooth;
+    &.secondary {
+        color: tint($dark-color, 30%);
+    }
+    &.upper {
+        text-transform: uppercase;
+    }
+    &.nice {
+        @include nice-button($primary-color);
+        &.secondary {
+            @include nice-button($secondary-color);
+        }
+        &.dark {
+            @include nice-button($dark-color);
+        }
+        &.dark {
+            @include nice-button($dark-color);
+        }
+        &.success {
+            @include nice-button($success-color);
+        }
+    }
+    &.hollow {
+        @include hollow-button($primary-color);
+        &.secondary {
+            @include hollow-button($secondary-color);
+        }
+        &.dark {
+            @include hollow-button($dark-color);
+        }
+        &.dark {
+            @include hollow-button($dark-color);
+        }
+        &.success {
+            @include hollow-button($success-color);
+        }
+    }
+}
+
+.button.secondary {
+    .info-detail {
+        font-family: $body-font;
+        font-size: rem-calc(13);
+        font-weight: bold;
+        text-decoration: underline;
+        text-transform: uppercase;
+        color: tint($dark-color, 30%);
+        @extend %smooth;
+    }
+}
+
+.outer {
+    position: relative;
+    left: 50%;
+    float: left;
+    ul.inner {
+        position: relative;
+        left: -50%;
+        float: left;
+        max-width: none;
+        margin: 0;
+        &.top-border {
+            border-top: 1px solid rgba(white, 0.3);
+        }
+    }
+}
+
+.spot-title {
+    font-size: rem-calc(37);
+    margin-bottom: rem-calc(3);
+    //margin-top: rem-calc(128);
+    letter-spacing: rem-calc(-3);
+    &.white {
+        color: rgba(white, 1);
+    }
+}
+
+.main-title {
+    font-size: rem-calc(27);
+    font-weight: $medium;
+    margin-top: rem-calc(30);
+    margin-bottom: rem-calc(16);
+    letter-spacing: rem-calc(-1);
+    &.white {
+        color: rgba(white, 1);
+    }
+}
+
+.with-separator {
+    margin-bottom: 3em;
+    border-bottom: 1px solid tint($dark-color, 80%);
+}
+
+.close {
+    font-size: rem-calc(14);
+    position: absolute;
+    z-index: 100;
+    top: rem-calc(18);
+    right: rem-calc(18);
+    cursor: pointer;
+    color: tint($dark-color, 30%);
+    &:hover {
+        color: scale-lightness($light-color, -20%);
+    }
+}
+
+.input-div {
+    margin-top: .5em;
+    margin-bottom: 1em;
+}
+
+.operator {
+    font-size: 4em;
+    font-weight: bold;
+    color: tint($dark-color, 70%);
+}
+
+ul#home-drop {
+    width: 25%;
+    min-width: 300px;
+    margin: 0 auto;
+    li {
+        position: relative;
+        margin: 0 auto;
+        list-style: none;
+        text-align: left;
+        a {
+            position: relative;
+            margin-bottom: 0;
+        }
+        ul {
+            position: absolute;
+            z-index: 1000;
+            display: block;
+            width: 100%;
+            margin: 0;
+            background: white;
+            @include box-shadow(0px 5px 5px 1px rgba(0, 0, 0, 0.24));
+            img {
+                width: 40px;
+                margin-right: 10px;
+                border: 2px solid white;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                border-radius: 50%;
+                -webkit-box-shadow: 0 1px 2px -1px rgba(0, 0, 0, 0.42);
+                -moz-box-shadow: 0 1px 2px -1px rgba(0, 0, 0, 0.42);
+                box-shadow: 0 1px 2px -1px rgba(0, 0, 0, 0.42);
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+            }
+            a {
+                font-weight: $light;
+                display: block;
+                padding: .5em 2em .5em 1em;
+                color: tint($dark-color, 10%);
+                border-bottom: 1px solid tint($dark-color, 90%);
+            }
+        }
+    }
+}
+
+hr {
+    &.double {
+      margin: 2em 0 2em 0;
+      padding: 0;
+      border: none;
+      border-top: 1px solid tint($dark-color, 90%);
+      color: tint($dark-color, 30%);
+      text-align: center;
+      &.finance {
+        &:after {
+          @include hr-text("Tu estado financiero");
+        }
+      }
+      &.improved {
+        &:after {
+          @include hr-text("Cómo mejorar tu diagnóstico");
+        }
+      }
+      &.products {
+        &:after {
+          @include hr-text("Otros productos de tu interés");
+        }
+      }
+      &.spot-products {
+        &:after {
+          @include hr-text("Productos destacados");
+      }
+    }
+  }
+}
+
+#preferencias-container {
+    ul {
+        margin-left: 0;
+    }
+}
+
+.divider-top {
+    margin-top: rem-calc(10);
+    border-top: 1px solid tint($dark-color, 90%);
+}
+
+.divider-bottom {
+    margin-bottom: rem-calc(10);
+    padding-bottom: rem-calc(10);
+    border-bottom: 1px solid tint($dark-color, 90%);
+}
+
+.loading.text-center {
+    margin-top: 100px;
+    .title {
+        font-family: $header-font;
+        font-size: rem-calc(21);
+        font-weight: $bold;
+        margin-top: rem-calc(30);
+        margin-bottom: rem-calc(17);
+        text-transform: uppercase;
+        color: tint($dark-color, 10%);
+    }
+    .subtitle {
+        font-family: $body-font;
+        font-size: rem-calc(17);
+        font-weight: $light;
+        color: tint($dark-color, 40%);
+        @extend %smooth;
+        line-height: 1.4em;
+    }
+    .loading-message {
+        margin-bottom: rem-calc(70);
+    }
+    i {
+        font-family: $body-font;
+        font-size: rem-calc(14);
+        font-weight: $light;
+        color: tint($dark-color, 80%);
+    }
+}
+
+label {
+color: tint($dark-color, 40%);
+font-family: $body-font;
+font-size: rem-calc(13);
+margin-bottom: .5em;
+font-weight: $medium;
+}
+
+.main-title {
+    color: tint($dark-color, 10%);
+    font-family: $body-font;
+    font-size: rem-calc(23);
+    margin-top: 3em;
+    margin-bottom: .5em;
+    font-weight: $light;
+    letter-spacing: 0;
+    line-height: 1.4em;
+    text-align: center;
+}
+
+.main-subtitle {
+    color: tint($dark-color, 40%);
+    font-family: $body-font;
+    font-size: rem-calc(18);
+    font-weight: $light;
+    letter-spacing: 0;
+    line-height: 1.4em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+p.explain {
+font-size: rem-calc(11);
+margin-top: 1em;
+color: tint($dark-color, 60%);
+}
+
+.cta-box {
+    margin: rem-calc(20) 0 rem-calc(50);
+}
+
+.input-space {
+    margin: rem-calc(6) 0;
+}
+
+
+.big-title {
+    color:$gold-color;
+    font-size: rem-calc(27);
+    line-height: 1.2em;
+    margin-bottom: 1em;
+    font-family: $header-font;
+    letter-spacing: -1px;
+    font-weight: $light;
+}
+
+%border-decoration {
+    &:before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: rem-calc(100);
+        top: rem-calc(30);
+        left: rem-calc(-110);
+        border-bottom: 1px solid tint($dark-color, 80%);
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: rem-calc(100);
+        top: rem-calc(30);
+        right: rem-calc(-110);
+        border-bottom: 1px solid tint($dark-color, 80%);
+    }
+}
+
+.icon_card-q {
+    position: relative;
+    @extend %border-decoration;
+}
+
+.icon_bank-q {
+    position: relative;
+    @extend %border-decoration;
+}
+
+.icon_sex-q {
+    position: relative;
+    @extend %border-decoration;
+}
+
+.icon_money-q {
+    position: relative;
+    @extend %border-decoration;
+}
+
+.sexy_line {
+    margin: 0;
+    margin-bottom: 25px;
+    height: 1px;
+    background: black;
+    @include filter-gradient(#ffffff, #ffffff, horizontal); // IE6-9
+@include background-image(linear-gradient(left, rgba(255,255,255,1) 0%,rgba(204,204,204,1) 50%,rgba(255,255,255,1) 100%));
+}

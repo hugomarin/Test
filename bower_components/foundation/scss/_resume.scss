@@ -1,0 +1,52 @@
+.resume-box {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 0;
+    padding: rem-calc(15) rem-calc(0) rem-calc(5) rem-calc(0);
+    border-bottom: 1px solid tint($dark-color, 90%);
+    background: tint($dark-color, 100%);
+    @include box-shadow(0 0px 0px rgba(0, 0, 0, 0));
+    &.fixed {
+        position: fixed;
+        top: -120px;
+        -webkit-transition: top 500ms;
+        /* For Safari 3.1 to 6.0 */
+        transition: top 500ms;
+    }
+    &.expand {
+        position: fixed;
+        top: 0;
+        @include box-shadow(0 3px 20px -5px rgba(0, 0, 0, 0.06));
+    }
+    .resume-description {
+        margin-left: rem-calc(0);
+        .resume-title {
+            font-family: $body-font;
+            font-size: rem-calc(14);
+            font-weight: $medium;
+            color: $gold-color;
+            @media #{$medium-up} {
+                font-size: rem-calc(19);
+                margin-top: rem-calc(13);
+            }
+        }
+    }
+    .resume-img {
+        float: left;
+        width: rem-calc(50);
+        margin-right: rem-calc(10);
+        img {
+            width: rem-calc(50);
+            border: 3px solid white;
+            @include border-radius(50%);
+            @include box-shadow(0px 1px 2px -1px rgba(0, 0, 0, 0.42));
+        }
+    }
+}
+
+.progress-bar {
+    max-width: rem-calc(250);
+    float: right;
+    width: 90%;
+}
