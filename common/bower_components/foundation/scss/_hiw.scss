@@ -1,3 +1,20 @@
+//INFO ICONS
+
+.uri_heart-medium {
+    @include uri-img("uri/uri_heart-medium.png", "uri/retina/uri_heart-medium.png");
+}
+
+
+.uri_lock-medium {
+    @include uri-img("uri/uri_lock-medium.png", "uri/retina/uri_lock-medium.png");
+}
+
+.uri_glasses-medium {
+    @include uri-img("uri/uri_glasses-medium.png", "uri/retina/uri_glasses-medium.png");
+}
+
+
+
 .hiw {
     padding-top: rem-calc(74);
     .section-title {
@@ -40,7 +57,7 @@
 .spot-2 {
     .spot-title {
         margin-top: rem-calc(150);
-        color: $terciary-color;
+        color: $red-color;
     }
 }
 

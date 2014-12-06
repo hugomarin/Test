@@ -79,7 +79,7 @@ $include-html-global-classes: $include-html-classes;
 // $include-html-grid-classes: $include-html-classes;
 // $include-xl-html-grid-classes: false;
 
-   $row-width: rem-calc(1000);
+   $row-width: rem-calc(1100);
 // $total-columns: 12;
 // $column-gutter: rem-calc(25);
 
@@ -87,7 +87,7 @@ $include-html-global-classes: $include-html-classes;
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
 // We use these to define default font stacks
-// $font-family-sans-serif: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+   $font-family-sans-serif: "proxima-nova", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 // $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
@@ -116,8 +116,10 @@ $include-html-global-classes: $include-html-classes;
 // $black       : #000000;
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
-// $secondary-color: #e7e7e7;
+  $primary-color: #fc1159; // Magenta
+  $secondary-color: #177cbd; // Blue
+  $terciary-color: #34C584; // Green
+  $quaternary-color: #F37721; // Orange
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
@@ -151,11 +153,11 @@ $include-html-global-classes: $include-html-classes;
 // d. Media Query Ranges
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $small-range: (0em, 40em);
-// $medium-range: (40.063em, 64em);
-// $large-range: (64.063em, 90em);
-// $xlarge-range: (90.063em, 120em);
-// $xxlarge-range: (120.063em, 99999999em);
+ $small-range: (0em, 30em);
+ $medium-range: (30.063em, 40em);
+ $large-range: (40.063em, 62em);
+ $xlarge-range: (62.063em, 90em);
+ $xxlarge-range: (90.063em, 99999999em);
 
 // $screen: "only screen";
 

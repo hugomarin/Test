@@ -85,7 +85,7 @@ $color_1: #d3e1ed;
         width: rem-calc(120);
         height: rem-calc(120);
         margin: -60px auto rem-calc(9) auto;
-        @include round;
+        @include round(120px);
     }
     blockquote {
         font-family: $body-font;

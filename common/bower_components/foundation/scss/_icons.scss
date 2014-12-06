@@ -51,102 +51,15 @@ dd.active {
     @extend %uri-position-1;
 }
 
-//Navigation
-
-.uri_logo-white {
-    @include uri-img("uri/uri_logo-white.png", "uri/retina/uri_logo-white.png");
-}
-
-.uri_logo-black-small {
-    @include uri-img("uri/uri_logo-black-small.png", "uri/retina/uri_logo-black-small.png");
-}
-
-.uri_logo-black {
-    @include uri-img("uri/uri_logo-black.png", "uri/retina/uri_logo-black.png");
-}
-
-.uri_flag-mex {
-    @include uri-img("uri/uri_flag-mex.png", "uri/retina/uri_flag-mex.png");
-}
-
-.uri_flag-co {
-    @include uri-img("uri/uri_flag-co.png", "uri/retina/uri_flag-co.png");
-}
 
 
-//Offcanvas
 
 
-.uri_nav-discover {
-    @include uri-img("uri/uri_nav-discover.png", "uri/retina/uri_nav-discover.png");
-}
 
 
-.uri_nav-help {
-    @include uri-img("uri/uri_nav-help.png", "uri/retina/uri_nav-help.png");
-}
-
-.uri_nav-home {
-    @include uri-img("uri/uri_nav-home.png", "uri/retina/uri_nav-home.png");
-}
-
-.uri_nav-legal {
-    @include uri-img("uri/uri_nav-legal.png", "uri/retina/uri_nav-legal.png");
-}
 
 
-//MEDIA
 
-.uri_techcrunch {
-    @include uri-img("uri/uri_techcrunch.png", "uri/retina/uri_techcrunch.png");
-}
-
-.uri_cnn {
-    @include uri-img("uri/uri_cnn.png", "uri/retina/uri_cnn.png");
-}
-
-.uri_financiero {
-    @include uri-img("uri/uri_financiero.png", "uri/retina/uri_financiero.png");
-}
-
-.uri_excelsior {
-    @include uri-img("uri/uri_excelsior.png", "uri/retina/uri_excelsior.png");
-}
-
-.uri_economista {
-    @include uri-img("uri/uri_economista.png", "uri/retina/uri_economista.png");
-}
-
-
-//INFO
-
-.uri_heart-medium {
-    @include uri-img("uri/uri_heart-medium.png", "uri/retina/uri_heart-medium.png");
-}
-
-
-.uri_lock-medium {
-    @include uri-img("uri/uri_lock-medium.png", "uri/retina/uri_lock-medium.png");
-}
-
-.uri_glasses-medium {
-    @include uri-img("uri/uri_glasses-medium.png", "uri/retina/uri_glasses-medium.png");
-}
-
-
-//FOOTER
-
-.uri_favicon {
-    @include uri-img("uri/uri_favicon.png", "uri/retina/uri_favicon.png");
-}
-
-.uri_facebook {
-    @include uri-img("uri/uri_facebook.png", "uri/retina/uri_facebook.png");
-}
-
-.uri_twitter {
-    @include uri-img("uri/uri_twitter.png", "uri/retina/uri_twitter.png");
-}
 
 
 $sprites: sprite-map("icons/*.png", $spacing: 5px);

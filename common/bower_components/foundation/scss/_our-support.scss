@@ -1,3 +1,26 @@
+//MEDIA ICONS
+
+.uri_techcrunch {
+    @include uri-img("uri/uri_techcrunch.png", "uri/retina/uri_techcrunch.png");
+}
+
+.uri_cnn {
+    @include uri-img("uri/uri_cnn.png", "uri/retina/uri_cnn.png");
+}
+
+.uri_financiero {
+    @include uri-img("uri/uri_financiero.png", "uri/retina/uri_financiero.png");
+}
+
+.uri_excelsior {
+    @include uri-img("uri/uri_excelsior.png", "uri/retina/uri_excelsior.png");
+}
+
+.uri_economista {
+    @include uri-img("uri/uri_economista.png", "uri/retina/uri_economista.png");
+}
+
+
 .support {
     overflow: hidden;
     padding: .3125rem 0;

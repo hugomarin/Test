@@ -1,3 +1,48 @@
+//Navigation Icons
+
+.uri_logo-white {
+    @include uri-img("uri/uri_logo-white.png", "uri/retina/uri_logo-white.png");
+}
+
+.uri_logo-black-small {
+    @include uri-img("uri/uri_logo-black-small.png", "uri/retina/uri_logo-black-small.png");
+}
+
+.uri_logo-black {
+    @include uri-img("uri/uri_logo-black.png", "uri/retina/uri_logo-black.png");
+}
+
+.uri_flag-mex {
+    @include uri-img("uri/uri_flag-mex.png", "uri/retina/uri_flag-mex.png");
+}
+
+.uri_flag-co {
+    @include uri-img("uri/uri_flag-co.png", "uri/retina/uri_flag-co.png");
+}
+
+//Offcanvas Icons
+
+
+.uri_nav-discover {
+    @include uri-img("uri/uri_nav-discover.png", "uri/retina/uri_nav-discover.png");
+}
+
+
+.uri_nav-help {
+    @include uri-img("uri/uri_nav-help.png", "uri/retina/uri_nav-help.png");
+}
+
+.uri_nav-home {
+    @include uri-img("uri/uri_nav-home.png", "uri/retina/uri_nav-home.png");
+}
+
+.uri_nav-legal {
+    @include uri-img("uri/uri_nav-legal.png", "uri/retina/uri_nav-legal.png");
+}
+
+
+
+
 //HEADER
 
 .header {
@@ -74,6 +119,7 @@
     ul {
         background: rgba(255, 255, 255, 0);
         li {
+            background: transparent;
             &:hover {
                 background: transparent;
             }

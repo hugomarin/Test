@@ -10,31 +10,19 @@ body {
 
 .hero {
     position: relative;
-    min-height: rem-calc(630);
     background-image: url(../images/home/banner-05.jpg);
     background-size: cover;
     background-position-x: center;
-    @media (max-height: 45em) {
-        min-height: rem-calc(450);
-    }
-    @media (max-height: 40em) {
-        min-height: rem-calc(380);
-    }
-
-
+    padding-bottom: rem-calc(120);
     .main-text {
         width: 100%;
-        height: rem-calc(370);
         margin-top: rem-calc(130);
         .tagline {
             font-size: rem-calc(67);
             line-height: 1em;
-            padding: 0 1.5em;
-            letter-spacing: -3px;
+            padding: 0;
+            letter-spacing: rem-calc(-3);
             color: white;
-            @media (max-height: 40em) {
-                font-size: rem-calc(48);
-            }
         }
         .summary {
             font-family: $body-font;
@@ -47,9 +35,6 @@ body {
             color:white;
             color: rgba(white, 0.9);
             font-weight: 300;
-            @media (max-height: 40em) {
-                font-size: rem-calc(23);
-            }
             @media #{$medium-up} {
                 margin-bottom: rem-calc(34);
             }

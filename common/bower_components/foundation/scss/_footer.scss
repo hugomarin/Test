@@ -1,3 +1,19 @@
+
+
+//FOOTER ICONS
+
+.uri_favicon {
+    @include uri-img("uri/uri_favicon.png", "uri/retina/uri_favicon.png");
+}
+
+.uri_facebook {
+    @include uri-img("uri/uri_facebook.png", "uri/retina/uri_facebook.png");
+}
+
+.uri_twitter {
+    @include uri-img("uri/uri_twitter.png", "uri/retina/uri_twitter.png");
+}
+
 .footer {
     padding: rem-calc(7) 0;
     border-top: 1px solid tint($dark-color, 95%);

@@ -5,6 +5,9 @@
 
 // Make sure the charset is set appropriately
 
+// Global Foundation Settings
+  @import "foundation/settings";
+
 // Behold, here are all the Foundation components.
   @import "foundation/components/grid";
   @import "foundation/components/accordion";
@@ -60,7 +63,7 @@
   @import "input";
   @import "slide";
   @import "intro";
-  @import "modal";
+//  @import "modal";
   @import "loading";
-  @import "result";
+//  @import "result";
   @import "footer";

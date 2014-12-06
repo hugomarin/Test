@@ -4,10 +4,10 @@
 
 //Colors
 
-$primary-color: rgb(251, 17, 89);
-$secondary-color: rgb(237, 237, 242);
-$terciary-color: #fc1159; // Magenta
-$quaternary-color: #fc1159; // Red
+$primary-color: #fc1159; // Magenta
+$secondary-color: #177cbd; // Blue
+$terciary-color: #34C584; // Green
+$quaternary-color: #F37721; // Orange
 
 $dark-color: #434651;
 $light-color: #e4e5e4;
@@ -19,7 +19,6 @@ $yellow-color: #fbb03b;
 $fb-color: #3b5998;
 $error: #ee5759;
 $highlighted: #fc3;
-$actives: #7ac943;
 
 //Font
 
@@ -54,11 +53,11 @@ $body-font: "proxima-nova";
 // MIXIN
 
 
-@mixin round($size: 70%) {
+@mixin round($size) {
     display: block;
     width: $size;
     height: $size;
-    border: 5px solid white;
+    border: $size/20 solid white;
     @include border-radius(50%);
 }
 
