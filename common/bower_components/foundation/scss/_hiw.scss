@@ -92,3 +92,57 @@
         margin-left: rem-calc(20);
     }
 }
+
+.hiw-steps {
+    margin-top: emCalc(-100);
+    padding-bottom: emCalc(30);
+    background: tint($dark-color, 95%);
+    border-bottom: 1px solid tint($dark-color, 90%);
+    h4 {
+        font-size: emCalc(16);
+        margin-bottom: emCalc(10);
+        text-align: center;
+        color: white;
+        color: rgba(white, 0.8);
+        border: 0;
+    }
+    h5 {
+        color: tint($dark-color, 20%);
+    }
+    .hiw-steps-img img {
+        display: block;
+        width: 120px;
+        max-width: emCalc(150);
+        height: 120px;
+        margin: 0 auto emCalc(9) auto;
+        border-radius: 50%;
+    }
+    .hiw-steps-title {
+        font-size: emCalc(19);
+        a {
+            color: black;
+        }
+    }
+    .step-no {
+        font-size: emCalc(12);
+        line-height: emCalc(25);
+        position: relative;
+        top: -3px;
+        display: inline-block;
+        width: emCalc(25);
+        height: emCalc(25);
+        color: tint($dark-color, 95%);
+        background: tint($dark-color, 80%);
+        @include border-radius(20px);
+    }
+    .intro {
+        font-size: emCalc(14);
+        font-weight: 300;
+        margin-bottom: 0;
+        letter-spacing: 0;
+        text-transform: none;
+        color: scale-lightness($dark-color, 50%);
+    }
+}
+
+

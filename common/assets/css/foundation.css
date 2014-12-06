@@ -17471,8 +17471,8 @@ p aside {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  font-weight: normal;
+  font-family: "proxima-nova", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: 600;
   font-style: normal;
   color: #222222;
   text-rendering: optimizeLegibility;
@@ -18311,8 +18311,8 @@ p aside {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  font-weight: normal;
+  font-family: "proxima-nova", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: 600;
   font-style: normal;
   color: #222222;
   text-rendering: optimizeLegibility;
@@ -18680,16 +18680,16 @@ blockquote p {
 
 .tab-bar {
   -webkit-backface-visibility: hidden;
-  background: #333333;
+  background: #fff;
   color: #FFFFFF;
-  height: 2.8125rem;
-  line-height: 2.8125rem;
+  height: 3.75rem;
+  line-height: 3.75rem;
   position: relative;
 }
 .tab-bar h1, .tab-bar h2, .tab-bar h3, .tab-bar h4, .tab-bar h5, .tab-bar h6 {
   color: #FFFFFF;
   font-weight: bold;
-  line-height: 2.8125rem;
+  line-height: 3.75rem;
   margin: 0;
 }
 .tab-bar h1, .tab-bar h2, .tab-bar h3, .tab-bar h4 {
@@ -18697,20 +18697,20 @@ blockquote p {
 }
 
 .left-small {
-  width: 2.8125rem;
-  height: 2.8125rem;
+  width: 3.75rem;
+  height: 3.75rem;
   position: absolute;
   top: 0;
-  border-right: solid 1px #1a1a1a;
+  border-right: solid 1px #f2f2f2;
   left: 0;
 }
 
 .right-small {
-  width: 2.8125rem;
-  height: 2.8125rem;
+  width: 3.75rem;
+  height: 3.75rem;
   position: absolute;
   top: 0;
-  border-left: solid 1px #1a1a1a;
+  border-left: solid 1px #f2f2f2;
   right: 0;
 }
 
@@ -18718,7 +18718,7 @@ blockquote p {
   padding: 0 0.625rem;
   position: absolute;
   text-align: center;
-  height: 2.8125rem;
+  height: 3.75rem;
   top: 0;
 }
 @media only screen and (min-width: 40.063em) {
@@ -18728,21 +18728,21 @@ blockquote p {
 }
 .tab-bar-section.left {
   left: 0;
-  right: 2.8125rem;
+  right: 3.75rem;
 }
 .tab-bar-section.right {
-  left: 2.8125rem;
+  left: 3.75rem;
   right: 0;
 }
 .tab-bar-section.middle {
-  left: 2.8125rem;
-  right: 2.8125rem;
+  left: 3.75rem;
+  right: 3.75rem;
 }
 
 .tab-bar .menu-icon {
   text-indent: 2.1875rem;
-  width: 2.8125rem;
-  height: 2.8125rem;
+  width: 3.75rem;
+  height: 3.75rem;
   display: block;
   padding: 0;
   color: #FFFFFF;
@@ -18756,7 +18756,7 @@ blockquote p {
   height: 0;
   top: 50%;
   margin-top: -0.5rem;
-  left: 0.90625rem;
+  left: 1.375rem;
   box-shadow: 0 0px 0 1px #FFFFFF, 0 7px 0 1px #FFFFFF, 0 14px 0 1px #FFFFFF;
   width: 1rem;
 }
@@ -18772,7 +18772,7 @@ blockquote p {
   position: absolute;
   overflow-x: hidden;
   overflow-y: auto;
-  background: #333333;
+  background: #fff;
   z-index: 1001;
   box-sizing: content-box;
   transition: transform 500ms ease 0s;
@@ -18798,7 +18798,7 @@ blockquote p {
   position: absolute;
   overflow-x: hidden;
   overflow-y: auto;
-  background: #333333;
+  background: #fff;
   z-index: 1001;
   box-sizing: content-box;
   transition: transform 500ms ease 0s;
@@ -18824,24 +18824,24 @@ ul.off-canvas-list {
 ul.off-canvas-list li label {
   display: block;
   padding: 0.3rem 0.9375rem;
-  color: #999999;
+  color: #ddd;
   text-transform: uppercase;
   font-size: 0.75rem;
   font-weight: bold;
-  background: #444444;
-  border-top: 1px solid #5e5e5e;
+  background: #fff;
+  border-top: 0px solid gray;
   border-bottom: none;
   margin: 0;
 }
 ul.off-canvas-list li a {
   display: block;
   padding: 0.66667rem;
-  color: rgba(255, 255, 255, 0.7);
-  border-bottom: 1px solid #262626;
+  color: rgba(0, 0, 0, 0.7);
+  border-bottom: 1px solid #ededed;
   transition: background 300ms ease;
 }
 ul.off-canvas-list li a:hover {
-  background: #242424;
+  background: #b3b3b3;
 }
 
 .move-right > .inner-wrap {
@@ -18856,10 +18856,10 @@ ul.off-canvas-list li a:hover {
   -webkit-backface-visibility: hidden;
   transition: background 300ms ease;
   cursor: pointer;
-  box-shadow: -4px 0 4px rgba(0, 0, 0, 0.5), 4px 0 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.05), 0 0 30px rgba(0, 0, 0, 0.05);
   display: block;
   position: absolute;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(67, 70, 81, 0.7);
   top: 0;
   bottom: 0;
   left: 0;
@@ -18869,7 +18869,7 @@ ul.off-canvas-list li a:hover {
 }
 @media only screen and (min-width: 40.063em) {
   .move-right .exit-off-canvas:hover {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(67, 70, 81, 0.01);
   }
 }
 
@@ -18885,10 +18885,10 @@ ul.off-canvas-list li a:hover {
   -webkit-backface-visibility: hidden;
   transition: background 300ms ease;
   cursor: pointer;
-  box-shadow: -4px 0 4px rgba(0, 0, 0, 0.5), 4px 0 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.05), 0 0 30px rgba(0, 0, 0, 0.05);
   display: block;
   position: absolute;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(67, 70, 81, 0.7);
   top: 0;
   bottom: 0;
   left: 0;
@@ -18898,7 +18898,7 @@ ul.off-canvas-list li a:hover {
 }
 @media only screen and (min-width: 40.063em) {
   .move-left .exit-off-canvas:hover {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(67, 70, 81, 0.01);
   }
 }
 
@@ -18914,10 +18914,10 @@ ul.off-canvas-list li a:hover {
   -webkit-backface-visibility: hidden;
   transition: background 300ms ease;
   cursor: pointer;
-  box-shadow: -4px 0 4px rgba(0, 0, 0, 0.5), 4px 0 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.05), 0 0 30px rgba(0, 0, 0, 0.05);
   display: block;
   position: absolute;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(67, 70, 81, 0.7);
   top: 0;
   bottom: 0;
   left: 0;
@@ -18927,7 +18927,7 @@ ul.off-canvas-list li a:hover {
 }
 @media only screen and (min-width: 40.063em) {
   .offcanvas-overlap .exit-off-canvas:hover {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(67, 70, 81, 0.01);
   }
 }
 
@@ -18943,10 +18943,10 @@ ul.off-canvas-list li a:hover {
   -webkit-backface-visibility: hidden;
   transition: background 300ms ease;
   cursor: pointer;
-  box-shadow: -4px 0 4px rgba(0, 0, 0, 0.5), 4px 0 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.05), 0 0 30px rgba(0, 0, 0, 0.05);
   display: block;
   position: absolute;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(67, 70, 81, 0.7);
   top: 0;
   bottom: 0;
   left: 0;
@@ -18956,7 +18956,7 @@ ul.off-canvas-list li a:hover {
 }
 @media only screen and (min-width: 40.063em) {
   .offcanvas-overlap-left .exit-off-canvas:hover {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(67, 70, 81, 0.01);
   }
 }
 
@@ -18972,10 +18972,10 @@ ul.off-canvas-list li a:hover {
   -webkit-backface-visibility: hidden;
   transition: background 300ms ease;
   cursor: pointer;
-  box-shadow: -4px 0 4px rgba(0, 0, 0, 0.5), 4px 0 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.05), 0 0 30px rgba(0, 0, 0, 0.05);
   display: block;
   position: absolute;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(67, 70, 81, 0.7);
   top: 0;
   bottom: 0;
   left: 0;
@@ -18985,7 +18985,7 @@ ul.off-canvas-list li a:hover {
 }
 @media only screen and (min-width: 40.063em) {
   .offcanvas-overlap-right .exit-off-canvas:hover {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(67, 70, 81, 0.01);
   }
 }
 
@@ -19011,7 +19011,7 @@ ul.off-canvas-list li a:hover {
   margin: 0;
   overflow-x: hidden;
   overflow-y: auto;
-  background: #333333;
+  background: #fff;
   z-index: 1002;
   box-sizing: content-box;
   -webkit-overflow-scrolling: touch;
@@ -19033,17 +19033,17 @@ ul.off-canvas-list li a:hover {
 }
 .left-submenu .back > a {
   padding: 0.3rem 0.9375rem;
-  color: #999999;
+  color: #ddd;
   text-transform: uppercase;
   font-weight: bold;
   background: #444;
-  border-top: 1px solid #5e5e5e;
+  border-top: 0px solid gray;
   border-bottom: none;
   margin: 0;
 }
 .left-submenu .back > a:hover {
   background: #303030;
-  border-top: 1px solid #5e5e5e;
+  border-top: 1px solid white;
   border-bottom: none;
 }
 .left-submenu .back > a:before {
@@ -19069,7 +19069,7 @@ ul.off-canvas-list li a:hover {
   margin: 0;
   overflow-x: hidden;
   overflow-y: auto;
-  background: #333333;
+  background: #fff;
   z-index: 1002;
   box-sizing: content-box;
   -webkit-overflow-scrolling: touch;
@@ -19091,17 +19091,17 @@ ul.off-canvas-list li a:hover {
 }
 .right-submenu .back > a {
   padding: 0.3rem 0.9375rem;
-  color: #999999;
+  color: #ddd;
   text-transform: uppercase;
   font-weight: bold;
   background: #444;
-  border-top: 1px solid #5e5e5e;
+  border-top: 0px solid gray;
   border-bottom: none;
   margin: 0;
 }
 .right-submenu .back > a:hover {
   background: #303030;
-  border-top: 1px solid #5e5e5e;
+  border-top: 1px solid white;
   border-bottom: none;
 }
 .right-submenu .back > a:after {
