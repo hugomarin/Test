@@ -39,25 +39,6 @@
             }
         }
     }
-    .goal-selection {
-        padding-bottom: rem-calc(16);
-        hr {
-            &.choose-goal {
-                margin-bottom: rem-calc(30);
-                text-align: center;
-                border: 1px solid rgba(white, 0.3);
-                border-bottom: 0;
-                &:after {
-                    font-size: rem-calc(13);
-                    @include hr-text("Escoge tu meta");
-                }
-            }
-        }
-        .goal-section-title {
-            font-size: rem-calc(12);
-            letter-spacing: 0;
-        }
-    }
     .hiw {
         padding-top: rem-calc(32);
         .section-title {
@@ -107,7 +88,6 @@
             width: rem-calc(80);
             height: rem-calc(80);
             margin: -40px auto rem-calc(9) auto;
-            @include round-img;
         }
         blockquote {
             font-size: rem-calc(27);
@@ -219,7 +199,6 @@
         .testimony-portrait img {
             width: rem-calc(100);
             height: rem-calc(100);
-            @include round-img;
         }
         blockquote {
             font-size: rem-calc(23);

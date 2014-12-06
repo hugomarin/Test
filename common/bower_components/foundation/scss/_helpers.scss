@@ -234,36 +234,7 @@ ul#home-drop {
     }
 }
 
-hr {
-    &.double {
-      margin: 2em 0 2em 0;
-      padding: 0;
-      border: none;
-      border-top: 1px solid tint($dark-color, 90%);
-      color: tint($dark-color, 30%);
-      text-align: center;
-      &.finance {
-        &:after {
-          @include hr-text("Tu estado financiero");
-        }
-      }
-      &.improved {
-        &:after {
-          @include hr-text("Cómo mejorar tu diagnóstico");
-        }
-      }
-      &.products {
-        &:after {
-          @include hr-text("Otros productos de tu interés");
-        }
-      }
-      &.spot-products {
-        &:after {
-          @include hr-text("Productos destacados");
-      }
-    }
-  }
-}
+
 
 #preferencias-container {
     ul {
