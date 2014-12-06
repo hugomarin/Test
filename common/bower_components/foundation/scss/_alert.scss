@@ -26,10 +26,10 @@
 }
 
 .required-text {
-    margin-top: rem-calc(10);
     position: absolute;
-    width: 100%;
     bottom: rem-calc(5);
+    width: 100%;
+    margin-top: rem-calc(10);
     .label-error {
         font-family: $body-font;
         font-size: rem-calc(11);
@@ -46,15 +46,14 @@
     position: relative;
 }
 
-
 .content-validation .alert:before {
-    display: block;
     position: absolute;
+    top: 10px;
+    display: block;
     width: 10px;
     height: 10px;
     border: solid 10px;
     border-color: transparent transparent $error transparent;
-    top: 10px
 }
 
 .content-validation {
@@ -65,11 +64,11 @@
         font-family: $body-font;
         font-size: rem-calc(12);
         font-weight: $light;
+        position: relative;
         padding: rem-calc(4) rem-calc(10);
         text-align: left;
         color: rgba(white, 0.9);
         background-color: $error;
         @include border-radius(2px);
-        position: relative;
     }
 }

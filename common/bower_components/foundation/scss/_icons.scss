@@ -64,7 +64,7 @@ $sprites-retina: sprite-map("icons-retina/*.png", $spacing: 10px);
     @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
         // Workaround for https://gist.github.com/2140082
         @if sprite-position($sprites, $name) != sprite-position($sprites-retina, $name) {
-            $ypos: round(nth(sprite-position($sprites-retina, $name), 2) / 1.999);
+            $ypos: round(nth(sprite-position($sprites-retina, $name), 2) / 1.984);
             background-position: 0 $ypos;
         }
         // Grab size of non-retina sprite image.
@@ -73,17 +73,7 @@ $sprites-retina: sprite-map("icons-retina/*.png", $spacing: 10px);
     }
 }
 
-// Usage.
 
-%check-before {
-    &:before {
-        content: "";
-        @include sprite-background(icon_check-green);
-        position: absolute;
-        top: -7px;
-        right: -7px;
-    }
-}
 
 .icon_loading {
     @include sprite-background(icon_loading);
@@ -140,14 +130,6 @@ $sprites-retina: sprite-map("icons-retina/*.png", $spacing: 10px);
     @extend %nav-icon;
 }
 
-.icon_scroll-down {
-    @include sprite-background(icon_scroll-down);
-    position: absolute;
-    z-index: 10;
-    left: 50%;
-    margin-top: -16px;
-    margin-left: -16px;
-}
 
 .icon_favicon {
     float: left;
@@ -244,38 +226,6 @@ $sprites-retina: sprite-map("icons-retina/*.png", $spacing: 10px);
     }
 }
 
-.mastercard {
-    @include sprite-background(icon_mastercard);
-    text-indent: -9999px;
-    cursor: pointer;
-    &.active {
-        @include sprite-background(icon_mastercard-active);
-        position: relative;
-        @extend %check-before;
-    }
-}
-
-.visa {
-    @include sprite-background(icon_visa);
-    text-indent: -9999px;
-    cursor: pointer;
-    &.active {
-        @include sprite-background(icon_visa-active);
-        position: relative;
-        @extend %check-before;
-    }
-}
-
-.american {
-    @include sprite-background(icon_american);
-    text-indent: -9999px;
-    cursor: pointer;
-    &.active {
-        @include sprite-background(icon_american-active);
-        position: relative;
-        @extend %check-before;
-    }
-}
 
 .boy-icon {
     @include sprite-background(icon_boy);
@@ -326,3 +276,132 @@ $sprites-retina: sprite-map("icons-retina/*.png", $spacing: 10px);
 .icon_update {
     @include sprite-background(icon_update);
 }
+
+
+
+///////////////////HOME
+
+.icon_flag-co {
+    @include sprite-background(icon_flag-co);
+    position: relative;
+    top: 2px;
+}
+
+.icon_flag-mex {
+    @include sprite-background(icon_flag-mex);
+    position: relative;
+    top: 2px;
+}
+
+.icon_facebook {
+    @include sprite-background(icon_facebook);
+}
+
+.icon_facebook {
+    @include sprite-background(icon_facebook);
+}
+
+.icon_twitter {
+    @include sprite-background(icon_twitter);
+}
+
+
+.icon_favicon {
+    @include sprite-background(icon_favicon);
+}
+
+.icon_500 {
+    @include sprite-background(icon_500);
+}
+
+.icon_andifuturo {
+    @include sprite-background(icon_andifuturo);
+}
+
+.icon_socialab {
+    @include sprite-background(icon_socialab);
+}
+
+.icon_bbva-open-talent {
+    @include sprite-background(icon_bbva-open-talent);
+}
+
+.icon_emprendetic {
+    @include sprite-background(icon_emprendetic);
+}
+
+.icon_techcrunch {
+    @include sprite-background(icon_techcrunch);
+}
+
+.icon_cnn {
+    @include sprite-background(icon_cnn);
+}
+
+.icon_excelsior {
+    @include sprite-background(icon_excelsior);
+}
+
+.icon_financiero {
+    @include sprite-background(icon_financiero);
+}
+
+.icon_economista {
+    @include sprite-background(icon_economista);
+}
+
+.icon_glasses {
+    @include sprite-background(icon_glasses);
+}
+
+.icon_lock {
+    @include sprite-background(icon_lock);
+}
+
+.icon_heart {
+    @include sprite-background(icon_heart);
+}
+
+.icon_logo {
+    @include sprite-background(icon_logo);
+    text-indent: -9999px;
+    margin-top: 8px;
+}
+
+.icon_logo-small {
+    @include sprite-background(icon_logo-small);
+    text-indent: -9999px;
+    margin-top: 8px;
+}
+
+.icon_logo-black {
+    @include sprite-background(icon_logo-black);
+    text-indent: -9999px;
+    margin-top: 8px;
+}
+
+.icon_logo-black-small {
+    @include sprite-background(icon_logo-black-small);
+    text-indent: -9999px;
+    margin-top: 12px;
+}
+
+.icon_free {
+    &:before {
+        @include sprite-background(icon_free);
+        position: absolute;
+        top: 30px;
+        left: -25px;
+        display: block;
+        content: " ";
+    }
+}
+
+.icon_flag-co {
+    @include sprite-background(icon_flag-co);
+}
+
+.icon_flag-mex {
+    @include sprite-background(icon_flag-mex);
+}
+

@@ -1,689 +1,265 @@
-/* Used to alter styles for screens at least 768px wide. This is where the grid changes. */
-@media only screen and (min-width: 300px) {
-
-    .user-nav {
-        margin-bottom: 0;
-        min-width: rem-calc(80);
+@media #{$small-only} {
+    .section-spot {
+        height: rem-calc(350);
+        padding-top: rem-calc(30);
+        padding-bottom: rem-calc(30);
+    }
+    .off-canvas-wrap {
+        overflow-x: hidden;
+    }
+    .content {
+        padding-top: rem-calc(40);
+        padding-bottom: rem-calc(20);
+        p {
+            font-size: rem-calc(14);
+        }
         li {
-            font-size: rem-calc(9);
+            font-size: rem-calc(14);
         }
     }
-
-    .menu a {
-        padding-right: .4em;
-        padding-left: .4em;
-    }
-
-    .innerheader {
-        padding-top: .3em;
-        padding-bottom: .3em;
-        min-height: rem-calc(60);
-    }
-
-    .discover-icon-big, .goals-icon-big, .dashboard-icon-big {
-        display: none;
-    }
-
-    .box-title {
-        font-size: rem-calc(18);
-        letter-spacing: 0;
-    }
-
-    .box-subtitle {
-        font-size: rem-calc(13);
-        margin-bottom: 1em;
-    }
-
     .hero {
-        height: 72%;
-        min-height: rem-calc(240);
-        background-position: center bottom;
-        .tagline {
-            font-size: rem-calc(26);
-            letter-spacing: 0px;
+        background-position-x: right;
+        &.testimony {
+            min-height: rem-calc(280);
+            background-position-x: rem-calc(-106);
         }
         .main-text {
-            left: 3%;
-            right: 3%;
-            bottom: 40%;
-        }
-        a.button.large {
-            font-size: rem-calc(14);
-        }
-    }
-
-    .hiw-steps {
-        margin-top: rem-calc(-76);
-        padding-bottom: rem-calc(10);
-        h4 {
-            font-size: rem-calc(13);
-        }
-        h5 {
-            font-size: rem-calc(13);
-        }
-        .intro {
-            font-size: rem-calc(12);
-        }
-    }
-
-    .new-goal-txt {
-        min-height: 3em;
-        padding: rem-calc(7) rem-calc(10);
-        .new-goal-title {
-            font-size: rem-calc(13);
-            letter-spacing: -1px;
-        }
-    }
-
-    .new-goal-img-overlay .new-goal-img-action {
-        left: 10%;
-        right: 10%;
-        font-size: rem-calc(13)
-    }
-
-    .banner {
-        &.product {
-            height: 235px;
-            .banner-text {
-                .banner-title {
-                    font-size: rem-calc(30);
-                    letter-spacing: -1px;
-                    line-height: 1.2em;
-                }
-                .banner-subtitle {
-                    font-size: rem-calc(18);
-                    letter-spacing: 0;
-                }
-            }
-        }
-        &.result {
-            height: 575px;
-            padding-top: 1.75em;
-            .image-main-result {
-                padding: 1em 1em;
-            }
-            .title {
-                line-height: 1em;
-                font-size: rem-calc(16);
-            }
-            .subtitle {
-                font-size: rem-calc(13);
-            }
-            .description {
-                font-size: rem-calc(13);
-            }
-            ul dl.characteristics dd {
-                font-size: rem-calc(15);
-            }
-        }
-    }
-
-    .note {
-        .image {
-            margin-bottom: 1em;
-        }
-        .title {
-            font-size: rem-calc(17);
-            margin-top: 0;
-        }
-        .description {
-            font-size: rem-calc(14);
-        }
-        ul dl.characteristics {
-            min-height: 3em;
-            dd {
-                font-size: rem-calc(14);
-            }
-        }
-    }
-
-
-    .secondary-result {
-        .image-secondary-result {
-            margin-bottom: 1em;
-        }
-        .product-info {
-            padding: 0;
-        }
-        .product-information {
-            margin-top: 0em;
-            margin-bottom: 1em ;
-            text-align: left;
-        }
-        a.button {
-            margin-bottom: .5em;
-        }
-        .product-cta {
-            p {
-                text-align: left;
-            }
-        }
-    }
-
-    a.unavailable-1 {
-        font-size: rem-calc(14);
-        text-align: left;
-    }
-
-    .resume-box {
-        padding: 0 rem-calc(15);
-        .resume-description {
-            margin-left: 0;
-            .resume-title {
-                font-size: rem-calc(13);
-                margin-top: rem-calc(7);
-            }
-        }
-        input[readonly].amount.small, input[readonly="readonly"].amount.small {
-            width: rem-calc(20);
-            font-size: rem-calc(16);
-        }
-    }
-
-    .question-timeline {
-        padding: 1.8em 0 3em 8%;
-        &.resume-padding {
-            padding-top: 2em;
-        }
-    }
-
-    .option-box {
-        .option-content {
-            font-size: rem-calc(12);
-        }
-    }
-
-    .option-box-large .option-content p {
-        font-weight: 300;
-        font-size: rem-calc(12);
-
-    }
-
-    .tag {
-        font-size: rem-calc(11);
-    }
-
-    .upload-text {
-        left: 2%;
-        right: 2%;
-    }
-
-    .info_first_metas {
-        margin-left: 10px;
-    }
-
-    #fileupload {
-        &:before {
-            font-size: .8em;
-        }
-    }
-
-    .over_relative {
-        position: absolute;
-        bottom: 0px;
-        width: 100%;
-        z-index: 200;
-        padding-top: 0em;
-        background: black;
-    }
-
-    .photo_prices_text{
-        color:$light-color;
-        font-size: rem-calc(16);
-        letter-spacing: -1px;
-        font-weight: normal;
-        padding: 1em 1em;
-        border-top: 1px solid tint($dark-color, 0%);
-        min-height: 77px;
-    }
-
-    .photo_prices_text2{
-        color:tint($light-color, 20%);
-        font-size: rem-calc(12);
-        font-weight: normal;
-        margin-top: 6px;
-        font-weight: $light;
-        letter-spacing: 0px;
-    }
-
-    .percentage_frame {
-        padding: rem-calc(20) 0;
-    }
-
-    .description {
-        margin-bottom: 1em;
-    }
-
-}
-
-
-
-
-
-/* Used to alter styles for screens at least 768px wide. This is where the grid changes. */
-@media only screen and (min-width: 480px) {
-
-
-    .discover-icon-big, .goals-icon-big, .dashboard-icon-big {
-        display: block;
-    }
-
-
-
-    .hero {
-        height: 70%;
-        min-height: rem-calc(400);
-        background-position: center bottom;
-        .tagline {
-            font-size: rem-calc(37);
-            letter-spacing: -1px;
-        }
-        .main-text {
-            left: 3%;
-            right: 3%;
-            bottom: 40%;
-        }
-        a.button.large {
-            font-size: rem-calc(18);
-        }
-    }
-
-    .hiw-steps {
-        margin-top: rem-calc(-130);
-        padding-bottom: rem-calc(10);
-        h4 {
-            font-size: rem-calc(14);
-        }
-        h5 {
-            font-size: rem-calc(15);
-        }
-        .intro {
-            font-size: rem-calc(13);
-        }
-    }
-    .new-goal-txt {
-        padding: rem-calc(7) rem-calc(15);
-        .new-goal-title {
-            font-size: rem-calc(14);
-            letter-spacing: -1px;
-        }
-    }
-    .new-goal-img-overlay .new-goal-img-action {
-        left: 15%;
-        right: 15%;
-        font-size: rem-calc(15)
-    }
-
-    .resume-box {
-        .resume-description {
-            .resume-title {
-                font-size: rem-calc(16);
-                margin-top: rem-calc(7);
-            }
-        }
-        input[readonly].amount.small, input[readonly="readonly"].amount.small {
-            width: rem-calc(22);
-            font-size: rem-calc(18);
-        }
-    }
-
-    .question-timeline {
-        padding: 1.8em 0 3em 5%;
-    }
-
-    .banner.product {
-        height: 235px;
-        .banner-text {
-            .banner-title {
-                font-size: rem-calc(34);
+            margin-top: rem-calc(30);
+            .tagline {
+                font-size: rem-calc(29);
+                padding: 0;
                 letter-spacing: -1px;
-                line-height: 1.2em;
             }
-            .banner-subtitle {
-                font-size: rem-calc(21);
+            .summary {
+                font-size: rem-calc(19);
+                line-height: 1.3em;
+                margin-top: rem-calc(24);
+                padding: 0;
                 letter-spacing: 0;
             }
         }
     }
-
-
-}
-
-/* Used to alter styles for screens at least 768px wide. This is where the grid changes. */
-@media only screen and (min-width: 640px) {
-
-    .banner {
-        &.product {
-            .banner-text {
-                .banner-title {
-                    font-size: rem-calc(37);
-                }
-                .banner-subtitle {
-                    font-size: rem-calc(23);
+    .goal-selection {
+        padding-bottom: rem-calc(16);
+        hr {
+            &.choose-goal {
+                margin-bottom: rem-calc(30);
+                text-align: center;
+                border: 1px solid rgba(white, 0.3);
+                border-bottom: 0;
+                &:after {
+                    font-size: rem-calc(13);
+                    @include hr-text("Escoge tu meta");
                 }
             }
         }
-        &.result {
-            height: 400px;
-            padding-top: 2em;
-            .image-main-result {
-                padding: 2em 1em;
-            }
-            .title {
-                line-height: 1em;
-                font-size: rem-calc(21);
-            }
-            .subtitle {
-                font-size: rem-calc(16);
-            }
-            .description {
-                font-size: rem-calc(16);
-            }
-            ul dl.characteristics dd {
-                font-size: rem-calc(18);
-            }
-        }
-    }
-
-
-
-    .secondary-result {
-        .image-secondary-result {
-            margin-bottom: 1em;
-        }
-        .product-info {
-            padding: 0 1em;
-        }
-        .product-information {
-            margin-top: 0em;
-            margin-bottom: 1em ;
-            text-align: left;
-        }
-        a.button {
-            margin-bottom: .5em;
-        }
-        .product-cta {
-            p {
-                text-align: left;
-            }
-        }
-    }
-
-    a.unavailable-1 {
-        font-size: rem-calc(14);
-        text-align: left;
-    }
-
-    .upload-text {
-        left: 15%;
-        right: 15%;
-    }
-
-
-}
-
-/* Used to alter styles for screens at least 768px wide. This is where the grid changes. */
-@media only screen and (min-width: 768px) {
-
-   .user-nav {
-    margin-bottom: 0;
-    min-width: rem-calc(140);
-    li {
-        font-size: rem-calc(11);
-    }
-}
-
-.innerheader {
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-
-.box-title {
-    font-size: rem-calc(21);
-    letter-spacing: 0;
-}
-
-.box-subtitle {
-    font-size: rem-calc(16);
-    margin-bottom: 1em;
-}
-
-.hero {
-    height: 75%;
-    min-height: rem-calc(455);
-    background-position: center bottom;
-    .tagline {
-        font-size: rem-calc(50);
-        letter-spacing: -2px;
-    }
-    .main-text {
-        left: 3%;
-        right: 3%;
-        bottom: 50%;
-    }
-    a.button.large {
-        font-size: rem-calc(20);
-    }
-}
-
-.hiw-steps {
-    margin-top: rem-calc(-130);
-    padding-bottom: rem-calc(10);
-    h4 {
-        font-size: rem-calc(14);
-    }
-    h5 {
-        font-size: rem-calc(15);
-    }
-    .intro {
-        font-size: rem-calc(13);
-    }
-}
-
-.banner.product {
-    height: 320px;
-    .banner-text {
-        .banner-title {
-            font-size: rem-calc(50);
-            letter-spacing: -2px;
-            line-height: 1.2em;
-        }
-        .banner-subtitle {
-            font-size: rem-calc(27);
+        .goal-section-title {
+            font-size: rem-calc(12);
             letter-spacing: 0;
         }
     }
-}
-
-.resume-box {
-    padding: 1em rem-calc(4);
-    .resume-description {
-        margin-left: 0;
-        .resume-title {
-            font-size: rem-calc(18);
-            margin-top: rem-calc(10);
+    .hiw {
+        padding-top: rem-calc(32);
+        .section-title {
+            font-size: rem-calc(10);
+        }
+        .main-title {
+            font-size: rem-calc(21);
+            margin-bottom: rem-calc(15);
+            letter-spacing: rem-calc(-1);
         }
     }
-    input[readonly].amount.small, input[readonly="readonly"].amount.small {
-        width: rem-calc(25);
-        font-size: rem-calc(21);
+    .screen-1 {
+        height: rem-calc(320);
     }
-    .resume-img img {
-        width: 75%;
+    .your-information {
+        text-align: center;
     }
-}
-
-.question-timeline {
-    padding: 1.8em 0 3em 3%;
-    &.resume-padding {
-        padding-top: 2em;
+    .screen-2 {
+        width: 100%;
+        height: 320px;
+        margin-right: 0;
+        margin-right: -1em;
+        margin-right: -1em;
+        margin-left: -1em;
+        padding-right: 1em;
+        padding-left: 1em;
     }
-}
-
-.option-box {
-    .option-content {
-        font-size: rem-calc(13);
-    }
-}
-
-.option-box-large .option-content p {
-    font-weight: 300;
-    font-size: rem-calc(15);
-
-}
-
-.tag {
-    font-size: rem-calc(13);
-}
-
-.upload-text {
-    left: 20%;
-    right: 20%;
-}
-.box {
-    padding: rem-calc(30);
-}
-
-.photo_prices_text{
-    font-size: rem-calc(21);
-}
-
-.photo_prices_text2{
-
-    font-size: rem-calc(10);
-}
-    .description {
-        margin-bottom: 0em;
-    }
-
-}
-
-@media only screen and (min-width: 1024px) {
-
-    .user-nav {
-        margin-bottom: 0;
-        min-width: rem-calc(140);
-        li {
-            font-size: rem-calc(11);
+    .spot-1,
+    .spot-2,
+    .spot-3 {
+        padding-bottom: rem-calc(40);
+        .spot-title {
+            font-size: rem-calc(27);
+            margin-top: rem-calc(16);
+            letter-spacing: rem-calc(-1);
+        }
+        p {
+            font-size: rem-calc(16);
         }
     }
-
-    .note {
-        .image {
-            margin-bottom: 1em;
-        }
-        .title {
-            font-size: (21);
-            margin-top: 0;
-        }
-        .description {
-            font-size: (16);
-        }
-        ul dl.characteristics {
-            min-height: 3em;
-            dd {
-                font-size: rem-calc(18);
-            }
-        }
+    .text-box {
+        padding: 0 rem-calc(20);
     }
-
-
-
-    .banner {
-        height: 330px;
-        &.result {
-            height: 440px;
-            padding-top: 2em;
-            .image-main-result {
-                padding: 2em 1em;
-            }
-            .title {
-                line-height: 1em;
-                font-size: rem-calc(33);
-            }
-            .subtitle {
-                font-size: rem-calc(23);
-            }
-            .description {
-                font-size: rem-calc(23);
-            }
-            ul dl.characteristics dd {
-                font-size: rem-calc(23);
-            }
+    .testimony {
+        padding-bottom: rem-calc(10);
+        .testimony-portrait img {
+            width: rem-calc(80);
+            height: rem-calc(80);
+            margin: -40px auto rem-calc(9) auto;
+            @include round-img;
         }
-    }
-
-    .secondary-result {
-        .image-secondary-result {
-            margin-bottom: 0;
-        }
-        .product-information {
-            margin-top: 1em;
-            margin-bottom: 0em ;
-            text-align: right;
-        }
-        a.button {
-            margin-bottom: .5em;
-        }
-        .product-cta {
-            p {
-                text-align: right;
-            }
-        }
-    }
-
-    a.unavailable-1 {
-        text-align: right;
-        float: right;
-    }
-
-    .question-timeline {
-        &.resume-padding {
-            padding-top: 2em;
-        }
-    }
-
-    .option-box {
-        .option-content {
-            font-size: rem-calc(13);
+        blockquote {
+            font-size: rem-calc(27);
+            margin-top: rem-calc(20);
+            line-height: 1.2em;
             padding: 0;
+            font-weight: 300;
+        }
+        div.author {
+            font-size: rem-calc(20);
         }
     }
-
-    .upload-text {
-        left: 35%;
-        right: 35%;
+    .support {
+        li {
+            display: block;
+            width: 100%;
+            padding: 5px 0;
+        }
+    }
+    .cta {
+        padding: rem-calc(30) 0 rem-calc(60) 0;
+        .cta-title {
+            letter-spacing: rem-calc(-1);
+        }
+        p {
+            font-size: rem-calc(17);
+            line-height: 1.2em;
+            margin-top: rem-calc(20);
+            margin-bottom: rem-calc(30);
+        }
+    }
+    .publications {
+    li {
+        display: block;
+        padding: rem-calc(10) rem-calc(24);
     }
 
 }
+}
 
-
-/* Used to alter styles for screens at least 1280px wide. */
-@media only screen and (min-width: 1280px) {
-
-    .banner.product {
-        height: 340px;
-        .banner-text {
-            .banner-title {
-                font-size: rem-calc(57);
-                letter-spacing: -2px;
-                line-height: 1.2em;
+@media #{$medium-only} {
+    .top-bar-section {
+        li:not(.has-form) a:not(.button) {
+            font-size: rem-calc(12);
+            padding: 0 rem-calc(10) 0 rem-calc(10);
+            a {
+                text-transform: uppercase;
             }
-            .banner-subtitle {
-                font-size: rem-calc(33);
+        }
+    }
+
+    .hero {
+        background-position-x: left;
+        .main-text {
+            .tagline {
+                font-size: rem-calc(44);
+                letter-spacing: -2px;
+                color: white;
+            }
+            .summary {
+                font-family: 'Lato';
+                font-size: rem-calc(27);
+                line-height: 1.3em;
+                margin-top: rem-calc(24);
                 letter-spacing: -1px;
             }
         }
     }
-
-    .question-timeline {
-        padding: 1.8em 0 3em 3%;
-        &.resume-padding {
-            padding-top: 2em;
+    .text-box {
+        padding: 0 rem-calc(30);
+    }
+    .section-spot {
+        height: rem-calc(440);
+        padding-top: rem-calc(140);
+        padding-bottom: rem-calc(120);
+    }
+    .spot-1,
+    .spot-2,
+    .spot-3 {
+        padding-bottom: rem-calc(40);
+        .spot-title {
+            font-size: rem-calc(33);
+            margin-top: rem-calc(40);
+            letter-spacing: rem-calc(-1);
+        }
+        .spot-tagline {
+            margin-bottom: rem-calc(21);
+            letter-spacing: rem-calc(-1);
+            color: tint($dark-color, 10%);
+        }
+        p {
+            font-size: rem-calc(19);
         }
     }
-
-
+    .screen-2 {
+        width: 53%;
+        height: 440px;
+        margin-right: 0;
+        margin-right: -1em;
+        margin-right: -1em;
+        margin-left: -1em;
+        padding-right: 1em;
+        padding-left: 1em;
+    }
+    .screen-1 {
+        height: rem-calc(450);
+    }
+    .testimony {
+        .testimony-portrait img {
+            width: rem-calc(100);
+            height: rem-calc(100);
+            @include round-img;
+        }
+        blockquote {
+            font-size: rem-calc(23);
+        }
+        div.author {
+            font-size: rem-calc(17);
+        }
+    }
+    .support {
+        li {
+            padding: 0 .5rem;
+        }
+    }
+    .cta {
+        padding: rem-calc(80) 0 rem-calc(80) 0;
+        .cta-title {
+            font-size: rem-calc(44);
+            letter-spacing: rem-calc(-1);
+        }
+        p {
+            font-size: rem-calc(27);
+            line-height: 1.2em;
+            margin-top: rem-calc(40);
+            margin-bottom: rem-calc(50);
+        }
+    }
+    .sub-nav {
+        dd {
+            margin-left: .5rem;
+            a {
+                padding: .1875rem .5rem;
+                text-decoration: none;
+            }
+        }
+        dt {
+            margin-left: .5rem;
+            a {
+                padding: .1875rem .5rem;
+                text-decoration: none;
+            }
+        }
+    }
 }
-
-

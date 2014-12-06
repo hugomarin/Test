@@ -1,0 +1,22 @@
+.cta {
+    padding: rem-calc(110) 0 rem-calc(110) 0;
+    background-image: url(../images/home/bg-cta.jpg);
+    background-size: cover;
+    .cta-title {
+        font-size: rem-calc(27);
+        letter-spacing: rem-calc(-1);
+        line-height: 1em;
+        &.white {
+            color: rgba(white, 1);
+        }
+        @media #{$medium-up} {
+            font-size: rem-calc(55);
+            letter-spacing: rem-calc(-3);
+        }
+    }
+    p {
+        line-height: 1.3em;
+        margin-top: rem-calc(20);
+        margin-bottom: rem-calc(60);
+    }
+}

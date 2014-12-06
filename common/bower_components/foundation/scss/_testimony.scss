@@ -68,3 +68,37 @@ $color_1: #d3e1ed;
         font-size: rem-calc(12);
     }
 }
+
+
+
+///////////////////HOME
+
+
+
+.testimony {
+    margin-bottom: rem-calc(0);
+    border-top: 1px solid tint($secondary-color, 90%);
+    border-bottom: 1px solid tint($secondary-color, 90%);
+    background: tint($secondary-color, 95%);
+    padding-bottom: rem-calc(60);
+    .testimony-portrait img {
+        width: rem-calc(120);
+        height: rem-calc(120);
+        margin: -60px auto rem-calc(9) auto;
+        @include round-img;
+    }
+    blockquote {
+        font-family: $body-font;
+        font-size: rem-calc(31);
+        line-height: 1.35em;
+        margin-top: rem-calc(31);
+        margin-bottom: 0;
+        color: tint($dark-color, 10%);
+        border-left: none;
+    }
+    div.author {
+        font-family: $body-font;
+        font-size: rem-calc(20);
+        color: tint($dark-color, 30%);
+    }
+}

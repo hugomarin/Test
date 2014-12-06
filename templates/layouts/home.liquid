@@ -4,15 +4,64 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Foundation 5</title>
-  {{ "assets/css/discover.css" | asset_url | stylesheet_tag }}
+  {{ "assets/css/home.css" | asset_url | stylesheet_tag }}
   <script src="{{ "modernizr.js" | asset_url }}"></script>
   <script type="text/javascript" src="//use.typekit.net/eif1fjl.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
 <body>
+
+        <header >
+            <div class="row">
+                <div class="large-12 columns">
+                    <nav class="top-bar navigation hide-for-small" data-topbar>
+                        <ul class="title-area">
+                            <li class="name">
+                                <h1><a onclick="ga('send', 'event', 'Nav', 'click', 'home-button');" href="<?php echo site_url();?>" title="Inicio de Rocket" ><i class="icon_logo">Rocket</i></a></h1>
+                            </li>
+                            <li class="toggle-topbar menu-icon"><a href="#" title="" >Menu</a></li>
+                        </ul>
+
+                        <section class="top-bar-section">
+                            <ul class="right">
+                                <li class=""><a onclick="ga('send', 'event', 'Nav', 'click', 'discover-button');" href="<?php echo base_url().$configCommon->descubraUrlModule.'pregunta/producto/tarjeta-de-credito'; ?>" title="Descubra Rocket" >Descubre tu Tarjeta de Crédito</a></li>
+                                <li class=""><a onclick="ga('send', 'event', 'Nav', 'click', 'blog-button');" href="https://rocket.la/blogmx/" title="Descubra Rocket" target="_blank" >Blog: Finanzas personales</a></li>
+                                <li><a href="#" data-dropdown="drop1" class="dropdown-"><span class="icon_flag-mex"></span> MX</a><br>
+                                    <ul id="drop1" data-dropdown-content class="f-dropdown">
+                                        <li><a href="<?php echo site_url('../co');?>"><span class="icon_flag-co"></span> CO</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </section>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <header class="with-bg">
+            <div class="row">
+                <div class="large-12 columns">
+                    <nav class="top-bar navigation hide-for-small" data-topbar>
+                        <ul class="title-area">
+                            <li class="name">
+                                <h1><a onclick="ga('send', 'event', 'Nav', 'click', 'home-button');" href="<?php echo site_url();?>" title="Inicio de Rocket" ><i class="icon_logo-black">Rocket</i></a></h1>
+                            </li>
+                            <li class="toggle-topbar menu-icon"><a href="#" title="" >Menu</a></li>
+                        </ul>
+                        <section class="top-bar-section">
+                            <ul class="right">
+                                <li class=""><a onclick="ga('send', 'event', 'Nav', 'click', 'discover-button');" href="<?php echo base_url().$configCommon->descubraUrlModule.'pregunta/producto/tarjeta-de-credito'; ?>" title="Descubra Rocket" >Descubre tu Tarjeta de Crédito</a></li>
+                                <li class=""><a onclick="ga('send', 'event', 'Nav', 'click', 'blog-button');" href="https://rocket.la/blogmx/" title="Descubra Rocket" >Blog: Finanzas personales</a></li>
+                            </ul>
+                        </section>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+
     <div class="off-canvas-wrap" data-offcanvas>
         <div class="inner-wrap">
-            <nav class="tab-bar">
+            <nav class="tab-bar show-for-small">
                 <section class="left-small">
                     <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
 

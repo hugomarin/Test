@@ -209,3 +209,177 @@ ul.off-canvas-list {
     left: 250px;
     /* width of your menu */
 }
+
+
+
+
+
+///////////////////HOME
+
+header {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    &.home {
+        background: rgba($dark-color, 0);
+    }
+    .button {
+        color: white;
+        background: $quaternary-color;
+    }
+    &.with-bg {
+        position: fixed;
+        top: -120px;
+        overflow: hidden;
+        -webkit-transition: top 500ms;
+        /* For Safari 3.1 to 6.0 */
+        transition: top 500ms;
+        border-bottom: 1px solid rgb(243, 243, 243);
+        background: tint($dark-color, 97%);
+        .navigation {
+            margin-top: rem-calc(8);
+            margin-bottom: rem-calc(8);
+        }
+        &.expanded {
+            top: 0;
+        }
+        .top-bar-section {
+            li:not(.has-form) a:not(.button) {
+                color: tint($dark-color, 50%);
+                background: rgba(255, 255, 255, 0);
+            }
+            li:hover:not(.has-form) > a {
+                color: tint($dark-color, 50%);
+                background: transparent;
+            }
+            .button.hollow {
+                color: white;
+                background: $quaternary-color;
+            }
+        }
+    }
+}
+
+.top-bar {
+    background: rgba(255, 255, 255, 0);
+    .name h1 a {
+        padding-left: 0;
+    }
+}
+
+.navigation {
+    margin-top: rem-calc(32);
+    margin-bottom: rem-calc(32);
+}
+
+.top-bar-section {
+    ul {
+        background: rgba(255, 255, 255, 0);
+        li {
+            &:hover {
+                background: transparent;
+            }
+            a {
+                font-size: rem-calc(13);
+                text-transform: uppercase;
+                font-weight: bold;
+                &.button {
+                    color: white;
+                    background: $quaternary-color;
+                    &:hover {
+                        background: darken($quaternary-color, 20%);
+                    }
+                }
+                &:hover {
+                    color: $quaternary-color;
+                }
+            }
+            &.tinyman img {
+                width: 1.875em;
+                height: 1.875em;
+                margin: 0;
+                margin-top: -3px;
+                @include border-radius(50%);
+                @include box-shadow(rgba(67, 70, 81, 0.2) 0px 2px 0px);
+            }
+            .f-dropdown {
+                font-size: .875rem;
+                position: absolute;
+                z-index: 99;
+                left: -9999px;
+                width: 100%;
+                max-width: 200px;
+                height: auto;
+                max-height: none;
+                margin-top: 2px;
+                margin-left: 0;
+                list-style: none;
+                border: none;
+                background: rgba(255, 255, 255, 0.6);
+                &:before {
+                    border-color: transparent transparent rgba(255, 255, 255, 0) transparent;
+                }
+            }
+        }
+    }
+    li:not(.has-form) a:not(.button) {
+        padding: 0 rem-calc(12) 0 rem-calc(12);
+        background: rgba(255, 255, 255, 0);
+    }
+    li:hover:not(.has-form) > a {
+        color: #fff;
+        background: transparent;
+    }
+}
+
+.tab-bar {
+    .left-small {
+        border-right: none;
+        box-shadow: 0 0 0;
+    }
+    .menu-icon span {
+        -webkit-box-shadow: 1px 10px 1px 1px $dark-color, 1px 16px 1px 1px $dark-color, 1px 22px 1px 1px $dark-color;
+        box-shadow: 0 10px 0 1px $dark-color, 0 16px 0 1px $dark-color, 0 22px 0 1px $dark-color;
+    }
+}
+
+ul.off-canvas-list {
+    li {
+        label {
+            font-family: 'Helvetica Neue';
+            font-size: rem-calc(10);
+            font-weight: $medium;
+            padding: rem-calc(5) rem-calc(15) rem-calc(3) rem-calc(15);
+            text-transform: uppercase;
+            color: tint($dark-color, 70%);
+            background: #FFF;
+            border-top: none;
+        }
+        a {
+            font-family: 'Helvetica Neue';
+            font-size: rem-calc(14);
+            font-weight: 500;
+            padding: rem-calc(6) rem-calc(15) rem-calc(15) rem-calc(15);
+            color: tint($dark-color, 20%);
+            border-bottom: 1px solid tint($dark-color, 94%);
+            &.active {
+                color: white;
+                background: tint($dark-color, 0%);
+            }
+            &:hover {
+                color: tint($dark-color, 0%);
+                background: tint($dark-color, 96%);
+            }
+        }
+    }
+}
+
+.lt-ie10 .left-off-canvas-menu {
+    left: -250px;
+    /* width of your menu */
+}
+
+.lt-ie10 .move-right > .inner-wrap {
+    left: 250px;
+    /* width of your menu */
+}

@@ -1,13 +1,10 @@
 @import "compass/css3";
 
-
-
 // VARIABLES
 
 //$primary-color: #f57922; // Orange
 //$secondary-color: #177cbd; // Blue
 //$terciary-color: #fc1159; // Magenta
-
 
 $dark-color: #434651;
 $light-color: #e4e5e4;
@@ -16,34 +13,40 @@ $gold-color: #c69c6d;
 $green-color: #64ba76;
 $blue-color: #519ed1;
 $yellow-color: #fbb03b;
-
 $fb-color: #3b5998;
 $error: #ee5759;
-$highlighted: #ffcc33;
+$highlighted: #fc3;
+$actives: #7ac943;
 
-$actives: #7ac943; //Green
-$passives: #fbb03b; //Yellow
-$incomes: #ef5d2f; //Orange-red
-$savings: #6acef4; // Light blue
-$debts: #177CBD; // Dark blue
+//Green
+$passives: #fbb03b;
+
+//Yellow
+$incomes: #ef5d2f;
+
+//Orange-red
+$savings: #6acef4;
+
+// Light blue
+$debts: #177cbd;
+
+// Dark blue
 
 $bold: 700;
 $medium: 600;
 $light: 300;
-
-$header-font: 'proxima-nova';
-$body-font: 'proxima-nova';
+$header-font: "proxima-nova";
+$body-font: "proxima-nova";
 
 /* Classes */
 $tasks: ".tasks";
 
-
 %clearfix {
-  &:after {
-    display: table;
-    clear: both;
-    content: "";
-  }
+    &:after {
+        display: table;
+        clear: both;
+        content: '';
+    }
 }
 
 %smooth {
@@ -51,73 +54,71 @@ $tasks: ".tasks";
     text-rendering: optimizeLegibility;
 }
 
-
 %caption {
-  color: $gold-color;
-  font-weight: $light;
-  font-size: rem-calc(10);
-  margin-top: rem-calc(4);
-  text-transform: uppercase;
+    font-size: rem-calc(10);
+    font-weight: $light;
+    margin-top: rem-calc(4);
+    text-transform: uppercase;
+    color: $gold-color;
 }
 
 // MIXIN
 
 @mixin border($size, $percentage, $border, $color: $dark-color) {
-  border-#{$border}: $size solid scale-lightness($color, $percentage);
+    border-#{$border}: $size solid scale-lightness($color, $percentage);
 }
 
 @mixin image-2x($image, $width, $height) {
-  @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
-    background-size: $width $height;
-    /* on retina, use image that's scaled by 2 */
-    background-image: url($image);
-  }
+    @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+        /* on retina, use image that's scaled by 2 */
+        background-image: url($image);
+        background-size: $width $height;
+    }
 }
 
 @mixin hide-text($width, $height) {
-  display: block;
-  overflow: hidden;
-  width: $width;
-  height: $height;
-  text-indent: -9000px;
-  direction: ltr;
+    display: block;
+    overflow: hidden;
+    width: $width;
+    height: $height;
+    text-indent: -9000px;
+    direction: ltr;
 }
-
 
 @mixin hr-text($text) {
-  content: $text;
-  display: inline-block;
-  position: relative;
-  top: -0.85em;
-  background: white;
-  padding: 0 .5em;
-  background: #f8f7f7;
-  font-size: rem-calc(13);
-  text-transform: uppercase;
+    font-size: rem-calc(13);
+    position: relative;
+    top: -.85em;
+    display: inline-block;
+    padding: 0 .5em;
+    content: $text;
+    text-transform: uppercase;
+    background: white;
+    background: #f8f7f7;
 }
 
-@mixin round ($size: 70%) {
-  @include border-radius(50%);
-  border: 5px solid white;
-  display: block;
-  width: $size;
-  height: $size;
+@mixin round($size: 70%) {
+    display: block;
+    width: $size;
+    height: $size;
+    border: 5px solid white;
+    @include border-radius(50%);
 }
 
 @mixin nice-button($color) {
+    font-weight: $bold;
     color: white;
     color: rgba(white, 0.9);
-    border: 1px solid ($color);
+    border: 1px solid $color;
     border-bottom: rem-calc(2) solid darken($color, 10%);
     text-shadow: 0 rem-calc(-1) 0 rgba(black, 0.1);
     @include background-image(linear-gradient(darken($color, 0%), darken($color, 2%)));
-    @include box-shadow(0 rem-calc(1) rem-calc(2) rgba(black, 0.2), inset 0px rem-calc(1) rgba(255,255,255,0.20));
+    @include box-shadow(0 rem-calc(1) rem-calc(2) rgba(black, 0.2), inset 0px rem-calc(1) rgba(255, 255, 255, 0.2));
     @include border-radius(3px);
     @extend %smooth;
-    font-weight: $bold;
     &:hover {
-        background: darken($color, 15%);
         border-bottom: rem-calc(2) solid darken($color, 25%);
+        background: darken($color, 15%);
     }
 }
 
@@ -125,21 +126,99 @@ $tasks: ".tasks";
     color: white;
     color: rgba(white, 0.9);
     text-shadow: 0 rem-calc(-1) 0 rgba(black, 0.1);
-    @include box-shadow(0 rem-calc(1) rem-calc(2) rgba(black, 0.2), inset 0px rem-calc(1) rgba(255,255,255,0.20));
+    @include box-shadow(0 rem-calc(1) rem-calc(2) rgba(black, 0.2), inset 0px rem-calc(1) rgba(255, 255, 255, 0.2));
     @extend %smooth;
     &:hover {
-        background: darken($color, 15%);
         border-bottom: rem-calc(2) solid darken($color, 25%);
+        background: darken($color, 15%);
     }
 }
 
 @mixin hollow-button($color) {
     color: $color;
-    background: transparent;
     border: rem-calc(3) solid $color;
+    background: transparent;
     @include border-radius(50px);
     @extend %smooth;
-
 }
 
+//////////////////////////home
 
+$header-font: "proxima-nova";
+$body-font: "proxima-nova";
+$primary-color: rgb(251, 17, 89);
+$secondary-color: #177cbd;
+
+// Blue
+$terciary-color: #d7292d;
+
+// Red
+$quaternary-color: #fc1159;
+
+// Magenta
+$dark-color: #434651;
+$light-color: #e4e5e4;
+
+%smooth {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+@mixin hr-text($text) {
+    font-family: $body-font;
+    font-size: rem-calc(18);
+    font-style: normal;
+    position: relative;
+    top: -1.3em;
+    display: inline-block;
+    padding: 0 .5em;
+    content: $text;
+    text-transform: uppercase;
+    color: white;
+    background: rgba(white, 0);
+}
+
+@mixin round-img {
+    display: block;
+    border: 5px solid white;
+    @include border-radius(50%);
+}
+
+@mixin nice-button($color) {
+    color: white;
+    color: rgba(white, 0.9);
+    border-bottom: rem-calc(2) solid darken($color, 10%);
+    text-shadow: 0 rem-calc(-1) 0 rgba(black, 0.2);
+    @include background-image(linear-gradient(darken($color, 0%), darken($color, 5%)));
+    @include box-shadow(0 rem-calc(1) rem-calc(2) rgba(black, 0.2), inset 0px rem-calc(1) rgba(255, 255, 255, 0.3));
+    @include border-radius(4px);
+    @extend %smooth;
+    &:hover {
+        border-bottom: rem-calc(2) solid darken($color, 25%);
+        background: darken($color, 15%);
+    }
+}
+
+@mixin hollow-button($color) {
+    color: $color;
+    border: rem-calc(3) solid $color;
+    background: transparent;
+    @include border-radius(50px);
+    @extend %smooth;
+}
+
+.icon-position-5px {
+    position: relative;
+    top: 3px;
+}
+
+%paragraph {
+    font-family: $body-font;
+    line-height: 1.4em;
+    margin-bottom: 2em;
+    color: tint($dark-color, 30%);
+}
+
+body {
+    background: tint($secondary-color, 95%);
+}

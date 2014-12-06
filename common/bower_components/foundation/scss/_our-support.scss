@@ -1,0 +1,34 @@
+.support {
+    overflow: hidden;
+    padding: .3125rem 0;
+    padding-top: rem-calc(60);
+    li {
+        display: inline-block;
+        padding: 0 rem-calc(24);
+        opacity: .8;
+    }
+    .logos {
+        margin-top: rem-calc(3);
+        .inner {
+            padding-top: rem-calc(16);
+        }
+    }
+}
+
+.publications {
+    background: white;
+    width: 100%;
+    overflow: hidden;
+    padding: rem-calc(5) 0 rem-calc(25);
+    li {
+        display: inline-block;
+        padding: 0 rem-calc(7);
+        text-align: center;
+    }
+    .logos {
+        margin-top: rem-calc(3);
+        .inner {
+            padding-top: rem-calc(0);
+        }
+    }
+}

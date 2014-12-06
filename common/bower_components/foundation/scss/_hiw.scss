@@ -1,0 +1,94 @@
+.hiw {
+    padding-top: rem-calc(74);
+    .section-title {
+        font-size: rem-calc(13);
+        text-transform: uppercase;
+        color: tint($dark-color, 30%);
+    }
+    .main-title {
+        font-size: rem-calc(44);
+        line-height: 1em;
+        margin-bottom: rem-calc(70);
+        letter-spacing: rem-calc(-3);
+    }
+}
+
+.spot-1,
+.spot-2 {
+    padding-bottom: rem-calc(0);
+    background: white;
+    .spot-tagline {
+        margin-bottom: rem-calc(27);
+        letter-spacing: rem-calc(-1);
+        color: tint($dark-color, 10%);
+    }
+    p {
+        font-size: rem-calc(21);
+        line-height: rem-calc(26);
+        color: tint($dark-color, 30%);
+        font-weight: 300;
+    }
+}
+
+.spot-1 {
+    .spot-title {
+        margin-top: rem-calc(126);
+        color: $secondary-color;
+    }
+}
+
+.spot-2 {
+    .spot-title {
+        margin-top: rem-calc(150);
+        color: $terciary-color;
+    }
+}
+
+.spot-3 {
+    .spot-title {
+        margin-top: rem-calc(100);
+        color: $secondary-color;
+        margin-bottom: rem-calc(60);
+    }
+}
+
+.your-information {
+    padding-bottom: rem-calc(60);
+    background: white;
+}
+
+.screen-1 {
+    height: rem-calc(731);
+    background-image: url(../images/home/spot-03.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+.screen-2 {
+    float: right;
+    width: 71%;
+    height: 750px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-right: -3em;
+    margin-right: -8em;
+    margin-bottom: 0;
+    margin-left: -3em;
+    padding-right: 8em;
+    padding-left: 3em;
+    background-image: url(../images/home/spot-01.jpg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 100% auto !important;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+    src='../images/home/spot-01.jpg',
+    sizingMethod='scale');
+}
+
+
+.text-box {
+    @media #{$medium-only} {
+        margin-left: rem-calc(20);
+    }
+}

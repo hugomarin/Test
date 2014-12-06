@@ -5,20 +5,20 @@ html, body {
 
 .hero {
   &.one {
-    background-image: url(../img/home/banner-01.jpg);
+    background-image: url(../images/home/banner-01.jpg);
   }
   &.two {
-    background-image: url(../img/home/banner-02.jpg);
+    background-image: url(../images/home/banner-02.jpg);
   }
   &.three {
-    background-image: url(../img/home/banner-03.jpg);
+    background-image: url(../images/home/banner-03.jpg);
   }
   &.four {
-    background-image: url(../img/home/banner-04.jpg);
+    background-image: url(../images/home/banner-04.jpg);
     background-position: center center;
   }
   &.five {
-    background-image: url(../img/home/banner-05.jpg);
+    background-image: url(../images/home/banner-05.jpg);
     background-position: center center;
   }
   background-size: cover;
@@ -106,5 +106,154 @@ html, body {
 }
 
 
+////////////////HOME
+
+
+.main-section,
+.inner-wrap,
+body {
+    height: 100%;
+}
+
+.off-canvas-wrap {
+    overflow-x: none;
+}
+
+.hero {
+    position: relative;
+    min-height: rem-calc(630);
+    background-image: url(../images/home/banner-05.jpg);
+    background-size: cover;
+    background-position-x: center;
+    &.testimony {
+        background-image: url(../images/home/banner-06.jpg);
+        background-size: cover;
+        background-position-y: bottom;
+        height: 390px;
+        min-height: rem-calc(390);
+    }
+
+    @media (max-height: 45em) {
+        min-height: rem-calc(550);
+    }
+
+    @media (max-height: 30em) {
+        min-height: rem-calc(380);
+    }
+    @media (max-height: 20em) {
+        min-height: rem-calc(270);
+    }
+
+
+    .main-text {
+        width: 100%;
+        height: rem-calc(370);
+        margin-top: rem-calc(130);
+        .tagline {
+            font-size: rem-calc(67);
+            line-height: 1em;
+            padding: 0 1.5em;
+            letter-spacing: -3px;
+            color: white;
+            @media (max-height: 40em) {
+                font-size: rem-calc(48);
+            }
+        }
+        .summary {
+            font-family: $body-font;
+            font-size: rem-calc(27);
+            line-height: 1.3em;
+            margin-top: rem-calc(12);
+            margin-bottom: rem-calc(20);
+            padding: 0 3em;
+            letter-spacing: 0;
+            color:white;
+            color: rgba(white, 0.9);
+            font-weight: 300;
+            @media (max-height: 40em) {
+                font-size: rem-calc(23);
+            }
+            @media #{$medium-up} {
+                margin-bottom: rem-calc(34);
+            }
+        }
+        a.button {
+            font-size: rem-calc(14);
+            padding-right: 3em;
+            padding-left: 3em;
+            @media #{$medium-up} {
+                font-size: rem-calc(21);
+            }
+            small {
+                font-family: $body-font;
+                opacity: .8;
+            }
+        }
+    }
+}
+
+.hiw-steps {
+    margin-top: emCalc(-100);
+    padding-bottom: emCalc(30);
+    background: tint($dark-color, 95%);
+    border-bottom: 1px solid tint($dark-color, 90%);
+    @media (max-height: 45em) {
+        margin-top: rem-calc(-52);
+    }
+    @media (max-height: 40em) {
+        margin-top: emCalc(-100);
+    }
+    @media (max-height: 30em) {
+        margin-top: emCalc(-86);
+    }
+    @media (max-height: 20em) {
+        margin-top: emCalc(-54);
+    }
+    h4 {
+        font-size: emCalc(16);
+        margin-bottom: emCalc(10);
+        text-align: center;
+        color: white;
+        color: rgba(white, 0.8);
+        border: 0;
+    }
+    h5 {
+        color: tint($dark-color, 20%);
+    }
+    .hiw-steps-img img {
+        display: block;
+        width: 120px;
+        max-width: emCalc(150);
+        height: 120px;
+        margin: 0 auto emCalc(9) auto;
+        border-radius: 50%;
+    }
+    .hiw-steps-title {
+        font-size: emCalc(19);
+        a {
+            color: black;
+        }
+    }
+    .step-no {
+        font-size: emCalc(12);
+        line-height: emCalc(25);
+        position: relative;
+        top: -3px;
+        display: inline-block;
+        width: emCalc(25);
+        height: emCalc(25);
+        color: tint($dark-color, 95%);
+        background: tint($dark-color, 80%);
+        @include border-radius(20px);
+    }
+    .intro {
+        font-size: emCalc(14);
+        font-weight: 300;
+        margin-bottom: 0;
+        letter-spacing: 0;
+        text-transform: none;
+        color: scale-lightness($dark-color, 50%);
+    }
+}
 
 
