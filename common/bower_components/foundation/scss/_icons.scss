@@ -51,6 +51,104 @@ dd.active {
     @extend %uri-position-1;
 }
 
+//Navigation
+
+.uri_logo-white {
+    @include uri-img("uri/uri_logo-white.png", "uri/retina/uri_logo-white.png");
+}
+
+.uri_logo-black-small {
+    @include uri-img("uri/uri_logo-black-small.png", "uri/retina/uri_logo-black-small.png");
+}
+
+.uri_logo-black {
+    @include uri-img("uri/uri_logo-black.png", "uri/retina/uri_logo-black.png");
+}
+
+.uri_flag-mex {
+    @include uri-img("uri/uri_flag-mex.png", "uri/retina/uri_flag-mex.png");
+}
+
+.uri_flag-co {
+    @include uri-img("uri/uri_flag-co.png", "uri/retina/uri_flag-co.png");
+}
+
+
+//Offcanvas
+
+
+.uri_nav-discover {
+    @include uri-img("uri/uri_nav-discover.png", "uri/retina/uri_nav-discover.png");
+}
+
+
+.uri_nav-help {
+    @include uri-img("uri/uri_nav-help.png", "uri/retina/uri_nav-help.png");
+}
+
+.uri_nav-home {
+    @include uri-img("uri/uri_nav-home.png", "uri/retina/uri_nav-home.png");
+}
+
+.uri_nav-legal {
+    @include uri-img("uri/uri_nav-legal.png", "uri/retina/uri_nav-legal.png");
+}
+
+
+//MEDIA
+
+.uri_techcrunch {
+    @include uri-img("uri/uri_techcrunch.png", "uri/retina/uri_techcrunch.png");
+}
+
+.uri_cnn {
+    @include uri-img("uri/uri_cnn.png", "uri/retina/uri_cnn.png");
+}
+
+.uri_financiero {
+    @include uri-img("uri/uri_financiero.png", "uri/retina/uri_financiero.png");
+}
+
+.uri_excelsior {
+    @include uri-img("uri/uri_excelsior.png", "uri/retina/uri_excelsior.png");
+}
+
+.uri_economista {
+    @include uri-img("uri/uri_economista.png", "uri/retina/uri_economista.png");
+}
+
+
+//INFO
+
+.uri_heart-medium {
+    @include uri-img("uri/uri_heart-medium.png", "uri/retina/uri_heart-medium.png");
+}
+
+
+.uri_lock-medium {
+    @include uri-img("uri/uri_lock-medium.png", "uri/retina/uri_lock-medium.png");
+}
+
+.uri_glasses-medium {
+    @include uri-img("uri/uri_glasses-medium.png", "uri/retina/uri_glasses-medium.png");
+}
+
+
+//FOOTER
+
+.uri_favicon {
+    @include uri-img("uri/uri_favicon.png", "uri/retina/uri_favicon.png");
+}
+
+.uri_facebook {
+    @include uri-img("uri/uri_facebook.png", "uri/retina/uri_facebook.png");
+}
+
+.uri_twitter {
+    @include uri-img("uri/uri_twitter.png", "uri/retina/uri_twitter.png");
+}
+
+
 $sprites: sprite-map("icons/*.png", $spacing: 5px);
 $sprites-retina: sprite-map("icons-retina/*.png", $spacing: 10px);
 
@@ -276,132 +374,3 @@ $sprites-retina: sprite-map("icons-retina/*.png", $spacing: 10px);
 .icon_update {
     @include sprite-background(icon_update);
 }
-
-
-
-///////////////////HOME
-
-.icon_flag-co {
-    @include sprite-background(icon_flag-co);
-    position: relative;
-    top: 2px;
-}
-
-.icon_flag-mex {
-    @include sprite-background(icon_flag-mex);
-    position: relative;
-    top: 2px;
-}
-
-.icon_facebook {
-    @include sprite-background(icon_facebook);
-}
-
-.icon_facebook {
-    @include sprite-background(icon_facebook);
-}
-
-.icon_twitter {
-    @include sprite-background(icon_twitter);
-}
-
-
-.icon_favicon {
-    @include sprite-background(icon_favicon);
-}
-
-.icon_500 {
-    @include sprite-background(icon_500);
-}
-
-.icon_andifuturo {
-    @include sprite-background(icon_andifuturo);
-}
-
-.icon_socialab {
-    @include sprite-background(icon_socialab);
-}
-
-.icon_bbva-open-talent {
-    @include sprite-background(icon_bbva-open-talent);
-}
-
-.icon_emprendetic {
-    @include sprite-background(icon_emprendetic);
-}
-
-.icon_techcrunch {
-    @include sprite-background(icon_techcrunch);
-}
-
-.icon_cnn {
-    @include sprite-background(icon_cnn);
-}
-
-.icon_excelsior {
-    @include sprite-background(icon_excelsior);
-}
-
-.icon_financiero {
-    @include sprite-background(icon_financiero);
-}
-
-.icon_economista {
-    @include sprite-background(icon_economista);
-}
-
-.icon_glasses {
-    @include sprite-background(icon_glasses);
-}
-
-.icon_lock {
-    @include sprite-background(icon_lock);
-}
-
-.icon_heart {
-    @include sprite-background(icon_heart);
-}
-
-.icon_logo {
-    @include sprite-background(icon_logo);
-    text-indent: -9999px;
-    margin-top: 8px;
-}
-
-.icon_logo-small {
-    @include sprite-background(icon_logo-small);
-    text-indent: -9999px;
-    margin-top: 8px;
-}
-
-.icon_logo-black {
-    @include sprite-background(icon_logo-black);
-    text-indent: -9999px;
-    margin-top: 8px;
-}
-
-.icon_logo-black-small {
-    @include sprite-background(icon_logo-black-small);
-    text-indent: -9999px;
-    margin-top: 12px;
-}
-
-.icon_free {
-    &:before {
-        @include sprite-background(icon_free);
-        position: absolute;
-        top: 30px;
-        left: -25px;
-        display: block;
-        content: " ";
-    }
-}
-
-.icon_flag-co {
-    @include sprite-background(icon_flag-co);
-}
-
-.icon_flag-mex {
-    @include sprite-background(icon_flag-mex);
-}
-

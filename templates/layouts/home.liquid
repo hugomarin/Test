@@ -11,52 +11,54 @@
 </head>
 <body>
 
-        <header class="navigation-bar">
-            <div class="row">
-                <div class="large-12 columns">
-                    <nav class="top-bar navigation hide-for-small" data-topbar>
-                        <ul class="title-area">
-                            <li class="name">
-                                <h1><a onclick="ga('send', 'event', 'Nav', 'click', 'home-button');" href="<?php echo site_url();?>" title="Inicio de Rocket" ><i class="icon_logo">Rocket</i></a></h1>
-                            </li>
-                            <li class="toggle-topbar menu-icon"><a href="#" title="" >Menu</a></li>
-                        </ul>
+<header class="navigation-bar">
+    <div class="row">
+        <div class="large-12 columns">
+            <nav class="top-bar navigation hide-for-small" data-topbar>
+                <ul class="title-area">
+                    <li class="name">
+                        <h1><a onclick="ga('send', 'event', 'Nav', 'click', 'home-button');" href="<?php echo site_url();?>" title="Inicio de Rocket" ><i class="uri_logo-white">Rocket</i></a></h1>
+                    </li>
+                    <li class="toggle-topbar menu-icon"><a href="#" title="" >Menu</a></li>
+                </ul>
 
-                        <section class="top-bar-section">
-                            <ul class="right">
-                                <li class=""><a onclick="ga('send', 'event', 'Nav', 'click', 'discover-button');" href="<?php echo base_url().$configCommon->descubraUrlModule.'pregunta/producto/tarjeta-de-credito'; ?>" title="Descubra Rocket" >Descubre tu Tarjeta de Crédito</a></li>
-                                <li class=""><a onclick="ga('send', 'event', 'Nav', 'click', 'blog-button');" href="https://rocket.la/blogmx/" title="Descubra Rocket" target="_blank" >Blog: Finanzas personales</a></li>
-                                <li><a href="#" data-dropdown="drop1" class="dropdown-"><span class="icon_flag-mex"></span> MX</a><br>
-                                    <ul id="drop1" data-dropdown-content class="f-dropdown">
-                                        <li><a href="<?php echo site_url('../co');?>"><span class="icon_flag-co"></span> CO</a></li>
-                                    </ul>
-                                </li>
+                <section class="top-bar-section">
+                    <ul class="right">
+                        <li class=""><a onclick="ga('send', 'event', 'Nav', 'click', 'discover-button');" href="<?php echo base_url().$configCommon->descubraUrlModule.'pregunta/producto/tarjeta-de-credito'; ?>" title="Descubra Rocket" >Descubre tu Tarjeta de Crédito</a></li>
+                        <li class=""><a onclick="ga('send', 'event', 'Nav', 'click', 'blog-button');" href="https://rocket.la/blogmx/" title="Descubra Rocket" target="_blank" >Blog: Finanzas personales</a></li>
+                        <li><a href="#" data-dropdown="drop1" class="dropdown-"><span class="uri_flag-mex"></span> MX</a><br>
+                            <ul id="drop1" data-dropdown-content class="f-dropdown">
+                                <li><a href="<?php echo site_url('../co');?>"><span class="uri_flag-co"></span> CO</a></li>
                             </ul>
-                        </section>
-                    </nav>
-                </div>
-            </div>
-        </header>
-        <header class="navigation-bar with-bg">
-            <div class="row">
-                <div class="large-12 columns">
-                    <nav class="top-bar navigation hide-for-small" data-topbar>
-                        <ul class="title-area">
-                            <li class="name">
-                                <h1><a onclick="ga('send', 'event', 'Nav', 'click', 'home-button');" href="<?php echo site_url();?>" title="Inicio de Rocket" ><i class="icon_logo-black">Rocket</i></a></h1>
-                            </li>
-                            <li class="toggle-topbar menu-icon"><a href="#" title="" >Menu</a></li>
-                        </ul>
-                        <section class="top-bar-section">
-                            <ul class="right">
-                                <li class=""><a onclick="ga('send', 'event', 'Nav', 'click', 'discover-button');" href="<?php echo base_url().$configCommon->descubraUrlModule.'pregunta/producto/tarjeta-de-credito'; ?>" title="Descubra Rocket" >Descubre tu Tarjeta de Crédito</a></li>
-                                <li class=""><a onclick="ga('send', 'event', 'Nav', 'click', 'blog-button');" href="https://rocket.la/blogmx/" title="Descubra Rocket" >Blog: Finanzas personales</a></li>
-                            </ul>
-                        </section>
-                    </nav>
-                </div>
-            </div>
-        </header>
+                        </li>
+                    </ul>
+                </section>
+            </nav>
+        </div>
+    </div>
+</header>
+
+
+<header class="navigation-bar with-bg">
+    <div class="row">
+        <div class="large-12 columns">
+            <nav class="top-bar navigation hide-for-small" data-topbar>
+                <ul class="title-area">
+                    <li class="name">
+                        <h1><a onclick="ga('send', 'event', 'Nav', 'click', 'home-button');" href="<?php echo site_url();?>" title="Inicio de Rocket" ><i class="uri_logo-black">Rocket</i></a></h1>
+                    </li>
+                    <li class="toggle-topbar menu-icon"><a href="#" title="" >Menu</a></li>
+                </ul>
+                <section class="top-bar-section">
+                    <ul class="right">
+                        <li class=""><a onclick="ga('send', 'event', 'Nav', 'click', 'discover-button');" href="<?php echo base_url().$configCommon->descubraUrlModule.'pregunta/producto/tarjeta-de-credito'; ?>" title="Descubra Rocket" >Descubre tu Tarjeta de Crédito</a></li>
+                        <li class=""><a onclick="ga('send', 'event', 'Nav', 'click', 'blog-button');" href="https://rocket.la/blogmx/" title="Descubra Rocket" >Blog: Finanzas personales</a></li>
+                    </ul>
+                </section>
+            </nav>
+        </div>
+    </div>
+</header>
 
 
     <div class="off-canvas-wrap" data-offcanvas>
@@ -70,7 +72,7 @@
                 <section class="middle tab-bar-section">
                     <h1 class="title" title="Inicio de Rocket">
                         <a href="<?php echo site_url();?>" title="Rocket">
-                            <i class="logo-icon-black">Rocket</i>
+                            <i class="uri_logo-black-small">Rocket</i>
                         </a>
                     </h1>
                 </section>
@@ -81,17 +83,17 @@
 
             <aside class="left-off-canvas-menu">
                 <ul class="off-canvas-list">
-                    <li><a onclick="ga('send', 'event', 'Side-Nav', 'click', 'home-button');"  href="<?php echo site_url();?>" title="Inicio de rocket"><i class="icon_nav-home" ></i> Inicio</a></li>
+                    <li><a onclick="ga('send', 'event', 'Side-Nav', 'click', 'home-button');"  href="<?php echo site_url();?>" title="Inicio de rocket"><i class="uri_nav-home" ></i> Inicio</a></li>
                     <li><label for="">Herramientas</label></li>
-                    <li><a class="active" onclick="ga('send', 'event', 'Side-Nav', 'click', 'discover-button');" href="<?php echo base_url().$configCommon->descubraUrlModule.'pregunta/producto/tarjeta-de-credito'; ?>" title="Descubra Rocket"><i class="icon_nav-discover" ></i> Descubra</a></li>
-                    <li><a class="" onclick="ga('send', 'event', 'Side-Nav', 'click', 'blog-button');" href="https://rocket.la/blogmx/" title="Blog Rocket"><i class="icon_nav-help" ></i> Blog</a></li>
+                    <li><a class="active" onclick="ga('send', 'event', 'Side-Nav', 'click', 'discover-button');" href="<?php echo base_url().$configCommon->descubraUrlModule.'pregunta/producto/tarjeta-de-credito'; ?>" title="Descubra Rocket"><i class="uri_nav-discover" ></i> Descubra</a></li>
+                    <li><a class="" onclick="ga('send', 'event', 'Side-Nav', 'click', 'blog-button');" href="https://rocket.la/blogmx/" title="Blog Rocket"><i class="uri_nav-help" ></i> Blog</a></li>
 
                     <li><label for="">Ayuda</label></li>
-                    <li><a onclick="ga('send', 'event', 'Side-Nav', 'click', 'faq-button');" href="<?php echo site_url('preguntas-frecuentes');?>" title="Preguntas frecuentes de Rocket"><i class="icon_nav-help" ></i> Preguntas frecuentes</a></li>
-                    <li><a onclick="ga('send', 'event', 'Side-Nav', 'click', 'contact-button');" href="<?php echo site_url('contacto'); ?>" title="Contacta a Rocket"><i class="icon_nav-help" ></i> Contacto</a></li>
+                    <li><a onclick="ga('send', 'event', 'Side-Nav', 'click', 'faq-button');" href="<?php echo site_url('preguntas-frecuentes');?>" title="Preguntas frecuentes de Rocket"><i class="uri_nav-help" ></i> Preguntas frecuentes</a></li>
+                    <li><a onclick="ga('send', 'event', 'Side-Nav', 'click', 'contact-button');" href="<?php echo site_url('contacto'); ?>" title="Contacta a Rocket"><i class="uri_nav-help" ></i> Contacto</a></li>
                     <li><label for="">Legal</label></li>
-                    <li><a onclick="ga('send', 'event', 'Side-Nav', 'click', 'conditions-button');" href="<?php echo site_url('terminos-condiciones'); ?>" title="Condiciones de uso de Rocket"><i class="icon_nav-legal" ></i> Términos y condiciones</a></li>
-                    <li><a onclick="ga('send', 'event', 'Side-Nav', 'click', 'privacy-button');" href="<?php echo site_url('aviso-privacidad'); ?>" title="Aviso de privacidad"><i class="icon_nav-legal" ></i>Aviso de privacidad</a></li>
+                    <li><a onclick="ga('send', 'event', 'Side-Nav', 'click', 'conditions-button');" href="<?php echo site_url('terminos-condiciones'); ?>" title="Condiciones de uso de Rocket"><i class="uri_nav-legal" ></i> Términos y condiciones</a></li>
+                    <li><a onclick="ga('send', 'event', 'Side-Nav', 'click', 'privacy-button');" href="<?php echo site_url('aviso-privacidad'); ?>" title="Aviso de privacidad"><i class="uri_nav-legal" ></i>Aviso de privacidad</a></li>
                 </ul>
             </aside>
 
@@ -102,7 +104,7 @@
                     <div class="row">
                         <div class="large-8 small-4 medium-9 columns">
                             <dl class="sub-nav">
-                                <dd class="first"><a href="<?php echo site_url();?>" title="Rocket" target="_blank"><i class="icon_favicon"></i></a></dd>
+                                <dd class="first"><a href="<?php echo site_url();?>" title="Rocket" target="_blank"><i class="uri_favicon"></i></a></dd>
                                 <dd class="hide-for-small">
                                     <a href="<?php echo site_url('aviso-privacidad'); ?>" title="Aviso de privacidad de Rocket" target="_blank">Aviso de privacidad</a>
                                 </dd>
@@ -123,14 +125,14 @@
                         <div class="large-4 small-8 medium-3 columns">
                             <div class="social">
                                 <dl class="sub-nav">
-                                    <dd class="icon_facebook">
+                                    <dd class="facebook">
                                         <a onclick="ga('send', 'event', 'Footer', 'click', 'facebook');" href="https://www.facebook.com/rocketmexico" title="Fanpage Rocket" target="_blank">
-                                            <span class="facebook-icon"></span>
+                                            <span class="uri_facebook"></span>
                                         </a>
                                     </dd>
-                                    <dd class="icon_twitter">
+                                    <dd class="twitter">
                                         <a onclick="ga('send', 'event', 'Footer', 'click', 'twitter');" href="https://twitter.com/MXRocket" title="twitter Rocket" target="_blank">
-                                            <span class="twitter-icon"></span>
+                                            <span class="uri_twitter"></span>
                                         </a>
                                     </dd>
                                 </dl>
