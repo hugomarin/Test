@@ -14,7 +14,7 @@
 <header class="navigation-bar">
     <div class="row">
         <div class="large-12 columns">
-            <nav class="top-bar navigation hide-for-small" data-topbar>
+            <nav class="top-bar navigation show-for-large-up" data-topbar>
                 <ul class="title-area">
                     <li class="name">
                         <h1><a onclick="ga('send', 'event', 'Nav', 'click', 'home-button');" href="<?php echo site_url();?>" title="Inicio de Rocket" ><i class="uri_logo-white">Rocket</i></a></h1>
@@ -42,7 +42,7 @@
 <header class="navigation-bar with-bg">
     <div class="row">
         <div class="large-12 columns">
-            <nav class="top-bar navigation hide-for-small" data-topbar>
+            <nav class="top-bar navigation show-for-large-up" data-topbar>
                 <ul class="title-area">
                     <li class="name">
                         <h1><a onclick="ga('send', 'event', 'Nav', 'click', 'home-button');" href="<?php echo site_url();?>" title="Inicio de Rocket" ><i class="uri_logo-black">Rocket</i></a></h1>
@@ -63,7 +63,7 @@
 
     <div class="off-canvas-wrap" data-offcanvas>
         <div class="inner-wrap">
-            <nav class="tab-bar show-for-small">
+            <nav class="tab-bar hide-for-large-up">
                 <section class="left-small">
                     <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
 
@@ -83,17 +83,17 @@
 
             <aside class="left-off-canvas-menu">
                 <ul class="off-canvas-list">
-                    <li><a onclick="ga('send', 'event', 'Side-Nav', 'click', 'home-button');"  href="<?php echo site_url();?>" title="Inicio de rocket"><i class="uri_nav-home" ></i> Inicio</a></li>
+                    <li><a class="active" onclick="ga('send', 'event', 'Side-Nav', 'click', 'home-button');"  href="<?php echo site_url();?>" title="Inicio de rocket"><i class="uri_nav-home" ></i> Inicio</a></li>
                     <li><label for="">Herramientas</label></li>
-                    <li><a class="active" onclick="ga('send', 'event', 'Side-Nav', 'click', 'discover-button');" href="<?php echo base_url().$configCommon->descubraUrlModule.'pregunta/producto/tarjeta-de-credito'; ?>" title="Descubra Rocket"><i class="uri_nav-discover" ></i> Descubra</a></li>
-                    <li><a class="" onclick="ga('send', 'event', 'Side-Nav', 'click', 'blog-button');" href="https://rocket.la/blogmx/" title="Blog Rocket"><i class="uri_nav-help" ></i> Blog</a></li>
+                    <li><a onclick="ga('send', 'event', 'Side-Nav', 'click', 'discover-button');" href="<?php echo base_url().$configCommon->descubraUrlModule.'pregunta/producto/tarjeta-de-credito'; ?>" title="Descubra Rocket"><i class="uri_nav-discover" ></i> Descubra</a></li>
+                    <li><a class="" onclick="ga('send', 'event', 'Side-Nav', 'click', 'blog-button');" href="https://rocket.la/blogmx/" title="Blog Rocket"><i class="uri_nav-blog" ></i> Blog</a></li>
 
                     <li><label for="">Ayuda</label></li>
                     <li><a onclick="ga('send', 'event', 'Side-Nav', 'click', 'faq-button');" href="<?php echo site_url('preguntas-frecuentes');?>" title="Preguntas frecuentes de Rocket"><i class="uri_nav-help" ></i> Preguntas frecuentes</a></li>
                     <li><a onclick="ga('send', 'event', 'Side-Nav', 'click', 'contact-button');" href="<?php echo site_url('contacto'); ?>" title="Contacta a Rocket"><i class="uri_nav-help" ></i> Contacto</a></li>
                     <li><label for="">Legal</label></li>
                     <li><a onclick="ga('send', 'event', 'Side-Nav', 'click', 'conditions-button');" href="<?php echo site_url('terminos-condiciones'); ?>" title="Condiciones de uso de Rocket"><i class="uri_nav-legal" ></i> Términos y condiciones</a></li>
-                    <li><a onclick="ga('send', 'event', 'Side-Nav', 'click', 'privacy-button');" href="<?php echo site_url('aviso-privacidad'); ?>" title="Aviso de privacidad"><i class="uri_nav-legal" ></i>Aviso de privacidad</a></li>
+                    <li><a onclick="ga('send', 'event', 'Side-Nav', 'click', 'privacy-button');" href="<?php echo site_url('aviso-privacidad'); ?>" title="Aviso de privacidad"><i class="uri_nav-legal" ></i> Aviso de privacidad</a></li>
                 </ul>
             </aside>
 

@@ -1,7 +1,11 @@
 .cta {
-    padding: rem-calc(110) 0 rem-calc(110) 0;
+    padding: rem-calc(30) 0 rem-calc(30) 0;
     background-image: url(../images/home/bg-cta.jpg);
     background-size: cover;
+    background-position: center;
+    @media #{$medium-up} {
+        padding: rem-calc(110) 0 rem-calc(110) 0;
+    }
     .cta-title {
         font-size: rem-calc(27);
         line-height: 1em;
@@ -15,8 +19,32 @@
         }
     }
     p {
+        font-size: rem-calc(19);
         line-height: 1.3em;
         margin-top: rem-calc(20);
-        margin-bottom: rem-calc(60);
+        margin-bottom: rem-calc(20);
+        @media #{$medium-up} {
+            font-size: rem-calc(27);
+            margin-bottom: rem-calc(60);
+        }
+        &.x-small {
+            font-size: rem-calc(12);
+            @media #{$medium-up} {
+                font-size: rem-calc(16);
+            }
+        }
+    }
+    input#mce-EMAIL {
+        font-size: rem-calc(18);
+        width: auto;
+        width: 100%;
+        margin: 0 auto;
+        padding: 1em;
+        color: white;
+        background: $dark-color;
+        @include border-radius(5px);
+        @media #{$medium-up} {
+            font-size: rem-calc(23);
+        }
     }
 }

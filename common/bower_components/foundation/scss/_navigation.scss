@@ -6,6 +6,7 @@
 
 .uri_logo-black-small {
     @include uri-img("uri/uri_logo-black-small.png", "uri/retina/uri_logo-black-small.png");
+    margin-top: rem-calc(20);
 }
 
 .uri_logo-black {
@@ -25,19 +26,27 @@
 
 .uri_nav-discover {
     @include uri-img("uri/uri_nav-discover.png", "uri/retina/uri_nav-discover.png");
+    @extend %uri-position-1;
 }
-
 
 .uri_nav-help {
     @include uri-img("uri/uri_nav-help.png", "uri/retina/uri_nav-help.png");
+    @extend %uri-position-1;
 }
 
 .uri_nav-home {
     @include uri-img("uri/uri_nav-home.png", "uri/retina/uri_nav-home.png");
+    @extend %uri-position-1;
 }
 
 .uri_nav-legal {
     @include uri-img("uri/uri_nav-legal.png", "uri/retina/uri_nav-legal.png");
+    @extend %uri-position-1;
+}
+
+.uri_nav-blog {
+    @include uri-img("uri/uri_nav-blog.png", "uri/retina/uri_nav-blog.png");
+    @extend %uri-position-1;
 }
 
 
@@ -225,8 +234,8 @@ ul.off-canvas-list {
             color: tint($dark-color, 20%);
             border-bottom: 1px solid tint($dark-color, 94%);
             &.active {
-                color: white;
-                background: tint($dark-color, 0%);
+                color: $dark-color;
+                background: tint($dark-color, 95%);
             }
             &:hover {
                 color: tint($dark-color, 0%);

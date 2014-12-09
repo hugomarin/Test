@@ -824,7 +824,7 @@ $include-html-global-classes: $include-html-classes;
 
 // Off Canvas Menu Variables
 // $off-canvas-width: rem-calc(250);
- $off-canvas-bg: #fff;
+   $off-canvas-bg: #fff;
 // $off-canvas-bg-hover: scale-color($tabbar-bg, $lightness: -30%);
 
 // Off Canvas Menu List Variables
@@ -867,7 +867,7 @@ $include-html-global-classes: $include-html-classes;
 // $off-canvas-overlay-transition: background 300ms ease;
 // $off-canvas-overlay-cursor: pointer;
    $off-canvas-overlay-box-shadow: 0 0 30px rgba(#000, 0.05), 0 0 30px rgba(#000, 0.05);
-   $off-canvas-overlay-background: rgba(#434651, 0.7);
+   $off-canvas-overlay-background: rgba(#434651, 0.1);
    $off-canvas-overlay-background-hover: rgba(#434651, 0.01);
 
 // Transition Variables
@@ -1202,7 +1202,7 @@ $include-html-global-classes: $include-html-classes;
 // $include-html-nav-classes: $include-html-classes;
 
 // We use these to control margin and padding
-// $sub-nav-list-margin: rem-calc(-4 0 18);
+   $sub-nav-list-margin: rem-calc(0);
 // $sub-nav-list-padding-top: rem-calc(4);
 
 // We use this to control the definition
@@ -1211,7 +1211,7 @@ $include-html-global-classes: $include-html-classes;
 // $sub-nav-font-color: $aluminum;
 // $sub-nav-font-weight: $font-weight-normal;
 // $sub-nav-text-decoration: none;
-// $sub-nav-padding: rem-calc(3 16);
+   $sub-nav-padding: rem-calc(3);
 // $sub-nav-border-radius: 3px;
 // $sub-nav-font-color-hover: scale-color($sub-nav-font-color, $lightness: -25%);
 

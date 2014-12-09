@@ -1,8 +1,9 @@
 {% layout "home" %}
 {% block content %}
 <section class="hero">
+<div class="hero-overlay"></div>
   <div class="row">
-    <div class="large-9 medium-11 columns large-centered medium-centered">
+    <div class="small-12 medium-11 large-9 columns large-centered medium-centered">
       <div class="main-text">
         <div class="text-center">
           <h2 class="tagline">Descubre la mejor tarjeta de crédito para ti</h2>
@@ -23,7 +24,7 @@
     <div class="large-12 columns">
 
       <h4 class="strong-title text-center">¿CÓMO FUNCIONA?</h4>
-      <ul class="large-block-grid-3 medium-block-grid-2 small-block-grid-1">
+      <ul class="large-block-grid-3 small-block-grid-1">
         <li>
           <div class="hiw-steps-img">
             <img src="{{ "steps/step_1.png" | asset_url }}" alt="Consumo Diagnóstico"/>
@@ -56,7 +57,7 @@
   </div>
 </section>
 
-<section class="publications">
+<section class="publications hide-for-small">
   <h3 class="text-center"><small class=" upper">Nos destacaron</small></h3>
   <div class="row">
     <div class="large-12 columns">
@@ -110,18 +111,18 @@ overflow-x: hidden;">
     </div>
     <div class="large-4 medium-4 columns">
       <i class="uri_glasses-medium"></i>
-      <h4>Anónimo</h4>
-      <p class="large">En Rocket no sabemos quién eres, tus datos son totalmente anónimos.</p>
+      <h4 class="spot-tagline">Anónimo</h4>
+      <p>En Rocket no sabemos quién eres, tus datos son totalmente anónimos.</p>
     </div>
     <div class="large-4 medium-4  columns">
       <i class="uri_lock-medium"></i>
-      <h4>Seguro</h4>
-      <p class="large">Rocket es un espacio privado y seguro. Tu información está segura con nosotros.</p>
+      <h4 class="spot-tagline">Seguro</h4>
+      <p>Rocket es un espacio privado y seguro. Tu información está segura con nosotros.</p>
     </div>
     <div class="large-4 medium-4  columns">
       <i class="uri_heart-medium"></i>
-      <h4>Independiente</h4>
-      <p class="large">Al no hacer parte de ningún banco o entidad financiera podemos ofrecemos todo la oferta del mercado.</p>
+      <h4 class="spot-tagline">Independiente</h4>
+      <p>Al no hacer parte de ningún banco o entidad financiera podemos ofrecemos todo la oferta del mercado.</p>
     </div>
   </div>
 </section>
@@ -148,7 +149,7 @@ overflow-x: hidden;">
 
     <div class="large-8 large-centered columns text-center">
       <h3 class="cta-title white">Mantente informado para ser un experto en finanzas.</h3>
-      <p class="huge white">Suscríbete a nuestro boletín de noticias, y sé el primero en conocer las últimas actualizaciónes de Rocket.</p>
+      <p class="white">Suscríbete a nuestro boletín de noticias, y sé el primero en conocer las últimas actualizaciones de Rocket.</p>
 
 
       <!-- Begin MailChimp Signup Form -->

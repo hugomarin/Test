@@ -71,16 +71,15 @@ $color_1: #d3e1ed;
 
 
 
-///////////////////HOME
-
-
-
 .testimony {
     margin-bottom: rem-calc(0);
     border-top: 1px solid tint($secondary-color, 90%);
     border-bottom: 1px solid tint($secondary-color, 90%);
     background: tint($secondary-color, 95%);
-    padding-bottom: rem-calc(60);
+    padding-bottom: rem-calc(30);
+    @media #{$medium-up} {
+        padding-bottom: rem-calc(60);
+    }
     .testimony-portrait img {
         width: rem-calc(120);
         height: rem-calc(120);
@@ -89,16 +88,25 @@ $color_1: #d3e1ed;
     }
     blockquote {
         font-family: $body-font;
-        font-size: rem-calc(31);
+        font-size: rem-calc(18);
         line-height: 1.35em;
         margin-top: rem-calc(31);
         margin-bottom: 0;
         color: tint($dark-color, 10%);
         border-left: none;
+        padding: 0;
+        @media #{$medium-up} {
+            font-size: rem-calc(31);
+        }
     }
     div.author {
         font-family: $body-font;
-        font-size: rem-calc(20);
+        font-size: rem-calc(14);
         color: tint($dark-color, 30%);
+        line-height: 1em;
+        margin-top: rem-calc(10);
+        @media #{$medium-up} {
+            font-size: rem-calc(20);
+        }
     }
 }

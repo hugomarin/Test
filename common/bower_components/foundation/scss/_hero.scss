@@ -12,35 +12,58 @@ body {
     position: relative;
     background-image: url(../images/home/banner-05.jpg);
     background-size: cover;
-    background-position-x: center;
+    background-position-x: right;
     padding-bottom: rem-calc(120);
+    @media #{$medium-up} {
+        background-position-x: center;
+    }
+    .hero-overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba($dark-color, .6);
+        @media #{$medium-up} {
+            visibility: hidden;
+        }
+    }
     .main-text {
         width: 100%;
-        margin-top: rem-calc(130);
+        margin-top: rem-calc(50);
+            @media #{$medium-up} {
+                margin-top: rem-calc(130);
+            }
         .tagline {
-            font-size: rem-calc(67);
+            font-size: rem-calc(37);
             line-height: 1em;
             padding: 0;
-            letter-spacing: rem-calc(-3);
+            letter-spacing: rem-calc(-1);
             color: white;
+            @media #{$medium-up} {
+                font-size: rem-calc(67);
+                letter-spacing: rem-calc(-3);
+            }
         }
         .summary {
             font-family: $body-font;
-            font-size: rem-calc(27);
+            font-size: rem-calc(19);
             line-height: 1.3em;
             margin-top: rem-calc(12);
             margin-bottom: rem-calc(20);
-            padding: 0 3em;
+            padding: 0;
             letter-spacing: 0;
             color:white;
             color: rgba(white, 0.9);
             font-weight: 300;
             @media #{$medium-up} {
+                font-size: rem-calc(27);
                 margin-bottom: rem-calc(34);
+                padding: 0 3em;
             }
         }
         a.button {
-            font-size: rem-calc(14);
+            font-size: rem-calc(18);
             padding-right: 3em;
             padding-left: 3em;
             @media #{$medium-up} {

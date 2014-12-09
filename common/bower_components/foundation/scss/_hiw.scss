@@ -4,7 +4,6 @@
     @include uri-img("uri/uri_heart-medium.png", "uri/retina/uri_heart-medium.png");
 }
 
-
 .uri_lock-medium {
     @include uri-img("uri/uri_lock-medium.png", "uri/retina/uri_lock-medium.png");
 }
@@ -12,8 +11,6 @@
 .uri_glasses-medium {
     @include uri-img("uri/uri_glasses-medium.png", "uri/retina/uri_glasses-medium.png");
 }
-
-
 
 .hiw {
     padding-top: rem-calc(74);
@@ -31,19 +28,26 @@
 }
 
 .spot-1,
-.spot-2 {
+.spot-3 {
     padding-bottom: rem-calc(0);
     background: white;
     .spot-tagline {
-        margin-bottom: rem-calc(27);
-        letter-spacing: rem-calc(-1);
+        margin-bottom: rem-calc(13);
+        letter-spacing: rem-calc(0);
         color: tint($dark-color, 10%);
+        @media #{$medium-up} {
+            letter-spacing: rem-calc(-1);
+            margin-bottom: rem-calc(27);
+        }
     }
     p {
-        font-size: rem-calc(21);
-        line-height: rem-calc(26);
+        font-size: rem-calc(16);
+        font-weight: $light;
+        line-height: 1.4em;
         color: tint($dark-color, 30%);
-        font-weight: 300;
+        @media #{$medium-up} {
+            font-size: rem-calc(21);
+        }
     }
 }
 
@@ -55,17 +59,35 @@
 }
 
 .spot-2 {
+    padding-bottom: rem-calc(20px);
+    border-bottom: 1px solid tint($dark-color, 90%);
+    @media #{$medium-up} {
+        border-bottom: none;
+    }
     .spot-title {
-        margin-top: rem-calc(150);
+        margin-top: rem-calc(20);
         color: $red-color;
+        @media #{$large-up} {
+            margin-top: rem-calc(150);
+        }
+    }
+    .button.nice {
+        width: 100%;
+        @media #{$medium-up} {
+            width: auto;
+        }
     }
 }
 
 .spot-3 {
     .spot-title {
-        margin-top: rem-calc(100);
+        margin-top: rem-calc(30);
+        margin-bottom: rem-calc(20);
         color: $secondary-color;
-        margin-bottom: rem-calc(60);
+        @media #{$large-up} {
+            margin-top: rem-calc(100);
+            margin-bottom: rem-calc(60);
+        }
     }
 }
 
@@ -84,37 +106,43 @@
 
 .screen-2 {
     float: right;
-    width: 71%;
-    height: 750px;
+    width: 100%;
+    height: 320px;
     margin-top: 0;
-    margin-right: 0;
-    margin-right: -3em;
-    margin-right: -8em;
+    margin-right: -1em;
     margin-bottom: 0;
-    margin-left: -3em;
-    padding-right: 8em;
-    padding-left: 3em;
+    margin-left: -1em;
+    padding-right: 1em;
+    padding-left: 1em;
     background-image: url(../images/home/spot-01.jpg);
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: 100% auto !important;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
-    src='../images/home/spot-01.jpg',
-    sizingMethod='scale');
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../images/home/spot-01.jpg', sizingMethod='scale');
+    @media #{$large-up} {
+        width: 69%;
+        height: 750px;
+        margin-right: -8em;
+        margin-left: -3em;
+        padding-right: 8em;
+        padding-left: 3em;
+    }
 }
 
-
 .text-box {
-    @media #{$medium-only} {
-        margin-left: rem-calc(20);
+    margin-right: rem-calc(20);
+    margin-left: rem-calc(20);
+    @media #{$large-up} {
+        margin-right: rem-calc(0);
+        margin-left: rem-calc(0);
     }
 }
 
 .hiw-steps {
     margin-top: emCalc(-100);
     padding-bottom: emCalc(30);
-    background: tint($dark-color, 95%);
     border-bottom: 1px solid tint($dark-color, 90%);
+    background: tint($dark-color, 95%);
     h4 {
         font-size: emCalc(16);
         margin-bottom: emCalc(10);
@@ -161,5 +189,3 @@
         color: scale-lightness($dark-color, 50%);
     }
 }
-
-
