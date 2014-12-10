@@ -12,42 +12,22 @@
     @include uri-img("uri/uri_glasses-medium.png", "uri/retina/uri_glasses-medium.png");
 }
 
-.hiw {
-    padding-top: rem-calc(74);
-    .section-title {
-        font-size: rem-calc(13);
-        text-transform: uppercase;
-        color: tint($dark-color, 30%);
-    }
-    .main-title {
-        font-size: rem-calc(44);
-        line-height: 1em;
-        margin-bottom: rem-calc(70);
-        letter-spacing: rem-calc(-3);
-    }
-}
-
 .spot-1,
 .spot-3 {
     padding-bottom: rem-calc(0);
     background: white;
     .spot-tagline {
-        margin-bottom: rem-calc(13);
+        margin-bottom: rem-calc(10);
+        margin-top: rem-calc(20);
         letter-spacing: rem-calc(0);
         color: tint($dark-color, 10%);
+        @extend %title-small;
         @media #{$medium-up} {
             letter-spacing: rem-calc(-1);
-            margin-bottom: rem-calc(27);
         }
     }
     p {
-        font-size: rem-calc(16);
-        font-weight: $light;
-        line-height: 1.4em;
         color: tint($dark-color, 30%);
-        @media #{$medium-up} {
-            font-size: rem-calc(21);
-        }
     }
 }
 
@@ -59,16 +39,15 @@
 }
 
 .spot-2 {
-    padding-bottom: rem-calc(20px);
     border-bottom: 1px solid tint($dark-color, 90%);
     @media #{$medium-up} {
         border-bottom: none;
     }
     .spot-title {
-        margin-top: rem-calc(20);
+        margin-top: rem-calc(0);
         color: $red-color;
         @media #{$large-up} {
-            margin-top: rem-calc(150);
+            margin-top: rem-calc(180);
         }
     }
     .button.nice {
@@ -76,6 +55,9 @@
         @media #{$medium-up} {
             width: auto;
         }
+    }
+    p {
+        color: tint($dark-color, 20%);
     }
 }
 
@@ -91,101 +73,108 @@
     }
 }
 
-.your-information {
-    padding-bottom: rem-calc(60);
-    background: white;
+.text-box {
+    padding: rem-calc(20);
+    background: tint($dark-color, 95%);
+    @media #{$large-up} {
+        padding: rem-calc(0);
+        background: white;
+    }
 }
 
-.screen-1 {
-    height: rem-calc(731);
-    background-image: url(../images/home/spot-03.jpg);
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: contain;
+.spot-title {
+    margin-bottom: rem-calc(3);
+    letter-spacing: rem-calc(-1);
+    @extend %title-large;
+    &.white {
+        color: rgba(white, 1);
+    }
+    @media #{$medium-up} {
+        letter-spacing: rem-calc(-2);
+    }
+}
+
+.your-information {
+    padding-bottom: rem-calc(80);
+    background: white;
 }
 
 .screen-2 {
     float: right;
     width: 100%;
-    height: 320px;
-    margin-top: 0;
-    margin-right: -1em;
-    margin-bottom: 0;
-    margin-left: -1em;
-    padding-right: 1em;
-    padding-left: 1em;
-    background-image: url(../images/home/spot-01.jpg);
+    height: rem-calc(280);
+    margin-top: rem-calc(20);
+    margin-right: 0;
+    margin-bottom: rem-calc(20);
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+    background-image: url(../images/home/spot-01-ipad.jpg);
     background-repeat: no-repeat;
-    background-position: right bottom;
-    background-size: 100% auto !important;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../images/home/spot-01.jpg', sizingMethod='scale');
-    @media #{$large-up} {
-        width: 69%;
-        height: 750px;
-        margin-right: -8em;
-        margin-left: -3em;
-        padding-right: 8em;
-        padding-left: 3em;
+    background-position: center;
+    background-size: contain;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../images/home/spot-01-ipad.jpg', sizingMethod='scale');
+    @media #{$medium-up} {
+        height: rem-calc(450);
+        margin-top: rem-calc(20);
     }
-}
-
-.text-box {
-    margin-right: rem-calc(20);
-    margin-left: rem-calc(20);
     @media #{$large-up} {
-        margin-right: rem-calc(0);
-        margin-left: rem-calc(0);
+        width: 80%;
+        height: rem-calc(750);
+        margin-right: -12em;
+        margin-left: -3em;
+        padding-right: 12em;
+        padding-left: 3em;
+        background-image: url(../images/home/spot-01.jpg);
+        background-position: right bottom;
+        background-size: 100% auto !important;
     }
 }
 
 .hiw-steps {
     margin-top: emCalc(-100);
     padding-bottom: emCalc(30);
-    border-bottom: 1px solid tint($dark-color, 90%);
+    border-bottom: rem-calc(1) solid tint($dark-color, 90%);
     background: tint($dark-color, 95%);
-    h4 {
-        font-size: emCalc(16);
-        margin-bottom: emCalc(10);
+    .hiw-steps-title {
+        margin-bottom: emCalc(20);
         text-align: center;
         color: white;
         color: rgba(white, 0.8);
         border: 0;
+        @extend %title-tiny;
     }
-    h5 {
+    .step-title {
+        margin-bottom: 0;
         color: tint($dark-color, 20%);
-    }
-    .hiw-steps-img img {
-        display: block;
-        width: 120px;
-        max-width: emCalc(150);
-        height: 120px;
-        margin: 0 auto emCalc(9) auto;
-        border-radius: 50%;
-    }
-    .hiw-steps-title {
-        font-size: emCalc(19);
-        a {
-            color: black;
-        }
+        @extend %title-mini;
     }
     .step-no {
-        font-size: emCalc(12);
-        line-height: emCalc(25);
+        line-height: emCalc(20);
         position: relative;
         top: -3px;
         display: inline-block;
-        width: emCalc(25);
-        height: emCalc(25);
+        width: emCalc(20);
+        height: emCalc(20);
         color: tint($dark-color, 95%);
         background: tint($dark-color, 80%);
+        @extend %title-micro;
         @include border-radius(20px);
     }
-    .intro {
-        font-size: emCalc(14);
-        font-weight: 300;
+    .hiw-steps-img img {
+        display: block;
+        width: rem-calc(120);
+        max-width: rem-calc(150);
+        height: rem-calc(120);
+        margin: 0 auto rem-calc(9) auto;
+        @include border-radius(50%);
+    }
+    p {
         margin-bottom: 0;
-        letter-spacing: 0;
         text-transform: none;
-        color: scale-lightness($dark-color, 50%);
+        color: scale-lightness($dark-color, 30%);
+        @media #{$medium-only} {
+            padding: 0em;
+        }
     }
 }

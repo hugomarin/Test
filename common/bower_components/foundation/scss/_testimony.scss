@@ -85,28 +85,20 @@ $color_1: #d3e1ed;
         height: rem-calc(120);
         margin: -60px auto rem-calc(9) auto;
         @include round(120px);
+        @include box-shadow(0 0 0 2px tint($secondary-color, 95%));
     }
     blockquote {
-        font-family: $body-font;
-        font-size: rem-calc(18);
-        line-height: 1.35em;
         margin-top: rem-calc(31);
         margin-bottom: 0;
-        color: tint($dark-color, 10%);
+        color: tint($dark-color, 20%);
         border-left: none;
         padding: 0;
-        @media #{$medium-up} {
-            font-size: rem-calc(31);
-        }
+        @extend %text-medium;
     }
-    div.author {
-        font-family: $body-font;
-        font-size: rem-calc(14);
-        color: tint($dark-color, 30%);
+    .author {
+        color: tint($dark-color, 45%);
         line-height: 1em;
         margin-top: rem-calc(10);
-        @media #{$medium-up} {
-            font-size: rem-calc(20);
-        }
+        @extend %title-mini;
     }
 }

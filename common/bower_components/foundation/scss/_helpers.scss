@@ -16,34 +16,6 @@ html {
     text-transform: uppercase;
 }
 
-p {
-    font-family: $body-font;
-    color: tint($dark-color, 30%);
-    &.large {
-        font-size: rem-calc(12);
-    }
-    &.xlarge {
-        font-size: rem-calc(16);
-    }
-    &.huge {
-        font-size: rem-calc(23);
-    }
-    &.white {
-        color: rgba(white, 0.8);
-    }
-    @media #{$medium-up} {
-        &.large {
-            font-size: rem-calc(18);
-        }
-        &.xlarge {
-            font-size: rem-calc(21);
-        }
-        &.huge {
-            font-size: rem-calc(27);
-        }
-    }
-}
-
 .outer {
     position: relative;
     left: 50%;
@@ -93,32 +65,6 @@ p {
     }
 }
 
-p {
-    font-family: $body-font;
-    font-weight: $light;
-    color: tint($dark-color, 30%);
-    &.tiny {
-        font-size: rem-calc(10);
-    }
-    &.xsmall {
-        font-size: rem-calc(12);
-    }
-    &.small {
-        font-size: rem-calc(14);
-    }
-    &.large {
-        font-size: rem-calc(18);
-    }
-    &.xlarge {
-        font-size: rem-calc(21);
-    }
-    &.huge {
-        font-size: rem-calc(33);
-    }
-    &.white {
-        color: rgba(white, 0.8);
-    }
-}
 
 .button {
     color: white;
@@ -171,32 +117,6 @@ p {
         text-transform: uppercase;
         color: tint($dark-color, 30%);
         @extend %smooth;
-    }
-}
-
-.outer {
-    position: relative;
-    left: 50%;
-    float: left;
-    ul.inner {
-        position: relative;
-        left: -50%;
-        float: left;
-        max-width: none;
-        margin: 0;
-        &.top-border {
-            border-top: 1px solid rgba(white, 0.3);
-        }
-    }
-}
-
-.spot-title {
-    font-size: rem-calc(37);
-    margin-bottom: rem-calc(3);
-    //margin-top: rem-calc(128);
-    letter-spacing: rem-calc(-3);
-    &.white {
-        color: rgba(white, 1);
     }
 }
 
@@ -377,15 +297,6 @@ p.explain {
     margin: rem-calc(6) 0;
 }
 
-.big-title {
-    font-family: $header-font;
-    font-size: rem-calc(27);
-    font-weight: $light;
-    line-height: 1.2em;
-    margin-bottom: 1em;
-    letter-spacing: -1px;
-    color: $gold-color;
-}
 
 %border-decoration {
     &:before {
@@ -436,18 +347,4 @@ p.explain {
     @include filter-gradient(#fff, #fff, horizontal);
     // IE6-9
     @include background-image(linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(204, 204, 204, 1) 50%, rgba(255, 255, 255, 1) 100%));
-}
-
-.spot-title {
-    font-size: rem-calc(27);
-    margin-bottom: rem-calc(3);
-    //margin-top: rem-calc(128);
-    letter-spacing: rem-calc(-1);
-    &.white {
-        color: rgba(white, 1);
-    }
-    @media #{$medium-up} {
-        font-size: rem-calc(37);
-        letter-spacing: rem-calc(-3);
-    }
 }

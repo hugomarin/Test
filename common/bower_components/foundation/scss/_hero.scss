@@ -14,7 +14,7 @@ body {
     background-size: cover;
     background-position-x: right;
     padding-bottom: rem-calc(120);
-    @media #{$medium-up} {
+    @media #{$large-up} {
         background-position-x: center;
     }
     .hero-overlay {
@@ -32,23 +32,27 @@ body {
         width: 100%;
         margin-top: rem-calc(50);
             @media #{$medium-up} {
+                margin-top: rem-calc(70);
+            }
+            @media #{$large-up} {
                 margin-top: rem-calc(130);
             }
         .tagline {
-            font-size: rem-calc(37);
-            line-height: 1em;
+            @extend %title-titanic;
+            margin-bottom: .5em;
             padding: 0;
             letter-spacing: rem-calc(-1);
             color: white;
             @media #{$medium-up} {
-                font-size: rem-calc(67);
+                letter-spacing: rem-calc(-2);
+            }
+            @media #{$large-up} {
                 letter-spacing: rem-calc(-3);
             }
         }
         .summary {
             font-family: $body-font;
-            font-size: rem-calc(19);
-            line-height: 1.3em;
+            @extend %text-medium;
             margin-top: rem-calc(12);
             margin-bottom: rem-calc(20);
             padding: 0;
@@ -57,7 +61,10 @@ body {
             color: rgba(white, 0.9);
             font-weight: 300;
             @media #{$medium-up} {
-                font-size: rem-calc(27);
+                margin-bottom: rem-calc(34);
+                padding: 0;
+            }
+            @media #{$large-up} {
                 margin-bottom: rem-calc(34);
                 padding: 0 3em;
             }

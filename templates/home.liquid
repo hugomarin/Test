@@ -1,55 +1,57 @@
 {% layout "home" %}
 {% block content %}
-<section class="hero">
-<div class="hero-overlay"></div>
-  <div class="row">
-    <div class="small-12 medium-11 large-9 columns large-centered medium-centered">
-      <div class="main-text">
-        <div class="text-center">
-          <h2 class="tagline">Descubre la mejor tarjeta de crédito para ti</h2>
-          <p class="summary">Una tarjeta de crédito que se ajusta a tus finanzas puede ahorrarte hasta 50% en gastos.</p>
-          <a onclick="ga('send', 'event', 'home', 'click', 'Discover-button: Hero');" href="<?php echo base_url().$configCommon->descubraUrlModule.'pregunta/producto/tarjeta-de-credito'; ?>" class="button large nice upper">
-            <span class="txt-btn">DESCÚBRELAS YA<br />
-              <small>es 100% gratis</small>
-            </span>
-          </a>
-        </div>
 
+
+  <section class="hero">
+  <div class="hero-overlay"></div>
+    <div class="row">
+      <div class="small-12 large-9 columns large-centered medium-centered">
+        <div class="main-text">
+          <div class="text-center">
+            <h2 class="tagline">Descubre la mejor tarjeta de crédito para ti</h2>
+            <p class="summary">Una tarjeta de crédito que se ajusta a tus finanzas puede ahorrarte hasta 50% en gastos.</p>
+            <a onclick="ga('send', 'event', 'home', 'click', 'Discover-button: Hero');" href="<?php echo base_url().$configCommon->descubraUrlModule.'pregunta/producto/tarjeta-de-credito'; ?>" class="button large nice upper">
+              <span class="txt-btn">DESCÚBRELAS YA<br />
+                <small>es 100% gratis</small>
+              </span>
+            </a>
+          </div>
+
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 <section class="hiw-steps">
   <div class="row">
     <div class="large-12 columns">
 
-      <h4 class="strong-title text-center">¿CÓMO FUNCIONA?</h4>
-      <ul class="large-block-grid-3 small-block-grid-1">
+      <div class="hiw-steps-title">¿CÓMO FUNCIONA?</div>
+      <ul class="medium-block-grid-3 small-block-grid-1">
         <li>
           <div class="hiw-steps-img">
             <img src="{{ "steps/step_1.png" | asset_url }}" alt="Consumo Diagnóstico"/>
           </div>
-          <div class="hiw-steps-title text-center">
-            <h5 class="step-title"><span class="step-no">1</span> Juega y Responde</h5>
-            <p class="intro">Responde unas sencillas preguntas para identificar tus necesidades y preferencias. ¡Juguemos!</p>
+          <div class="hiw-steps-description text-center">
+            <header class="step-title"><span class="step-no">1</span> Juega y Responde</header>
+            <p class="mini">Responde unas sencillas preguntas para identificar tus necesidades y preferencias. ¡Juguemos!</p>
           </div>
         </li>
         <li>
           <div class="hiw-steps-img">
             <img src="{{ "steps/step_2.png" | asset_url }}" alt="Finanzas Diagnóstico"/>
           </div>
-          <div class="hiw-steps-title text-center">
-            <h5 class="step-title"><span class="step-no">2</span> Elige y Aplica</h5>
-            <p class="intro">Encuentra las tarjetas de crédito que más te convienen, elige y solicítala al banco correspondiente.</p>
+          <div class="hiw-steps-description text-center">
+            <header class="step-title"><span class="step-no">2</span> Elige y Aplica</header>
+            <p class="mini">Encuentra las tarjetas de crédito que más te convienen, elige y solicítala al banco correspondiente.</p>
           </div>
         </li>
         <li>
           <div class="hiw-steps-img">
             <img src="{{ "steps/step_3.png" | asset_url }}" alt="Finanzas Diagnóstico"/>
           </div>
-          <div class="hiw-steps-title text-center">
-            <h5 class="step-title"><span class="step-no">3</span> Relájate y ahorra</h5>
-            <p class="intro">Ahora que tienes la tarjeta de crédito que se adapta a ti, puedes estar tranquilo ahorrando en tus gastos.</p>
+          <div class="hiw-steps-description text-center">
+            <header class="step-title"><span class="step-no">3</span> Relájate y ahorra</header>
+            <p class="mini">Ahora que tienes la tarjeta de crédito que se adapta a ti, puedes estar tranquilo ahorrando en tus gastos.</p>
           </div>
         </li>
       </ul>
@@ -57,7 +59,7 @@
   </div>
 </section>
 
-<section class="publications hide-for-small">
+<section class="publications show-for-large-up">
   <h3 class="text-center"><small class=" upper">Nos destacaron</small></h3>
   <div class="row">
     <div class="large-12 columns">
@@ -85,21 +87,20 @@
 </section>
 
 
-<section class="spot-2 discover" style="
-overflow-x: hidden;">
+<section class="spot-2 discover" style="overflow-x: hidden;">
 <div class="row collapse">
-  <div class="screen-2 show-for-small"></div>
-  <div class="large-4 medium-6 columns">
+  <div class="screen-2 hide-for-large-up"></div>
+  <div class="large-5 small-12 columns">
     <div class="text-box">
-      <h3 class="spot-title">Descubra.</h3>
-      <h4 class="spot-tagline">Qué tarjeta de crédito te beneficia más a ti que al banco.</h4>
-      <p >Cuando necesitas crédito, queremos asegurarte que lo tengas con tranquilidad, por eso te mostramos la mejor opción para una buena tarjeta de crédito.</p>
+      <header class="spot-title">Descubra.</header>
+      <p class="small"><strong>Qué tarjeta de crédito te beneficia más a ti que al banco.</strong></p>
+      <p class="small">Cuando necesitas crédito, queremos asegurarte que lo tengas con tranquilidad, por eso te mostramos la mejor opción para una buena tarjeta de crédito.</p>
 
-      <p>Lo hacemos a través de una búsqueda que identifica cuál de todas las del mercado es la que mejor se adapta a ti y a tus necesidades.</p>
+      <p class="small">Lo hacemos a través de una búsqueda que identifica cuál de todas las del mercado es la que mejor se adapta a ti y a tus necesidades.</p>
       <a onclick="ga('send', 'event', 'home', 'click', 'Discover-button');" href="<?php echo base_url().$configCommon->descubraUrlModule.'pregunta/producto/tarjeta-de-credito'; ?>" title="buscar producto" class="button nice radius big terciary">Encuentra tu tarjeta</a>
     </div>
   </div>
-  <div class="screen-2 hide-for-small"></div>
+  <div class="screen-2 show-for-large-up"></div>
 </div>
 </section>
 
@@ -109,20 +110,20 @@ overflow-x: hidden;">
     <div class="large-12 columns">
       <h3 class="spot-title blue">Tu información.</h3>
     </div>
-    <div class="large-4 medium-4 columns">
+    <div class="medium-4 small-12 columns">
       <i class="uri_glasses-medium"></i>
-      <h4 class="spot-tagline">Anónimo</h4>
-      <p>En Rocket no sabemos quién eres, tus datos son totalmente anónimos.</p>
+      <header class="spot-tagline">Anónimo</header>
+      <p class="mini">En Rocket no sabemos quién eres, tus datos son totalmente anónimos.</p>
     </div>
-    <div class="large-4 medium-4  columns">
+    <div class="medium-4 small-12 columns">
       <i class="uri_lock-medium"></i>
-      <h4 class="spot-tagline">Seguro</h4>
-      <p>Rocket es un espacio privado y seguro. Tu información está segura con nosotros.</p>
+      <header class="spot-tagline">Seguro</header>
+      <p class="mini">Rocket es un espacio privado y seguro. Tu información está segura con nosotros.</p>
     </div>
-    <div class="large-4 medium-4  columns">
+    <div class="medium-4 small-12 columns">
       <i class="uri_heart-medium"></i>
-      <h4 class="spot-tagline">Independiente</h4>
-      <p>Al no hacer parte de ningún banco o entidad financiera podemos ofrecemos todo la oferta del mercado.</p>
+      <header class="spot-tagline">Independiente</header>
+      <p class="mini">Al no hacer parte de ningún banco podemos ofrecemos todo la oferta del mercado.</p>
     </div>
   </div>
 </section>
@@ -130,7 +131,7 @@ overflow-x: hidden;">
 
 <section class="testimony">
   <div class="row">
-    <div class="large-8 columns large-centered">
+    <div class="large-10 columns large-centered">
       <div class="text-center">
         <div class="testimony-portrait">
           <img alt="Testimonio" src="{{ "portrait-1.jpg" | asset_url }}">
@@ -155,7 +156,7 @@ overflow-x: hidden;">
       <!-- Begin MailChimp Signup Form -->
 <div class="newsletter text-center">
     <div class="row">
-      <div class="five columns centered">
+      <div class="large-6 medium-8 columns large-centered medium-centered">
         <div id="mc_embed_signup">
             <form action="//rocket.us4.list-manage.com/subscribe/post?u=b1e5b4fabc880e321bc5fcd3e&amp;id=1981615c52" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                 <div id="mc_embed_signup_scroll">
@@ -169,7 +170,7 @@ overflow-x: hidden;">
                     <p class="x-small">Tampoco nos gusta el SPAM y te prometemos no compartir tu información con nadie.</p>
    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                     <div style="position: absolute; left: -5000px;"><input type="text" name="b_b1e5b4fabc880e321bc5fcd3e_1981615c52" tabindex="-1" value=""></div>
-                    <div class="clear"><input type="submit" value="SUSCRÍBIRME" name="subscribe" id="mc-embedded-subscribe" class="button large nice quaternary upper icon_free radius"></div>
+                    <div class="clear"><input type="submit" value="SUSCRÍBIRME" name="subscribe" id="mc-embedded-subscribe" class="button large nice secondary upper icon_free radius"></div>
 
                 </div>
             </form>

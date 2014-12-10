@@ -22,6 +22,7 @@
         margin: 0;
         dd {
             margin-bottom: 0;
+            margin-left: 1em;
             &.first {
                 margin-left: 0;
                 a {
@@ -38,7 +39,7 @@
 
 .footer .social {
     float: right;
-    min-width: rem-calc(100);
+    min-width: rem-calc(50);
 }
 
 .footer dd a {

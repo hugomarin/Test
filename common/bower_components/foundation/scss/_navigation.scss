@@ -23,7 +23,6 @@
 
 //Offcanvas Icons
 
-
 .uri_nav-discover {
     @include uri-img("uri/uri_nav-discover.png", "uri/retina/uri_nav-discover.png");
     @extend %uri-position-1;
@@ -49,9 +48,6 @@
     @extend %uri-position-1;
 }
 
-
-
-
 //HEADER
 
 .header {
@@ -63,7 +59,6 @@
     padding: rem-calc(10) 0;
     background-color: $dark-color;
     h1 {
-        font-size: 0;
         margin: 0;
     }
 }
@@ -126,15 +121,15 @@
 
 .top-bar-section {
     ul {
-        background: rgba(255, 255, 255, 0);
+        background: transparent;
         li {
             background: transparent;
             &:hover {
                 background: transparent;
             }
             a {
-                font-size: rem-calc(13);
-                font-weight: bold;
+                @extend %title-micro;
+                font-weight: $medium;
                 text-transform: uppercase;
                 &.button {
                     color: white;
@@ -147,14 +142,13 @@
                     color: $quaternary-color;
                 }
             }
-
             .f-dropdown {
-                font-size: .875rem;
+                @extend %title-tiny;
                 position: absolute;
                 z-index: 99;
                 left: -9999px;
                 width: 100%;
-                max-width: 200px;
+                max-width: rem-calc(200);
                 height: auto;
                 max-height: none;
                 margin-top: 2px;
@@ -187,8 +181,7 @@
         margin-left: 2em;
     }
     a {
-        font-size: rem-calc(11);
-        font-weight: $medium;
+        @extend %title-tiny;
         text-transform: uppercase;
     }
 }
@@ -219,17 +212,14 @@
 ul.off-canvas-list {
     li {
         label {
-            font-family: $body-font;
-            font-size: rem-calc(10);
-            font-weight: $medium;
+            @extend %title-tiny;
             padding: rem-calc(5) rem-calc(15) rem-calc(3) rem-calc(15);
             text-transform: uppercase;
             color: tint($dark-color, 70%);
         }
         a {
-            font-family: $body-font;
-            font-size: rem-calc(14);
-            font-weight: 500;
+            @extend %title-mini;
+            font-weight: $medium;
             padding: rem-calc(6) rem-calc(15) rem-calc(15) rem-calc(15);
             color: tint($dark-color, 20%);
             border-bottom: 1px solid tint($dark-color, 94%);

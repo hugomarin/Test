@@ -1,0 +1,309 @@
+%title {
+    font-family: $header-font;
+    font-weight: $bold;
+    line-height: 1.1em;
+    margin-bottom: 1em;
+}
+
+%title-nano {
+    font-size: rem-calc(9);
+    @extend %title;
+    @media #{$medium-up} {
+        font-size: rem-calc(9);
+    }
+    @media #{$large-up} {
+        font-size: rem-calc(10);
+    }
+}
+
+%title-micro {
+    font-size: rem-calc(11);
+    @extend %title;
+    @media #{$medium-up} {
+        font-size: rem-calc(11);
+    }
+    @media #{$large-up} {
+        font-size: rem-calc(13);
+    }
+}
+
+%title-tiny {
+    font-size: rem-calc(13);
+    @extend %title;
+    @media #{$medium-up} {
+        font-size: rem-calc(13);
+    }
+    @media #{$large-up} {
+        font-size: rem-calc(16);
+    }
+}
+
+%title-mini {
+    font-size: rem-calc(16);
+    @extend %title;
+    @media #{$medium-up} {
+        font-size: rem-calc(16);
+    }
+    @media #{$large-up} {
+        font-size: rem-calc(19);
+    }
+}
+
+%title-small {
+    font-size: rem-calc(19);
+    @extend %title;
+    @media #{$medium-up} {
+        font-size: rem-calc(19);
+    }
+    @media #{$large-up} {
+        font-size: rem-calc(24);
+    }
+}
+
+%title-medium {
+    font-size: rem-calc(21);
+    @extend %title;
+    @media #{$medium-up} {
+        font-size: rem-calc(24);
+    }
+    @media #{$large-up} {
+        font-size: rem-calc(29);
+    }
+}
+
+%title-large {
+    font-size: rem-calc(24);
+    @extend %title;
+    @media #{$medium-up} {
+        font-size: rem-calc(29);
+    }
+    @media #{$large-up} {
+        font-size: rem-calc(36);
+    }
+}
+
+%title-great {
+    font-size: rem-calc(29);
+    @extend %title;
+    @media #{$medium-up} {
+        font-size: rem-calc(36);
+    }
+    @media #{$large-up} {
+        font-size: rem-calc(44);
+    }
+}
+
+%title-gigantic {
+    font-size: rem-calc(36);
+    @extend %title;
+    @media #{$medium-up} {
+        font-size: rem-calc(44);
+    }
+    @media #{$large-up} {
+        font-size: rem-calc(54);
+    }
+}
+
+%title-titanic {
+    font-size: rem-calc(36);
+    @extend %title;
+    @media #{$medium-up} {
+        font-size: rem-calc(54);
+    }
+    @media #{$large-up} {
+        font-size: rem-calc(67);
+    }
+}
+
+
+header {
+    &.titanic {
+        @extend %title-titanic;
+    }
+    &.gigantic {
+        @extend %title-gigantic;
+    }
+    &.great {
+        @extend %title-great;
+    }
+    &.large {
+        @extend %title-large;
+    }
+    &.medium {
+        @extend %title-medium;
+    }
+    &.small {
+        @extend %title-small;
+    }
+    &.mini {
+        @extend %title-mini;
+    }
+    &.tiny {
+        @extend %title-tiny;
+    }
+    &.micro {
+        @extend %title-micro;
+    }
+    &.nano {
+        @extend %title-nano;
+    }
+}
+
+//Text
+
+%text {
+    font-family: $body-font;
+    font-weight: $light;
+    line-height: 1.3em;
+    margin-bottom: 1em;
+}
+
+%text-nano {
+    font-size: rem-calc(7);
+    @extend %text;
+    @media #{$medium-up} {
+        font-size: rem-calc(8);
+    }
+    @media #{$large-up} {
+        font-size: rem-calc(10);
+    }
+}
+
+%text-micro {
+    font-size: rem-calc(8);
+    @extend %text;
+    @media #{$medium-up} {
+        font-size: rem-calc(10);
+    }
+    @media #{$large-up} {
+        font-size: rem-calc(13);
+    }
+}
+
+%text-tiny {
+    font-size: rem-calc(10);
+    @extend %text;
+    @media #{$medium-up} {
+        font-size: rem-calc(13);
+    }
+    @media #{$large-up} {
+        font-size: rem-calc(16);
+    }
+}
+
+%text-mini {
+    font-size: rem-calc(13);
+    @extend %text;
+    @media #{$medium-up} {
+        font-size: rem-calc(16);
+    }
+    @media #{$large-up} {
+        font-size: rem-calc(19);
+    }
+}
+
+%text-small {
+    font-size: rem-calc(16);
+    @extend %text;
+    @media #{$medium-up} {
+        font-size: rem-calc(19);
+    }
+    @media #{$large-up} {
+        font-size: rem-calc(24);
+    }
+}
+
+%text-medium {
+    font-size: rem-calc(19);
+    @extend %text;
+    @media #{$medium-up} {
+        font-size: rem-calc(24);
+    }
+    @media #{$large-up} {
+        font-size: rem-calc(29);
+    }
+}
+
+%text-large {
+    font-size: rem-calc(24);
+    @extend %text;
+    @media #{$medium-up} {
+        font-size: rem-calc(29);
+    }
+    @media #{$large-up} {
+        font-size: rem-calc(36);
+    }
+}
+
+%text-great {
+    font-size: rem-calc(29);
+    @extend %text;
+    @media #{$medium-up} {
+        font-size: rem-calc(36);
+    }
+    @media #{$large-up} {
+        font-size: rem-calc(44);
+    }
+}
+
+%text-gigantic {
+    font-size: rem-calc(36);
+    @extend %text;
+    @media #{$medium-up} {
+        font-size: rem-calc(44);
+    }
+    @media #{$large-up} {
+        font-size: rem-calc(54);
+    }
+}
+
+%text-titanic {
+    font-size: rem-calc(44);
+    @extend %text;
+    @media #{$medium-up} {
+        font-size: rem-calc(54);
+    }
+    @media #{$large-up} {
+        font-size: rem-calc(67);
+    }
+}
+
+
+//Paragraph
+
+p, ul {
+    strong {
+        font-weight: $medium;
+    }
+    &.titanic {
+        @extend %text-titanic;
+    }
+    &.gigantic {
+        @extend %text-gigantic;
+    }
+    &.great {
+        @extend %text-great;
+    }
+    &.large {
+        @extend %text-large;
+    }
+    &.medium {
+        @extend %text-medium;
+    }
+    &.small {
+        @extend %text-small;
+    }
+    &.mini {
+        @extend %text-mini;
+    }
+    &.tiny {
+        @extend %text-tiny;
+    }
+    &.micro {
+        @extend %text-micro;
+    }
+    &.nano {
+        @extend %text-nano;
+    }
+}
+
