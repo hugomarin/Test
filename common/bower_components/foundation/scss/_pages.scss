@@ -1,10 +1,11 @@
 .section-spot {
-    height: rem-calc(450);
-    padding-top: rem-calc(180);
-    padding-bottom: rem-calc(80);
+    padding-top: rem-calc(60);
+    padding-bottom: rem-calc(30);
     text-align: left;
     background-color: $secondary-color;
     background-size: cover;
+    background: linear-gradient(to bottom, #177cbd 0%,#1726b2 100%);
+
     &.bg-1 {
         background-image: url(../img/home/bg-1.jpg);
     }
@@ -20,6 +21,14 @@
     a {
         text-decoration: underline;
         color: white;
+    }
+    @media #{$medium-up} {
+        padding-top: rem-calc(100);
+        padding-bottom: rem-calc(60);
+    }
+    @media #{$large-up} {
+        padding-top: rem-calc(180);
+        padding-bottom: rem-calc(80);
     }
 }
 

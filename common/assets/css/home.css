@@ -12147,6 +12147,7 @@ body {
 @media only screen and (min-width: 52.063em) {
   .text-box {
     padding: 0;
+    margin-left: 1.25rem;
     background: white;
   }
 }
@@ -12172,23 +12173,22 @@ body {
 .screen-2 {
   float: right;
   width: 100%;
-  height: 17.5rem;
+  height: 12.5rem;
   margin-top: 1.25rem;
   margin-right: 0;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0;
   margin-left: 0;
   padding-right: 0;
   padding-left: 0;
   background-image: url(../images/home/spot-01-ipad.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center bottom;
   background-size: contain;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../images/home/spot-01-ipad.jpg', sizingMethod='scale');
 }
 @media only screen and (min-width: 35.063em) {
   .screen-2 {
     height: 28.125rem;
-    margin-top: 1.25rem;
   }
 }
 @media only screen and (min-width: 52.063em) {
@@ -12598,12 +12598,12 @@ body {
 }
 
 .section-spot {
-  height: 28.125rem;
-  padding-top: 11.25rem;
-  padding-bottom: 5rem;
+  padding-top: 3.75rem;
+  padding-bottom: 1.875rem;
   text-align: left;
   background-color: #177cbd;
   background-size: cover;
+  background: linear-gradient(to bottom, #177cbd 0%, #1726b2 100%);
 }
 .section-spot.bg-1 {
   background-image: url(../img/home/bg-1.jpg);
@@ -12620,6 +12620,18 @@ body {
 .section-spot a {
   text-decoration: underline;
   color: white;
+}
+@media only screen and (min-width: 35.063em) {
+  .section-spot {
+    padding-top: 6.25rem;
+    padding-bottom: 3.75rem;
+  }
+}
+@media only screen and (min-width: 52.063em) {
+  .section-spot {
+    padding-top: 11.25rem;
+    padding-bottom: 5rem;
+  }
 }
 
 .small-title {

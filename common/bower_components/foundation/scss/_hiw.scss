@@ -78,6 +78,7 @@
     background: tint($dark-color, 95%);
     @media #{$large-up} {
         padding: rem-calc(0);
+        margin-left: rem-calc(20);
         background: white;
     }
 }
@@ -102,21 +103,20 @@
 .screen-2 {
     float: right;
     width: 100%;
-    height: rem-calc(280);
+    height: rem-calc(200);
     margin-top: rem-calc(20);
     margin-right: 0;
-    margin-bottom: rem-calc(20);
+    margin-bottom: rem-calc(0);
     margin-left: 0;
     padding-right: 0;
     padding-left: 0;
     background-image: url(../images/home/spot-01-ipad.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center bottom;
     background-size: contain;
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../images/home/spot-01-ipad.jpg', sizingMethod='scale');
     @media #{$medium-up} {
         height: rem-calc(450);
-        margin-top: rem-calc(20);
     }
     @media #{$large-up} {
         width: 80%;
