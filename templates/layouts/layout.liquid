@@ -15,13 +15,12 @@
             <nav class="tab-bar">
                 <section class="left-small">
                     <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
-
                 </section>
 
                 <section class="middle tab-bar-section">
                     <h1 class="title" title="Inicio de Rocket">
                         <a href="<?php echo site_url();?>" title="Rocket">
-                            <i class="logo-icon-black">Rocket</i>
+                            <i class="uri_logo-black">Rocket</i>
                         </a>
                     </h1>
                 </section>
@@ -32,17 +31,17 @@
 
             <aside class="left-off-canvas-menu">
                 <ul class="off-canvas-list">
-                    <li><a onclick="ga('send', 'event', 'Side-Nav', 'click', 'home-button');"  href="<?php echo site_url();?>" title="Inicio de rocket"><i class="icon_nav-home" ></i> Inicio</a></li>
+                    <li><a class="active" onclick="ga('send', 'event', 'Side-Nav', 'click', 'home-button');"  href="home" title="Inicio de rocket"><i class="uri_nav-home" ></i> Inicio</a></li>
                     <li><label for="">Herramientas</label></li>
-                    <li><a class="active" onclick="ga('send', 'event', 'Side-Nav', 'click', 'discover-button');" href="<?php echo base_url().$configCommon->descubraUrlModule.'pregunta/producto/tarjeta-de-credito'; ?>" title="Descubra Rocket"><i class="icon_nav-discover" ></i> Descubra</a></li>
-                    <li><a class="" onclick="ga('send', 'event', 'Side-Nav', 'click', 'blog-button');" href="https://rocket.la/blogmx/" title="Blog Rocket"><i class="icon_nav-help" ></i> Blog</a></li>
+                    <li><a onclick="ga('send', 'event', 'Side-Nav', 'click', 'discover-button');" href="producto" title="Descubra Rocket"><i class="uri_nav-discover" ></i> Descubra</a></li>
+                    <li><a class="" onclick="ga('send', 'event', 'Side-Nav', 'click', 'blog-button');" href="https://rocket.la/blogmx/" title="Blog Rocket"><i class="uri_nav-blog" ></i> Blog</a></li>
 
                     <li><label for="">Ayuda</label></li>
-                    <li><a onclick="ga('send', 'event', 'Side-Nav', 'click', 'faq-button');" href="<?php echo site_url('preguntas-frecuentes');?>" title="Preguntas frecuentes de Rocket"><i class="icon_nav-help" ></i> Preguntas frecuentes</a></li>
-                    <li><a onclick="ga('send', 'event', 'Side-Nav', 'click', 'contact-button');" href="<?php echo site_url('contacto'); ?>" title="Contacta a Rocket"><i class="icon_nav-help" ></i> Contacto</a></li>
+                    <li><a onclick="ga('send', 'event', 'Side-Nav', 'click', 'faq-button');" href="preguntas-frecuentes" title="Preguntas frecuentes de Rocket"><i class="uri_nav-help" ></i> Preguntas frecuentes</a></li>
+                    <li><a onclick="ga('send', 'event', 'Side-Nav', 'click', 'contact-button');" href="<?php echo site_url('contacto'); ?>" title="Contacta a Rocket"><i class="uri_nav-help" ></i> Contacto</a></li>
                     <li><label for="">Legal</label></li>
-                    <li><a onclick="ga('send', 'event', 'Side-Nav', 'click', 'conditions-button');" href="<?php echo site_url('terminos-condiciones'); ?>" title="Condiciones de uso de Rocket"><i class="icon_nav-legal" ></i> Términos y condiciones</a></li>
-                    <li><a onclick="ga('send', 'event', 'Side-Nav', 'click', 'privacy-button');" href="<?php echo site_url('aviso-privacidad'); ?>" title="Aviso de privacidad"><i class="icon_nav-legal" ></i>Aviso de privacidad</a></li>
+                    <li><a onclick="ga('send', 'event', 'Side-Nav', 'click', 'conditions-button');" href="terminos-condiciones" title="Condiciones de uso de Rocket"><i class="uri_nav-legal" ></i> Términos y condiciones</a></li>
+                    <li><a onclick="ga('send', 'event', 'Side-Nav', 'click', 'privacy-button');" href="aviso-privacidad" title="Aviso de privacidad"><i class="uri_nav-legal" ></i> Aviso de privacidad</a></li>
                 </ul>
             </aside>
 
@@ -53,35 +52,33 @@
                     <div class="row">
                         <div class="large-8 small-4 medium-9 columns">
                             <dl class="sub-nav">
-                                <dd class="first"><a href="<?php echo site_url();?>" title="Rocket" target="_blank"><i class="icon_favicon"></i></a></dd>
+                                <dd class="first"><a href="<?php echo site_url();?>" title="Rocket" target="_blank"><i class="uri_favicon"></i></a></dd>
                                 <dd class="hide-for-small">
-                                    <a href="<?php echo site_url('aviso-privacidad'); ?>" title="Aviso de privacidad de Rocket" target="_blank">Aviso de privacidad</a>
+                                    <a href="aviso-privacidad" title="Aviso de privacidad de Rocket" target="_blank">Aviso de privacidad</a>
                                 </dd>
                                 <dd class="hide-for-small">
-                                    <a href="<?php echo site_url('terminos-condiciones'); ?>" title="Información legal de Rocket" target="_blank">Condiciones de uso</a>
+                                    <a href="terminos-condiciones" title="Información legal de Rocket" target="_blank"> Términos y condiciones</a>
                                 </dd>
                                 <dd class="hide-for-small">
-                                    <a href="<?php echo site_url('contacto'); ?>" title="Contacta a Rocket" target="_blank">Contacto</a>
-                                </dd>
-
-                                <dd class="hide-for-small">
-                                    <a href="<?php echo site_url('preguntas-frecuentes');?>" title="Ayuda de Rocket" target="_blank">Q&A</a>
+                                    <a href="contacto" title="Contacta a Rocket" target="_blank">Contacto</a>
                                 </dd>
 
-
+                                <dd class="hide-for-small">
+                                    <a href="preguntas-frecuentes" title="Ayuda de Rocket" target="_blank">Q&A</a>
+                                </dd>
                             </dl>
                         </div>
                         <div class="large-4 small-8 medium-3 columns">
                             <div class="social">
                                 <dl class="sub-nav">
-                                    <dd class="icon_facebook">
+                                    <dd class="facebook">
                                         <a onclick="ga('send', 'event', 'Footer', 'click', 'facebook');" href="https://www.facebook.com/rocketmexico" title="Fanpage Rocket" target="_blank">
-                                            <span class="facebook-icon"></span>
+                                            <span class="uri_facebook"></span>
                                         </a>
                                     </dd>
-                                    <dd class="icon_twitter">
+                                    <dd class="twitter">
                                         <a onclick="ga('send', 'event', 'Footer', 'click', 'twitter');" href="https://twitter.com/MXRocket" title="twitter Rocket" target="_blank">
-                                            <span class="twitter-icon"></span>
+                                            <span class="uri_twitter"></span>
                                         </a>
                                     </dd>
                                 </dl>
