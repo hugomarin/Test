@@ -1,37 +1,30 @@
 /*
-Error: Invalid US-ASCII character "\xC3"
-        on line 40 of /Users/Hugo/Dropbox/Mixture/Test-2/common/bower_components/foundation/scss/_slide.scss
-        from line 65 of /Users/Hugo/Dropbox/Mixture/Test-2/common/bower_components/foundation/scss/discover.scss
+Error: File to import not found or unreadable: slide.
+       Load paths:
+         Compass::SpriteImporter
+         /Users/Hugo/Dropbox/Mixture/Test-2/common/bower_components/foundation/scss
+         /Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets
+        on line 65 of /Users/Hugo/Dropbox/Mixture/Test-2/common/bower_components/foundation/scss/discover.scss
 
-35:   @include ui-slide-content ("100%",  "0%" );
-36:   &.q1003 {
-37:     @include ui-slide-content ("+72 meses",  "0 meses" );
-38:   }
-39:   &.q1007 {
-40:     @include ui-slide-content ("+8 años",  "0 meses" );
-41:   }
-42:   &.q2002 {
-43:     @include ui-slide-content ("+72 años",  "0 meses" );
-44:   }
-45:   .ui-slider-range {
+60:   @import "progress";
+61:   @import "banner";
+62:   @import "navigation";
+63:   @import "testimony";
+64:   @import "input";
+65:   @import "slide";
+66:   @import "intro";
+67:   @import "hiw";
+68:   @import "modal";
+69:   @import "loading";
+70:   @import "result";
 
 Backtrace:
-/Users/Hugo/Dropbox/Mixture/Test-2/common/bower_components/foundation/scss/_slide.scss:40
 /Users/Hugo/Dropbox/Mixture/Test-2/common/bower_components/foundation/scss/discover.scss:65
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/util.rb:1323:in `rescue in block in find_encoding_error'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/util.rb:1320:in `block in find_encoding_error'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/util.rb:1319:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/util.rb:1319:in `each_with_index'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/util.rb:1319:in `find_encoding_error'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/util.rb:896:in `check_sass_encoding'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/engine.rb:423:in `check_encoding!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/engine.rb:379:in `_to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/engine.rb:299:in `to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:313:in `block in visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/stack.rb:88:in `block in with_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/stack.rb:88:in `with_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:312:in `visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/import_node.rb:66:in `rescue in import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/import_node.rb:45:in `import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:301:in `visit_import'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.5/lib/sass/stack.rb:79:in `block in with_base'
@@ -69,4 +62,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid US-ASCII character \"\xC3\"\A         on line 40 of /Users/Hugo/Dropbox/Mixture/Test-2/common/bower_components/foundation/scss/_slide.scss\A         from line 65 of /Users/Hugo/Dropbox/Mixture/Test-2/common/bower_components/foundation/scss/discover.scss\A \A 35:   @include ui-slide-content (\"100%\",  \"0%\" );\A 36:   &.q1003 {\A 37:     @include ui-slide-content (\"+72 meses\",  \"0 meses\" );\A 38:   }\A 39:   &.q1007 {\A 40:     @include ui-slide-content (\"+8 años\",  \"0 meses\" );\A 41:   }\A 42:   &.q2002 {\A 43:     @include ui-slide-content (\"+72 años\",  \"0 meses\" );\A 44:   }\A 45:   .ui-slider-range {"; }
+  content: "Error: File to import not found or unreadable: slide.\A        Load paths:\A          Compass::SpriteImporter\A          /Users/Hugo/Dropbox/Mixture/Test-2/common/bower_components/foundation/scss\A          /Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets\A         on line 65 of /Users/Hugo/Dropbox/Mixture/Test-2/common/bower_components/foundation/scss/discover.scss\A \A 60:   @import \"progress\";\A 61:   @import \"banner\";\A 62:   @import \"navigation\";\A 63:   @import \"testimony\";\A 64:   @import \"input\";\A 65:   @import \"slide\";\A 66:   @import \"intro\";\A 67:   @import \"hiw\";\A 68:   @import \"modal\";\A 69:   @import \"loading\";\A 70:   @import \"result\";"; }
