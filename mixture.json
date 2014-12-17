@@ -8,10 +8,10 @@
   "modelSource": null,
   "preprocessorLocations": [
     "common/bower_components/foundation/scss",
-    "common/assets"
+    "common"
   ],
-  "preprocessorScriptOutput": "common/assets/js",
-  "preprocessorStyleOutput": "common/assets/css",
+  "preprocessorScriptOutput": "common/js",
+  "preprocessorStyleOutput": "common/css",
   "projectDescription": "The most advanced responsive front-end framework in the world.",
   "projectName": "Test-2",
   "publishedId": null,
