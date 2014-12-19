@@ -110,11 +110,11 @@
     margin-left: 0;
     padding-right: 0;
     padding-left: 0;
-    background-image: url(../images/home/spot-01-ipad.jpg);
+    background-image: url(../img/home/spot-01-ipad.jpg);
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: contain;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../images/home/spot-01-ipad.jpg', sizingMethod='scale');
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/home/spot-01-ipad.jpg', sizingMethod='scale');
     @media #{$medium-up} {
         height: rem-calc(450);
     }
@@ -125,7 +125,7 @@
         margin-left: -3em;
         padding-right: 12em;
         padding-left: 3em;
-        background-image: url(../images/home/spot-01.jpg);
+        background-image: url(../img/home/spot-01.jpg);
         background-position: right bottom;
         background-size: 100% auto !important;
     }

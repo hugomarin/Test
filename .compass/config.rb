@@ -13,7 +13,7 @@ css_dir = "common/css" # update to the path of your css files.
 
 sass_dir = "common/bower_components/foundation/scss" # update to the path of your sass files.
 
-images_dir = "common/images" # update to the path of your image files.
+images_dir = "common/img" # update to the path of your image files.
 
 javascripts_dir = "common/js" # update to the path of your script files.
 
